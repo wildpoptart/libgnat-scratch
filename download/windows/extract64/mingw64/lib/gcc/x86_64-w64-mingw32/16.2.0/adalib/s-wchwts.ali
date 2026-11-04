@@ -1,0 +1,122 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+
+U system.wch_wts%b	s-wchwts.adb		862a141b NE OL PK
+W system%s		system.ads		system.ali
+W system.case_util%s	s-casuti.adb		s-casuti.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.wch_cnv%s	s-wchcnv.adb		s-wchcnv.ali
+W system.wch_con%s	s-wchcon.adb		s-wchcon.ali
+
+U system.wch_wts%s	s-wchwts.ads		7d6fcd4a NE OL PU PK
+W system%s		system.ads		system.ali
+W system.wch_con%s	s-wchcon.adb		s-wchcon.ali
+
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D system.ads		20260807074606 898beeee system%s
+D s-casuti.ads		20260807074606 bb976540 system.case_util%s
+D s-cautns.ads		20260807074606 656f842a system.case_util_nss%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-wchcnv.ads		20260807074606 06c0ca70 system.wch_cnv%s
+D s-wchcnv.adb		20260807074606 5870a60e system.wch_cnv%b
+D s-wchcon.ads		20260807074606 d9032363 system.wch_con%s
+D s-wchjis.ads		20260807074606 6a748b39 system.wch_jis%s
+D s-wchwts.ads		20260807074606 2de700c7 system.wch_wts%s
+D s-wchwts.adb		20260807074606 cf99988f system.wch_wts%b
+G a e
+G c Z s b [wide_string_to_string system__wch_wts 42 13 none]
+G c Z s b [enum_wide_string_to_string system__wch_wts 58 13 none]
+G c Z s b [wide_wide_string_to_string system__wch_wts 64 13 none]
+G c Z s b [enum_wide_wide_string_to_string system__wch_wts 69 13 none]
+G c Z b b [normalize_string system__wch_wts 42 14 none]
+G c Z b b [store_utf_32_character system__wch_wts 50 14 none]
+X 2 system.ads
+37K9*System 214e11 12|37r6 39r9 44r12 60r12 66r12 71r12 75r5 13|32r6 32r28
+. 33r6 33r28 34r6 34r28 36r14 281r5
+80V14*">="{boolean} 13|155r59
+X 3 s-casuti.ads
+56K16*Case_Util 110e21 13|32w13 32w35
+61V13*To_Upper=62:28{character} 13|160s27
+X 8 s-wchcnv.ads
+48K16*WCh_Cnv 114e19 13|34w13 34w35
+51I9*UTF_32_Code<integer> 13|51r12 94r20 172r12
+81v13*Char_Sequence_To_UTF_32 13|92r34
+106u14*UTF_32_To_Char_Sequence 13|181r36
+X 10 s-wchcon.ads
+39K16*WCh_Con 218e19 12|37w13 44r19 60r19 66r19 71r19 13|33w13 33w35
+92I9*WC_Encoding_Method<short_short_integer> 12|44r27 60r27 66r27 71r27 13|44r12
+. 54r12 66r12 175r12 203r12 218r12 233r12 260r12
+182I12*WC_Upper_Half_Encoding_Method{92I9} 13|154r30
+191a4*WC_Longest_Sequences(natural) 13|235r39 262r39
+X 12 s-wchwts.ads
+39K16*WCh_WtS 2|37k9 12|75l12 75e19 13|36b21 281l12 281t19
+42V13*Wide_String_To_String{string} 43>7 44>7 13|205s26 231b13 252l8 252t29
+43a7 S{wide_string} 13|232b7 237r28 237r39 237r61 243r20 245r39
+44i7 EM{10|92I9} 13|233b7 235r61 248r19
+58V13*Enum_Wide_String_To_String{string} 59>7 60>7 13|201b13 210l8 210t34
+59a7 S{wide_string} 13|202b7 205r49
+60i7 EM{10|92I9} 13|203b7 205r52 208r33
+64V13*Wide_Wide_String_To_String{string} 65>7 66>7 13|220s26 258b13 279l8
+. 279t34
+65a7 S{wide_wide_string} 13|259b7 264r28 264r39 264r61 270r20 272r44
+66i7 EM{10|92I9} 13|260b7 262r61 275r19
+69V13*Enum_Wide_Wide_String_To_String{string} 70>7 71>7 13|216b13 225l8 225t39
+70a7 S{wide_wide_string} 13|217b7 220r54
+71i7 EM{10|92I9} 13|218b7 220r57 223r33
+X 13 s-wchwts.adb
+42U14 Normalize_String 43=7 44>7 64b14 165l8 165t24 208s7 223s7
+43a7 S{string} 65b7 114r12 115r12 125r28 132r10 139r13 145r10 152r16 153r23
+. 155r50 157r27 160m16 160r37
+44i7 EM{10|92I9} 66b7 104r44 154r24
+50U14 Store_UTF_32_Character 51>7 52<7 53=7 54>7 171b14 195l8 195t30 244s10
+. 271s10
+51i7 U{8|51I9} 172b7 194r20 245r13 272r13
+52a7 S{string} 173b7 190m10 246r13 273r13
+53i7 P{integer} 174b7 189m10 189r15 190r13 247r13 274r13
+54i7 EM{10|92I9} 175b7 194r23 248r13 275r13
+68U17 Skip_Wide 68>28 68=40 78b17 109l11 109t20 157s16
+68a28 S{string} 78b28 89r20
+68i40 P{natural} 78b40 88m13 88r18 89r23
+79V19 Skip_Char{character} 86b19 90l14 90t23 92r59 104s33
+92V19 WC_Skip[8|81]{8|51I9} 9|42b13 13|104s24
+94i10 Discard{8|51I9} 95r32 104m13
+111i7 F{natural} 114m7 119r10 125r13 125r31 126m10 126r15 132r13 145r13 146r17
+111i10 L{natural} 115m7 119r14 125r17 133m10 133r15 139r16 140m10 140r15
+. 148r23
+111i13 Ptr{natural} 146m10 148r16 152r19 153r26 155r53 157m30 157r30 160r19
+. 160r40 161m16 161r23
+177U17 Out_Char 177>27 178r22 181r61 187b17 191l11 191t19
+177e27 C{character} 187b27 190r19
+181U17 Store_Chars[8|106] 9|272b14 13|194s7
+205a7 Result{string} 208r25 209r14
+220a7 Result{string} 223r25 224r14
+235i7 Max_Chars{natural} 237r49
+237a7 Result{string} 241r21 246m19 251r14 251r22
+238i7 Result_Idx{natural} 241m7 247m19 247r19 251r38
+243i11 S_Idx{integer} 245r42
+262i7 Max_Chars{natural} 264r49
+264a7 Result{string} 268r21 273m19 278r14 278r22
+265i7 Result_Idx{natural} 268m7 274m19 274r19 278r38
+270i11 S_Idx{integer} 272r47
+

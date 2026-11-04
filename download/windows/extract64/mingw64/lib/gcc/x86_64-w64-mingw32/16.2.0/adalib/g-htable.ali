@@ -1,0 +1,48 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+
+U gnat.htable%b		g-htable.adb		9f9cc922 NE OL PK
+W gnat%s		gnat.ads		gnat.ali
+
+U gnat.htable%s		g-htable.ads		4a45b320 EB NE OL PR PK
+W gnat%s		gnat.ads		gnat.ali
+W system%s		system.ads		system.ali
+W system.htable%s	s-htable.adb		s-htable.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D gnat.ads		20260807074606 b5988c27 gnat%s
+D g-htable.ads		20260807074606 7e0467ec gnat.htable%s
+D g-htable.adb		20260807074606 e198aece gnat.htable%b
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-htable.ads		20260807074606 81d958eb system.htable%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+G a e
+X 3 gnat.ads
+40K9*GNAT 63e9 4|47r9 61r5 5|37r14 38r5
+X 4 g-htable.ads
+47K14*HTable 3|40k9 4|61l10 61e16 5|37b19 38l10 38t16
+56k20*Simple_HTable
+57k20*Static_HTable
+59v21*Hash
+X 6 system.ads
+37K9*System 4|45r6 56r42 57r42 59r34 6|214e11
+X 8 s-htable.ads
+40K16*HTable 4|45w13 56r49 57r49 59r41 8|220e18
+68k12*Simple_HTable 4|56r56 8|111e21
+166k12*Static_HTable 4|57r56 8|208e21
+218v13*Hash 4|59r48
+

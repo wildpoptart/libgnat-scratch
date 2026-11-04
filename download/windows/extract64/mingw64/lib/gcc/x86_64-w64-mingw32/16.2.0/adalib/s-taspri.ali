@@ -1,0 +1,72 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+
+U system.task_primitives%s  s-taspri.ads	6c9ca1aa NE OL PR PK
+W system%s		system.ads		system.ali
+W system.os_interface%s	s-osinte.ads		s-osinte.ali
+W system.os_locks%s	s-oslock.ads		s-oslock.ali
+W system.win32%s	s-win32.ads		s-win32.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260807074606 49eced87 interfaces.c.strings%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-osinte.ads		20260807074606 35a74841 system.os_interface%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-taspri.ads		20260807074606 af22d192 system.task_primitives%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s s [lockIP system__task_primitives 62 9 none]
+G c Z s s [private_dataIP system__task_primitives 70 9 none]
+X 4 i-c.ads
+73M9*unsigned_long
+89I9*ptrdiff_t<long_long_integer>
+X 6 system.ads
+37K9*System 214e11 12|34r6 35r6 36r6 38r9 53r28 63r32 68r35 71r24 85r19 89r5
+67M9*Address 12|53r35
+X 8 s-osinte.ads
+50K16*OS_Interface 381e24 12|34w13 71r31
+72I12*Thread_Id{13|55I9} 12|71r44
+X 9 s-oslock.ads
+37K16*OS_Locks 62e20 12|35w13 63r39 85r26
+42R12*RTS_Lock{40R9} 12|63r48 85r35
+X 12 s-taspri.ads
+38K16*Task_Primitives 6|37k9 12|62E9 89l12 89e27
+41R9*Lock 62c9 66e14
+44P9*Task_Body_Access
+48R9*Private_Data 70c9 87e14
+53M12*Task_Address{6|67M9}
+54N4*Task_Address_Size
+57N4*Alternate_Stack_Size
+63r7*Mutex{9|42R12}
+64i7*Priority{integer}
+65i7*Owner_Priority{integer}
+68I9 Condition_Variable<13|55I9> 82r20
+71i7*Thread{8|72I12} 72r22
+79m7*Thread_Id{13|61M9}
+82i7*CV{68I9}
+85r7*L{9|42R12}
+X 13 s-win32.ads
+39K16*Win32 12|36w13 68r42 79r27 13|350e17
+55I9*HANDLE<4|89I9> 12|68r48
+61M9*DWORD<4|73M9> 12|79r33
+

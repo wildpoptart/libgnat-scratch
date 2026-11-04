@@ -1,0 +1,54 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.multiprocessors%b  s-multip.adb	414d8432 NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+N A39:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A53:7 gnatcheck exempt_off "Improper_Returns"
+
+U system.multiprocessors%s  s-multip.ads	b127719d NE OL PR PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-multip.ads		20260807074606 38ac9f73 system.multiprocessors%s
+D s-multip.adb		20260807074606 a23c20a6 system.multiprocessors%b
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+G a e
+G c Z s b [number_of_cpus system__multiprocessors 29 13 none]
+X 3 interfac.ads
+47K9*Interfaces 247e15 8|29r6 29r24
+X 4 i-c.ads
+33K20*C 605e17 8|29w17 29w35
+62I9*int<integer> 8|46r49
+X 5 system.ads
+37K9*System 214e11 7|20r9 32r5 8|31r14 56r5
+X 7 s-multip.ads
+20K16*Multiprocessors 5|37k9 7|21r25 32l12 32e27 8|31b21 56l12 56t27
+23I9*CPU_Range<integer> 25r19 25r40 27r34
+25I12*CPU{23I9} 29r35 8|37r35 42r10 49r20
+27i4*Not_A_Specific_CPU{23I9}
+29V13*Number_Of_CPUs{25I12} 8|37b13 54l8 54t22
+X 8 s-multip.adb
+46V22*Gnat_Number_Of_CPUs{4|62I9} 47b<c,__gnat_number_of_cpus>31 49s25
+

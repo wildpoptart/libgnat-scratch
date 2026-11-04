@@ -1,0 +1,108 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U ada.wide_characters.handling%b  a-wichha.adb	c4349ee9 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.wide_characters%s	a-widcha.ads		a-widcha.ali
+W ada.wide_characters.unicode%s  a-wichun.adb	a-wichun.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U ada.wide_characters.handling%s  a-wichha.ads	a59bc40a BN NE OL PK
+W ada.wide_characters%s	a-widcha.ads		a-widcha.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-widcha.ads		20091030133032 a2b85d3d
+D a-wichha.ads		20101007092627 07239937
+D a-wichha.adb		20101007092627 d9e86744
+D a-wichun.ads		20101007092627 1aff609a
+D system.ads		20120503154647 23e1f70b
+D s-secsta.ads		20090707124243 eea35a36
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-utf_32.ads		20101007091606 fd857092
+X 1 ada.ads
+16K9*Ada 19e8 4|16r9 120r5 5|32r6 32r39 34r14 59r14 86r14 93r14 109r14 116r14
+. 123r14 130r14 155r14 173r14 186r5
+X 3 a-widcha.ads
+19K13*Wide_Characters 1|16k9 3|21e24 4|16r13 120r9 5|32r10 32r43 34r18 59r18
+. 86r18 93r18 109r18 116r18 123r18 130r18 155r18 173r18 186r9
+X 4 a-wichha.ads
+16K29*Handling 3|19k13 4|120l25 120e33 5|34b34 186l25 186t33
+18V13*Is_Control{boolean} 18>25 19r19 5|49b13 52l8 52t18
+18e25 Item{wide_character} 5|49b25 51r28
+23V13*Is_Letter{boolean} 23>24 24r19 5|42s14 85b13
+23e24 Item{wide_character} 5|85b24
+29V13*Is_Lower{boolean} 29>23 30r19 5|99b13 102l8 102t16
+29e23 Item{wide_character} 5|99b23 101r28
+34V13*Is_Upper{boolean} 34>23 35r19 5|145b13 148l8 148t16
+34e23 Item{wide_character} 5|145b23 147r28
+39V13*Is_Digit{boolean} 39>23 40r19 45r14 5|42s39 58b13 76s14
+39e23 Item{wide_character} 5|58b23
+44V13*Is_Decimal_Digit=45:14{boolean}
+44e31 Item{wide_character}
+47V13*Is_Hexadecimal_Digit{boolean} 47>35 5|74b13 79l8 79t28
+47e35 Item{wide_character} 5|74b35 76r24 77r17 78r17
+52V13*Is_Alphanumeric{boolean} 52>30 53r19 5|40b13 43l8 43t23 138s45
+52e30 Item{wide_character} 5|40b30 42r25 42r49
+58V13*Is_Special{boolean} 58>25 59r19 5|136b13 139l8 139t18
+58e25 Item{wide_character} 5|136b25 138r26 138r62
+65V13*Is_Line_Terminator{boolean} 65>33 66r19 5|92b13
+65e33 Item{wide_character} 5|92b33
+71V13*Is_Mark{boolean} 71>22 72r19 5|108b13
+71e22 Item{wide_character} 5|108b22
+76V13*Is_Other{boolean} 76>23 77r19 5|115b13
+76e23 Item{wide_character} 5|115b23
+81V13*Is_Punctuation{boolean} 81>29 82r19 5|122b13
+81e29 Item{wide_character} 5|122b29
+86V13*Is_Space{boolean} 86>23 87r19 5|129b13
+86e23 Item{wide_character} 5|129b23
+91V13*Is_Graphic{boolean} 91>25 92r19 5|65b13 68l8 68t18 138s14
+91e25 Item{wide_character} 5|65b25 67r34
+96V13*To_Lower{wide_character} 96>23 97r19 5|154b13 162s24
+96e23 Item{wide_character} 5|154b23
+102V13*To_Lower{wide_string} 102>23 5|157b13 166l8 166t16
+102s23 Item{wide_string} 5|157b23 158r29 162r34
+108V13*To_Upper{wide_character} 108>23 109r19 5|172b13 180s24
+108e23 Item{wide_character} 5|172b23
+114V13*To_Upper{wide_string} 114>23 5|175b13 184l8 184t16
+114s23 Item{wide_string} 5|175b23 176r29 180r34
+X 5 a-wichha.adb
+158a7 Result{wide_string} 161r16 162m10 165r14
+161i11 J{integer} 162r18 162r40
+176a7 Result{wide_string} 179r16 180m10 183r14
+179i11 J{integer} 180r18 180r40
+X 6 a-wichun.ads
+39K29*Unicode 5|32w26 32r59 59r34 86r34 93r34 109r34 116r34 123r34 130r34
+. 155r34 173r34 6|196e32
+45E9*Category<11|55E9>
+78V13*Get_Category{45E9} 5|51s14 101s14 147s14
+92V13*Is_Letter{boolean} 5|86r42
+104V13*Is_Digit{boolean} 5|59r42
+111V13*Is_Line_Terminator{boolean} 5|93r42
+119V13*Is_Mark{boolean} 5|109r42
+128V13*Is_Other{boolean} 5|116r42
+137V13*Is_Punctuation{boolean} 5|123r42
+145V13*Is_Space{boolean} 5|130r42
+152V13*Is_Non_Graphic{boolean} 5|67s18
+182V13*To_Lower_Case{wide_character} 5|155r42
+189V13*To_Upper_Case{wide_character} 5|173r42
+X 11 s-utf_32.ads
+56n6*Cc{55E9} 5|51r36
+61n6*Ll{55E9} 5|101r36
+65n6*Lu{55E9} 5|147r36
+

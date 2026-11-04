@@ -1,0 +1,39 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+
+U system.exponu%b	s-exponu.adb		f99253db NE OL SU GE
+W system%s		system.ads		system.ali
+
+U system.exponu%s	s-exponu.ads		fa8e8c60 BN NE OL GE
+W system%s		system.ads		system.ali
+
+D system.ads		20260807074606 898beeee system%s
+D s-exponu.ads		20260807074606 7305628e system.exponu%s
+D s-exponu.adb		20260807074606 8a973155 system.exponu%b
+G a e
+G c Z s b [exponu system 37 17 none]
+X 1 system.ads
+37K9*System 214e11 2|37r10 3|32r10 62r5
+X 2 s-exponu.ads
+35M9 Int 37r32 37r61 3|32r32 32r61 36r13 37r13
+37v17*Exponu 1|37k9 2|37>25 37>37 3|32b17 62l12 62t18
+37*25 Left{35M9} 3|32b25 37r24
+37i37 Right{natural} 3|32b37 38r24
+X 3 s-exponu.adb
+36*4 Result{2|35M9} 52m13 52r23 61r11
+37*4 Factor{2|35M9} 52r32 57m10 57r20 57r29
+38i4 Exp{natural} 49r7 51r13 55m10 55r17 56r20
+50l7 loop 58e15
+

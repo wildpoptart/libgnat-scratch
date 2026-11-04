@@ -1,0 +1,86 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnn
+
+U system.linux%s	s-linux.ads		6470edba NE OL PR PK
+W system%s		system.ads		system.ali
+
+D system.ads		20120503154647 23e1f70b
+D s-linux.ads		20090730092306 47911ab1
+X 1 system.ads
+37K9*System 153e11 2|38r9 113r20 119r5
+64M9*Address 2|113r27
+X 2 s-linux.ads
+38K16*Linux 1|37k9 2|119l12 119e17
+45N4*EAGAIN
+46N4*EINTR
+47N4*EINVAL
+48N4*ENOMEM
+49N4*EPERM
+50N4*ETIMEDOUT
+56N4*SIGHUP
+57N4*SIGINT
+58N4*SIGQUIT
+59N4*SIGILL
+60N4*SIGTRAP
+61N4*SIGIOT
+62N4*SIGABRT
+63N4*SIGFPE
+64N4*SIGKILL
+65N4*SIGBUS
+66N4*SIGSEGV
+67N4*SIGPIPE
+68N4*SIGALRM
+69N4*SIGTERM
+70N4*SIGUSR1
+71N4*SIGUSR2
+72N4*SIGCLD
+73N4*SIGCHLD
+74N4*SIGPWR
+75N4*SIGWINCH
+76N4*SIGURG
+77N4*SIGPOLL
+78N4*SIGIO
+79N4*SIGLOST
+80N4*SIGSTOP
+81N4*SIGTSTP
+82N4*SIGCONT
+83N4*SIGTTIN
+84N4*SIGTTOU
+85N4*SIGVTALRM
+86N4*SIGPROF
+87N4*SIGXCPU
+88N4*SIGXFSZ
+89N4*SIGUNUSED
+90N4*SIGSTKFLT
+91N4*SIGLTHRRES
+92N4*SIGLTHRCAN
+93N4*SIGLTHRDBG
+97N4*sa_handler_pos
+98N4*sa_mask_pos 99r39
+99N4*sa_flags_pos
+101N4*SA_SIGINFO
+102N4*SA_ONSTACK
+104R9*struct_pthread_fast_lock 107e14 108r26 115r20
+105i7*status{long_integer}
+106i7*spinlock{integer}
+110R9*pthread_mutex_t 116e14 117r26
+111i7*m_reserved{integer}
+112i7*m_count{integer}
+113m7*m_owner{1|64M9}
+114i7*m_kind{integer}
+115r7*m_lock{104R9}
+

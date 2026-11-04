@@ -1,0 +1,406 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+
+U system.traceback.symbolic%b  s-trasym.adb	ef93d144 OL PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.generic_array_sort%s
+Z ada.containers.generic_constrained_array_sort%s
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.exceptions.traceback%s  a-exctra.adb	a-exctra.ali
+W ada.unchecked_deallocation%s
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.address_to_access_conversions%s
+W system.bounded_strings%s  s-boustr.adb	s-boustr.ali
+W system.crtl%s		s-crtl.adb		s-crtl.ali
+W system.dwarf_lines%s	s-dwalin.adb		s-dwalin.ali
+W system.exception_traces%s  s-exctra.adb	s-exctra.ali
+W system.os_lib%s	s-os_lib.adb		s-os_lib.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+W system.strings%s	s-string.adb		s-string.ali
+W system.traceback%s	s-traceb.adb		s-traceb.ali
+W system.traceback_entries%s  s-traent.adb	s-traent.ali
+W system.win32%s	s-win32.ads		s-win32.ali
+
+U system.traceback.symbolic%s  s-trasym.ads	3e2e1203 EB EE NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system.traceback%s	s-traceb.adb		s-traceb.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-contai.ads		20260807074606 61e5e089 ada.containers%s
+D a-cgarso.ads		20260807074606 9129bfa8 ada.containers.generic_array_sort%s
+D a-cgarso.adb		20260807074606 59f5315a ada.containers.generic_array_sort%b
+D a-cgcaso.ads		20260807074606 9f1e835c ada.containers.generic_constrained_array_sort%s
+D a-cgcaso.adb		20260807074606 21f0752d ada.containers.generic_constrained_array_sort%b
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-exctra.ads		20260807074606 0966bad0 ada.exceptions.traceback%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20260807074606 c3a8ac65 ada.unchecked_deallocation%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-atacco.ads		20260807074606 5868e3ba system.address_to_access_conversions%s
+D s-boustr.ads		20260807074606 77fd2119 system.bounded_strings%s
+D s-crtl.ads		20260807074606 823b6536 system.crtl%s
+D s-dwalin.ads		20260807074606 fe15cdf0 system.dwarf_lines%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-exctra.ads		20260807074606 2484d6ea system.exception_traces%s
+D s-mmap.ads		20260807074606 3c5bc490 system.mmap%s
+D s-objrea.ads		20260807074606 a1dea848 system.object_reader%s
+D s-os_lib.ads		20260807074606 66ffd2a3 system.os_lib%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-string.ads		20260807074606 582aac7d system.strings%s
+D s-traceb.ads		20260807074606 4e864b31 system.traceback%s
+D s-trasym.ads		20260807074606 f6318ecd system.traceback.symbolic%s
+D s-trasym.adb		20260807074606 cac06be6 system.traceback.symbolic%b
+D s-tsmona.adb		20260807074606 93b3a654 system.traceback.symbolic.module_name
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s b [symbolic_traceback system__traceback__symbolic 80 13 none]
+G c Z s b [symbolic_traceback_no_hex system__traceback__symbolic 82 13 none]
+G c Z s b [symbolic_traceback system__traceback__symbolic 89 13 none]
+G c Z s b [symbolic_traceback_no_hex system__traceback__symbolic 91 13 none]
+G c Z s b [enable_cache system__traceback__symbolic 99 14 none]
+G c Z s b [calling_entity system__traceback__symbolic 108 13 none]
+G c Z b b [to_pointer system__traceback__symbolic__big_string_conv 61 13 59_4]
+G c Z b b [to_address system__traceback__symbolic__big_string_conv 67 13 59_4]
+G c Z b b [module_cacheIP system__traceback__symbolic 65 9 none]
+G c Z b b [free system__traceback__symbolic 75 14 none]
+G c Z b b [init_exec_module system__traceback__symbolic 95 14 none]
+G c Z b b [symbolic_traceback system__traceback__symbolic 98 13 none]
+G c Z b b [symbolic_traceback system__traceback__symbolic 102 13 none]
+G c Z b b [lt system__traceback__symbolic 109 13 none]
+G c Z b b [init_module system__traceback__symbolic 112 14 none]
+G c Z b b [close_module system__traceback__symbolic 119 14 none]
+G c Z b b [value system__traceback__symbolic 122 13 none]
+G c Z b b [add_module_to_cache system__traceback__symbolic 126 14 none]
+G c Z b b [build_cache_for_all_modules system__traceback__symbolic__module_name 133 17 none]
+G c Z b b [get system__traceback__symbolic__module_name 136 16 none]
+G c Z b b [is_supported system__traceback__symbolic__module_name 143 16 none]
+G c Z b b [module_arrayIP system__traceback__symbolic 82 9 none]
+G c Z b b [executable_name system__traceback__symbolic 152 13 none]
+G c Z b b [get_executable_load_address system__traceback__symbolic 157 13 none]
+G c Z b b [hexa_traceback system__traceback__symbolic 164 14 none]
+G c Z b b [symbolic_traceback_no_lock system__traceback__symbolic 170 14 none]
+G c Z b b [module_symbolic_traceback system__traceback__symbolic 178 14 none]
+G c Z b b [multi_module_symbolic_traceback system__traceback__symbolic 186 14 none]
+G c Z b b [multi_module_symbolic_traceback system__traceback__symbolic 193 14 none]
+G c Z b b [module_cache_array_sortR system__traceback__symbolic__module_cache_array_sortGP10097 277 14 none]
+G c Z b b [module_cache_array_sort system__traceback__symbolic 277 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 31|75r6 90r11 92r11 32|34r6 36r6 36r36 37r6 75r26 103r22 277r45
+. 745r22 751r12 755r11 762r11
+X 2 a-contai.ads
+16K13*Containers 28e19 32|37r10 277r49
+X 3 a-cgarso.ads
+23u26*Generic_Array_Sort 2|16k13 32|37w21 277r60
+X 4 a-cgarso.adb
+41U14 Sort[5|24] 6|32b26[32|277]
+X 5 a-cgcaso.ads
+24u26*Generic_Constrained_Array_Sort 2|16k13
+X 7 a-except.ads
+44K13*Exceptions 309e19 31|75w10 90r15 92r15 32|36r10 36r40 103r26 745r26
+. 751r16 755r15 762r15
+53R9*Exception_Occurrence 281e14 31|90r26 92r26 32|103r37 745r37 755r26 762r26
+X 8 a-exctra.ads
+40K24*Traceback 63e29 32|36w21 36w51 751r27
+47A12*Tracebacks_Array{34|50A9}<integer> 32|165r29 171r22 179r22 187r22 194r22
+. 347r19 491r22 528r22 610r22 650r29 672r22 702r22
+50V13*Tracebacks{47A12} 32|751s37
+X 10 a-uncdea.ads
+23u15*Unchecked_Deallocation 32|34w10 75r30
+X 11 interfac.ads
+47K9*Interfaces 247e15 32|49r6 386r31
+X 12 i-c.ads
+33K20*C 605e17 32|49w17 386r42
+62I9*int<integer> 32|386r44
+73M9*unsigned_long
+89I9*ptrdiff_t<long_long_integer>
+X 13 system.ads
+37K9*System 214e11 31|77r9 81r19 83r19 111r5 32|39r6 40r6 41r6 42r6 43r6
+. 44r6 45r6 46r6 47r6 48r6 51r14 53r8 54r8 59r35 99r22 122r27 127r50 136r28
+. 137r40 157r48 208r27 226r50 378r19 381r44 382r27 385r14 386r56 402r27 405r36
+. 408r30 409r34 420r13 467r10 584r33 654r11 710r7 718r7 724r10 729r19 737r19
+. 787r5 33|34r6 34r35 35r6 35r35 37r11 55r19 56r26 63r24
+67M9*Address 32|116r26 122r34 127r57 136r35 137r47 157r55 208r34 226r57 250r34
+. 378r26 381r51 385r21 386r63 402r34 405r43 408r37 445r26 543r36 584r40 706r31
+. 33|55r26 56r33
+69m4*Null_Address{67M9} 32|116r37 210r18 390r22 409r41 419r31 445r37 712r55
+. 33|63r31
+77V14*"<"{boolean} 32|270r35 550r24
+81V14*"="{boolean} 32|210r15 390r20 409r31 419r28 535r27 712r52
+X 14 s-atacco.ads
+42k16*Address_To_Access_Conversions 76e41 32|39w13 59r42 382r34
+50P9 Object_Pointer(32|381A12)
+61V13*To_Pointer{50P9[32|59]} 32|212s32[59] 213s39[59] 403s17[382]
+X 15 s-boustr.ads
+34K16*Bounded_Strings 62e27 32|48w13 53r15
+35R9*Bounded_String 61e14 32|167r29 174r29 183r29 190r29 198r29 495r29 531r29
+. 614r29 652r29 675r29 707r22
+39U14*Append 32|500s10 658s10 662s13 715s10
+40U14*Append 32|501s10 502s10 657s10 682s13 713s10
+44V13*To_String{string} 32|720s14
+48U14*Append_Address 32|661s13 714s10
+51V13*Is_Full{boolean} 32|535s39
+X 16 s-crtl.ads
+36K16*CRTL 244e16 32|41w13 420r20
+137U14*free 32|420s25
+X 17 s-dwalin.ads
+42K16*Dwarf_Lines 211e23 32|42w13 54r15 505r7
+47R9*Dwarf_Context 209e14 32|69r11
+54U14*Open 32|472s7
+58U14*Close 32|433s7
+61U14*Set_Load_Address 32|481s7
+65V13*Is_Inside{boolean} 32|552s22 576s13 630s36
+69V13*Low_Address{13|67M9} 32|270s14 270s37 550s26
+79U14*Enable_Cache 32|320s19
+82E9*Display_Mode_Type 82e54 32|101r22 173r22 182r22 189r22 197r22 494r22
+. 530r22 613r22 674r22 704r22
+82n31*Full{82E9} 32|499r68 712r25 733r62 741r61 751r67
+82n37*Subprg_Name_Only{82E9} 32|361r31 511r49 685r52
+88U14*Symbolic_Traceback 32|505s19
+X 19 s-exctra.ads
+57K16*Exception_Traces 107e28 32|43w13 783r7
+95U14*Set_Trace_Decorator 32|783s24
+X 22 s-os_lib.ads
+53K16*OS_Lib 1120e18 32|44w13 467r17
+420V13*Is_Directory{boolean} 32|467s24
+X 25 s-soflin.ads
+45K16*Soft_Links 430e22 32|40w13 710r14 718r14 724r17
+62P9*No_Param_Proc
+187p4*Lock_Task{62P9} 32|710r25
+197p4*Unlock_Task{62P9} 32|718r25 724r28
+X 27 s-stalib.ads
+49K16*Standard_Library 261e28 32|45w13 774r8
+217n7*RM_Convention{216E9} 32|784r40
+232n7*Unhandled_Raise_In_Main{216E9} 32|785r26
+244e4*Exception_Trace{216E9} 32|784r22 785m7
+X 28 s-stoele.ads
+43K16*Storage_Elements 104e28 33|34w13 34w42
+92M9*Integer_Address 33|71r39
+96V13*To_Address{13|67M9} 33|71s27
+X 29 s-string.ads
+40K16*Strings 61e19 32|47w13 66r14 434r7
+43P9*String_Access(string) 32|66r22
+47U14*Free[10|23] 32|434s15
+X 30 s-traceb.ads
+38K16*Traceback 13|37k9 30|81e21 31|77r16 111r12 32|51r21 787r12 33|37r18
+44U14*Call_Chain 32|350s7
+50i7 Skip_Frames{natural} 32|350r38
+75V13*C_Call_Chain{natural} 78i<c,system__traceback__c_call_chain>22
+X 31 s-trasym.ads
+77K26*Symbolic 30|38k16 31|111l22 111e30 32|51b31 499r10 677r10 787l22 787t30
+. 33|37r28
+80V13*Symbolic_Traceback{string} 81>7 32|728b13 734l8 734t26 783r45
+81a7 Traceback{34|50A9} 32|729b7 733r12
+82V13*Symbolic_Traceback_No_Hex{string} 83>7 32|736b13 742l8 742t33
+83a7 Traceback{34|50A9} 32|737b7 741r12
+89V13*Symbolic_Traceback{string} 90>7 32|754b13 759l8 759t26
+90r7 E{7|53R9} 32|755b7 758r34
+91V13*Symbolic_Traceback_No_Hex{string} 92>7 32|761b13 765l8 765t33
+92r7 E{7|53R9} 32|762b7 764r34
+99U14*Enable_Cache 99>28 32|287b14 335l8 335t20
+99b28 Include_Modules{boolean} 32|287b28 304r10
+108V13*Calling_Entity{string} 32|337b13 367l8 367t22
+X 32 s-trasym.adb
+56A12 Big_String{string}<integer> 60r7 211r19
+59K12 Big_String_Conv[14|42] 212r16 213r23
+62R9 Module_Cache 63r40 65c9 73e14 76r7 88r26 113r26 119r44 180r22 195r22
+. 231r21 431r44 442r26 492r22 588r23 611r22
+63P9 Module_Cache_Acc(62R9) 72r15 77r7 79r18 82r53 109r31 228r17 268r31 279r7
+. 311r19
+65R9 Module_Cache
+66p7*Name{29|43P9} 434m28 483m14 501r30
+69r7*C{17|47R9} 270r32 270r56 320m40 433m21 472m33 481m32 506r17 550r59 552r53
+. 576r36 630r54
+72p7*Chain{63P9} 237m14 324r33
+75U14 Free[10|23] 234s10
+79p4 Cache_Chain{63P9} 237r23 238m7 290r10 302m7 315r23
+82A9 Module_Array(63P9)<integer> 83r36 280r7 328r37
+83P9 Module_Array_Acc(82A9) 85r20
+85p4 Modules_Cache{83P9} 322r19 328m16 334r32 539r10 546r19 547r19 550r39
+. 552r33 555r22
+88r4 Exec_Module{65R9} 253m26 302m22 302r22 576r24 578r27 689r27
+91E9 Init_State 91e59 92r24
+91n24 Uninitialized{91E9} 92r38 247r30
+91n39 Initialized{91E9} 256r37
+91n52 Failed{91E9} 258r37 297r30 681r33
+92e4 Exec_Module_State{91E9} 247r10 256m16 258m16 297r10 681r13
+95U14 Init_Exec_Module 245b14 262l8 262t24 295s7 711s7
+98V13 Symbolic_Traceback{string} 99>7 100>7 101>7 358s12 701b13 726l8 726t26
+. 732s9 740s9 750s9
+99a7 Traceback{34|50A9} 702b7 717r35
+100b7 Suppress_Hex{boolean} 360r15 703b7 717r46 733r23 741r23
+101e7 Display_Mode{17|82E9} 361r15 704b7 712r10 717r60 733r46 741r45
+102V13 Symbolic_Traceback{string} 103>7 104>7 744b13 752l8 752t26 758s14
+. 764s14
+103r7 E{7|53R9} 745b7 751r49
+104b7 Suppress_Hex{boolean} 746b7 751r53 758r37 764r37
+109V13 Lt{boolean} 109>17 109>23 268b13 271l8 271t10 281r7
+109p17 Left{63P9} 268b17 270r27
+109p23 Right{63P9} 268b23 270r50
+112U14 Init_Module 113<7 114<7 115>7 116>7 232s7 253s13 441b14 484l8 484t19
+. 591s13
+113r7 Module{65R9} 442b7 472m26 472r26 481m25 481r25 483m7
+114b7 Success{boolean} 443b7 451m10 468m10 472m36 477r14
+115a7 Module_Name{string} 444b7 450r10 467r38 472r13 483r34
+116m7 Load_Address{13|67M9} 445b7 481r35
+119U14 Close_Module 119=28 431b14 435l8 435t20 595s16
+119r28 Module{65R9} 431b28 433m14 433r14 434m21 434r21
+122V13 Value{string} 122>20 208b13 219l8 219t13 413s38
+122m20 Item{13|67M9} 208b20 210r10 212r44 213r51
+126U14 Add_Module_To_Cache 126>35 127>35 225b14 239l8 239t27
+126a35 Module_Name{string} 225b35 232r41
+127m35 Load_Address{13|67M9} 226b35 232r54
+131K12 Module_Name 148l8 148e19 150b17 305r10 499r19 586r15 677r19 33|39b14
+. 96l5 96t16
+133U17*Build_Cache_For_All_Modules 305s22 33|45b14 48l8 48t35
+136V16*Get{string} 136>21 137^21 586s27 33|54b13 85l8 85t11
+136m21 Addr{13|67M9} 586r32 33|55b7 68r13
+137p21 Load_Addr(13|67M9) 587r32 33|56b7 63r7 71r10
+143V16*Is_Supported{boolean} 144r22 499s31 677s31 33|91b13 94l8 94t20
+152V13 Executable_Name{string} 249s45 373b13 425l8 425t23
+157V13 Get_Executable_Load_Address{13|67M9} 160b<c,__gnat_get_executable_load_address>7
+. 250s45 706s42
+164U14 Hexa_Traceback 165>7 166>7 167=7 509s10 566s13 598s16 649b14 665l8
+. 665t22 683s13
+165a7 Traceback{8|47A12} 650b7 660r19 661r42
+166b7 Suppress_Hex{boolean} 651b7 656r10
+167r7 Res{15|35R9} 652b7 657m18 658m18 661m29 662m21
+170U14 Symbolic_Traceback_No_Lock 171>7 172>7 173>7 174=7 671b14 692l8 692t34
+. 717s7
+171a7 Traceback{8|47A12} 672b7 679r13 684r16 689r16
+172b7 Suppress_Hex{boolean} 673b7 679r24 685r16 689r40
+173e7 Display_Mode{17|82E9} 674b7 679r38 685r37 689r54
+174r7 Res{15|35R9} 675b7 679m52 682m21 686m16 689m68
+178U14 Module_Symbolic_Traceback 179>7 180>7 181>7 182>7 183=7 490b14 521l8
+. 521t33 635s7 688s13
+179a7 Traceback{8|47A12} 491b7 506r20 510r13
+180r7 Module{65R9} 492b7 501r23 506r10
+181b7 Suppress_Hex{boolean} 493b7 506r31 511r13
+182e7 Display_Mode{17|82E9} 494b7 499r53 506r45 511r34
+183r7 Res{15|35R9} 495b7 500m18 501m18 502m18 506m68 512m13
+186U14 Multi_Module_Symbolic_Traceback 187>7 188>7 189>7 190=7 527b14 567s13
+. 599s16 607l8 607t39 641s7 678s10
+187a7 Traceback{8|47A12} 528b7 533r31 535r10 543r47 554r22 566r29 568r16
+. 568r36 576r39 578r16 586r40 594r19 598r32 600r19 600r39
+188b7 Suppress_Hex{boolean} 529b7 556r22 566r49 569r16 578r40 594r38 598r52
+. 601r19
+189e7 Display_Mode{17|82E9} 530b7 557r22 570r16 578r54 594r52 602r19
+190r7 Res{15|35R9} 531b7 535r48 558m22 566m63 571m16 578m68 594m66 598m66
+. 603m19
+193U14 Multi_Module_Symbolic_Traceback 194>7 195>7 196>7 197>7 198=7 553s19
+. 577s13 593s16 609b14 643l8 643t39
+194a7 Traceback{8|47A12} 610b7 620r14 626r38 630r57 636r10 636r21 642r10
+. 642r28
+195r7 Module{65R9} 611b7 630r47 637r10
+196b7 Suppress_Hex{boolean} 612b7 638r10 642r45
+197e7 Display_Mode{17|82E9} 613b7 639r10 642r59
+198r7 Res{15|35R9} 614b7 640m10 642m73
+201N4 Max_String_Length 707r52
+211i14 J{integer} 212r51 213r63
+228p7 Module{63P9} 231m7 232r20 234m16 234r16 237r7 238r23
+229b7 Success{boolean} 232m32 233r14
+249a13 Exec_Path{string} 253r48
+250m13 Exec_Load{13|67M9} 253r59
+251b13 Success{boolean} 253m39 255r16
+277U14 Module_Cache_Array_Sort[3|23] 4|32b26 32|334s7
+310i10 Count{natural} 314m13 317m16 317r25 322r34 328r56
+311p10 Module{63P9} 315m13 316r19 320r33 322r44 324m16 324r26
+313i14 Phase{integer} 319r19 327r16
+338i7 N_Skipped_Frames{natural} 350r53
+347a7 Traceback{8|47A12} 350m19 350r19 359r15
+348i7 Len{natural} 350m33 352r10
+357a10 With_Trailing_Newline{string} 364r12 365r15 365r46
+378m7*Gnat_Argv{13|67M9} 379m25 379r25 390r10 403r29
+381A12 Argv_Array(13|67M9)<integer> 382r65
+382K15 Conv[14|42] 403r12
+384V16*locate_exec_on_path{13|67M9} 385>10 386>10 387b<c,__gnat_locate_exec_on_path>25
+. 406s12
+385m10 A{13|67M9}
+386i10 Current_Dir_On_Win{12|62I9}
+402m10 Argv0{13|67M9} 406r33 411r18
+405m10 Resolved_Argv0{13|67M9} 409r16 410r18 419r13 420r31
+408m10 Exe_Argv{13|67M9} 413r45
+413a10 Result{string} 423r17
+497b7 Success{boolean} 506m59 508r14
+533i7 F{natural} 543r58 566r40 566r45 568r27 576r50 586r51 598r43 598r48
+. 600r30
+543m13 Addr{13|67M9} 550r19 552r56
+544i13 Hi{natural} 547m13 548r25 549r29 551m19
+544i17 Lo{natural} 546m13 548r19 549r24 561m19
+544i21 Mid{natural} 549m16 550r54 551r25 552r48 555r37 561r25
+584m13 Load_Addr{13|67M9} 587m45 587r45 591r51
+585a13 M_Name{string} 591r43
+588r13 Module{65R9} 591m26 594r30 595m30 595r30
+589b13 Success{boolean} 591m34 592r16
+616i7 Pos{positive} 620m7 626r32 630r68 632m10 632r17 636r40 642r21
+624l7 Same_Module 626r15 630r15 633l16 633e27
+660i14 J{integer} 661r53
+698a4 LDAD_Header{string} 713r23
+706m7 Load_Address{13|67M9} 712r39 714r31
+707r7 Res{15|35R9} 713m18 713r18 714m26 714r26 715m18 715r18 717m74 717r74
+. 720r25
+767i4 Exception_Tracebacks_Symbolic{integer} 770r7 782r7
+X 33 s-tsmona.adb
+58m7 Res{35|61M9} 73m10 75r13 76r41
+59i7 hModule{35|55I9} 69m13 69r13 71r56 73r36
+60a7 Path{string} 73m45 73r45 73r59 76r20
+X 34 s-traent.ads
+41K16*Traceback_Entries 31|81r26 83r26 32|46w13 99r29 654r18 729r26 737r26
+. 34|61e29
+50A9*Tracebacks_Array(44M12)<integer> 31|81r44 83r44 32|99r47 729r44 737r44
+52V13*PC_For{13|67M9} 32|661s34
+X 35 s-win32.ads
+39K16*Win32 33|35w13 35w42 69r31 35|350e17
+55I9*HANDLE<12|89I9> 33|59r25
+61M9*DWORD<12|73M9> 33|58r17
+69I9*BOOL<12|62I9>
+84N4*TRUE 33|69r37
+160N4*GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS 33|66r13
+161N4*GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT 33|67r15
+335V13*GetModuleHandleEx{69I9} 33|65s10
+341V13*GetModuleFileName{61M9} 33|73s17
+

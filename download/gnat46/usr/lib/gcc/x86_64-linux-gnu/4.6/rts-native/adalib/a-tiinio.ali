@@ -1,0 +1,112 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnvnnvnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U ada.text_io.integer_io%b  a-tiinio.adb	f48cfa9d NE OL PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+
+U ada.text_io.integer_io%s  a-tiinio.ads	92691002 BN NE OL PK GE
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-tiinau.ads		20090409150019 8114c8e4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-tiinio.adb		20091130162119 df9cd7af
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20120503154647 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 10|45r9 84r5 11|32r6 34r14 36r24 154r5
+X 8 a-textio.ads
+49K13*Text_IO 1|16k9 8|472e16 10|45r13 84r9 11|32r10 34r18 36r28 154r9
+52P9*File_Type(370R9) 10|51r15 60r15 11|49r15 115r15
+74I12*Field{integer} 10|47r20 53r15 57r15 62r15 67r15 11|51r15 71r15 117r15
+. 130r15
+79I12*Number_Base{integer} 10|48r20 63r15 68r15 78r14 11|118r15 131r15 144r14
+299X4*Data_Error 11|66r38 86r38 107r38
+456p4 Current_In{52P9} 11|80r23 82r23
+457p4 Current_Out{52P9} 11|135r23 137r23
+X 9 a-tiinau.ads
+39K29*Integer_Aux 83e28 11|32w18 36r36
+41U14*Get_Int 11|62s14 82s14
+46U14*Get_LLI 11|60s14 80s14
+51U14*Put_Int 11|124s14 137s14
+57U14*Put_LLI 11|122s14 135s14
+63U14*Gets_Int 11|103s14
+68U14*Gets_LLI 11|101s14
+73U14*Puts_Int 11|150s14
+78U14*Puts_LLI 11|148s14
+X 10 a-tiinio.ads
+43I9 Num 47r29 52r19 56r19 61r15 66r15 72r18 77r14 11|38r35 50r19 70r19 91r18
+. 116r15 129r15 143r14
+45k21*Integer_IO 8|49k13 10|43z9 84l17 84e27 11|34b26 154l17 154t27
+47i4*Default_Width{8|74I12} 62r24 67r24 11|117r24 130r24
+48i4*Default_Base{8|79I12} 63r30 68r30 78r29 11|118r30 131r30 144r29
+50U14*Get 51>7 52<7 53>7 11|48b14 67l8 67t11
+51p7 File{8|52P9} 11|49b7 60r23 62r23
+52*7 Item{43I9} 11|50b7 60m48 62m38
+53i7 Width{8|74I12} 11|51b7 60r55 62r45
+55U14*Get 56<7 57>7 11|69b14 87l8 87t11
+56*7 Item{43I9} 11|70b7 80m54 82m44
+57i7 Width{8|74I12} 11|71b7 80r61 82r51
+59U14*Put 60>7 61>7 62>7 63>7 11|114b14 126l8 126t11
+60p7 File{8|52P9} 11|115b7 122r23 124r23
+61*7 Item{43I9} 11|116b7 122r48 124r38
+62i7 Width{8|74I12} 11|117b7 122r55 124r45
+63i7 Base{8|79I12} 11|118b7 122r62 124r52
+65U14*Put 66>7 67>7 68>7 11|128b14 139l8 139t11
+66*7 Item{43I9} 11|129b7 135r55 137r45
+67i7 Width{8|74I12} 11|130b7 135r62 137r52
+68i7 Base{8|79I12} 11|131b7 135r69 137r59
+70U14*Get 71>7 72<7 73<7 11|89b14 108l8 108t11
+71s7 From{string} 11|90b7 101r24 103r24
+72*7 Item{43I9} 11|91b7 101m49 103m39
+73i7 Last{positive} 11|92b7 101m56 103m46
+75U14*Put 76<7 77>7 78>7 11|141b14 152l8 152t11
+76s7 To{string} 11|142b7 148m24 150m24
+77*7 Item{43I9} 11|143b7 148r47 150r37
+78i7 Base{8|79I12} 11|144b7 148r54 150r44
+X 11 a-tiinio.adb
+36K12 Aux=36:36 60r10 62r10 80r10 82r10 101r10 103r10 122r10 124r10 135r10
+. 137r10 148r10 150r10
+38b4 Need_LLI{boolean} 59r10 79r10 100r10 121r10 134r10 147r10
+

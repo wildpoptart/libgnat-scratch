@@ -1,0 +1,67 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnn
+
+U system.task_info%b	s-tasinf.adb		3d54d5f6 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.task_info%s	s-tasinf.ads		6cfdb051 EB EE OL PR PK
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.os_interface%s	s-osinte.adb		s-osinte.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-linux.ads		20090730092306 47911ab1
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-stalib.ads		20101021102512 c4241c00
+D s-tasinf.ads		20090409150019 21316953
+D s-tasinf.adb		20090409150019 1c65bca5
+D s-unstyp.ads		20090409150019 6ae15c76
+X 4 i-c.ads
+37I9*long<long_integer>
+X 5 system.ads
+37K9*System 153e11 11|44r6 46r9 79r23 101r5 12|34r14 55r5
+X 8 s-osinte.ads
+47K16*OS_Interface 568e24 11|44w13 79r30 12|49r13 49r35
+55I12*long{4|37I9}
+231V13*sysconf{55I12} 12|49s26
+235N4*SC_NPROCESSORS_ONLN 12|49r48
+479A9*bit_field(boolean)<integer>
+484R9*cpu_set_t 486e14 11|79r43
+485a7*bits{479A9} 11|81m35 82m35
+X 11 s-tasinf.ads
+46K16*Task_Info 5|37k9 11|101l12 101e21 12|34b21 55l12 55t21
+79R12*CPU_Set{8|484R9} 81r23 82r23 89r30
+81r4*Any_CPU{79R12} 89r41
+82r4*No_CPU{79R12}
+84X4*Invalid_CPU_Number
+88R9*Thread_Attributes 90e14 92r41 94r38
+89r7*CPU_Affinity{79R12}
+92r4*Default_Thread_Attributes{88R9}
+94P9*Task_Info_Type(88R9) 96r37
+96p4*Unspecified_Task_Info{94P9}
+98V13*Number_Of_Processors{positive} 12|45b13 53l8 53t28
+X 12 s-tasinf.adb
+36i4 N_CPU{natural} 37r19 47r10 48m10 52r14
+

@@ -1,0 +1,55 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+
+U system.tasking.restricted%s  s-tasres.ads	ef3b80a0 NE OL PK
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260807074606 49eced87 interfaces.c.strings%s
+D system.ads		20260807074606 898beeee system%s
+D s-atacco.ads		20260807074606 5868e3ba system.address_to_access_conversions%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-multip.ads		20260807074606 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20260807074606 35a74841 system.os_interface%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260807074606 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260807074606 601f6b72 system.task_info%s
+D s-taspri.ads		20260807074606 af22d192 system.task_primitives%s
+D s-taskin.ads		20260807074606 e3b5765b system.tasking%s
+D s-tasres.ads		20260807074606 0c8ef6fb system.tasking.restricted%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+X 7 system.ads
+37K9*System 214e11 23|34r9 35r5
+X 17 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+X 22 s-taskin.ads
+47K16*Tasking 7|37k9 22|1235e19 23|34r16 35r12
+X 23 s-tasres.ads
+34K24*Restricted 22|47k16 23|35l20 35e30
+

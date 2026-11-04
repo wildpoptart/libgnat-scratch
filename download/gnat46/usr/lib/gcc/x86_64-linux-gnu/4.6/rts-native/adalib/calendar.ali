@@ -1,0 +1,35 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnvnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U calendar%s		calendar.ads		1889a610 NE OL
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-calend.ads		20090409150019 343c83dd
+D a-unccon.ads		20070406091342 f9eb8f06
+D calendar.ads		20070406091342 2cb525cd
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-stalib.ads		20101021102512 c4241c00
+X 1 ada.ads
+16K9*Ada 19e8 4|16r6 18r26
+X 2 a-calend.ads
+36K13*Calendar 358e17 4|16w10 18r30
+X 4 calendar.ads
+18K9*Calendar=18:30
+

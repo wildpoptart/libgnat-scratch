@@ -1,0 +1,118 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnvnnnvnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnvnvnnnnnnnnnnnnnnnn
+
+U ada.synchronous_task_control%b  a-sytaco.adb	40a75eda NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.task_primitives.operations%s  s-taprop.adb  s-taprop.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+U ada.synchronous_task_control%s  a-sytaco.ads	d29ff3ad BN EE OL PR PK
+W ada%s			ada.ads			ada.ali
+W ada.finalization%s	a-finali.adb		a-finali.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-stream.ads		20090409150019 2ca4ee37
+D a-sytaco.ads		20090409150019 a7cf8eb9
+D a-sytaco.adb		20090409150019 5e04bae4
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-atacco.ads		20090409150019 1dc856ad
+D s-exctab.ads		20090417131547 66e51330
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-linux.ads		20090730092306 47911ab1
+D s-multip.ads		20101011073009 38ac9f73
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stausa.ads		20101018101807 bba781f7
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-tasinf.ads		20090409150019 21316953
+D s-taspri.ads		20080408071349 af44aca8
+D s-taprop.ads		20090409150019 07f79e46
+D s-taskin.ads		20101021101406 b2eaee08
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 5|38r6 40r9 63r10 78r5 6|32r6 37r14 97r10 104r5
+X 2 a-except.ads
+55K13*Exceptions 370e19 6|32w10 97r14
+95U14*Raise_Exception 6|97s25
+X 3 a-finali.ads
+42K13*Finalization 71e21 5|38w10 63r14
+53H9*Limited_Controlled 69e55 5|63r27
+X 5 a-sytaco.ads
+40K13*Synchronous_Task_Control 1|16k9 5|78l9 78e33 6|37b18 104l9 104t33
+44R9*Suspension_Object 46r35 48r36 50r32 52r45 56r37 59r35 62c9 69e14 6|43r37
+. 52r35 61r32 70r36 79r35 88r45
+46U14*Set_True 46=24 71r19 6|79b14 82l8 82t16
+46r24 S{44R9} 6|79b24 81m51
+48U14*Set_False 48=25 72r19 6|70b14 73l8 73t17
+48r25 S{44R9} 6|70b25 72m52
+50V13*Current_State{boolean} 50>28 73r19 6|61b13 64l8 64t21
+50r28 S{44R9} 6|61b28 63r63
+52U14*Suspend_Until_True 52=34 74r19 6|88b14 102l8 102t26
+52r34 S{44R9} 6|88b34 101m61
+56U14 Initialize<3|56p14> 56=26 75r19 6|43b14 46l8 46t18
+56r26 S{44R9} 6|43b26 45m53
+59U14 Finalize<3|57p14> 59=24 76r19 6|52b14 55l8 55t16
+59r24 S{44R9} 6|52b24 54m51
+65r7*SO{29|56R9} 6|45m55 54m53 63r65 72m54 81m53 101m63
+X 11 system.ads
+37K9*System 5|36r6 65r12 6|34r6 35r6 45r7 54r7 63r14 72r7 81r7 94r10 95r18
+. 101r7 11|153e11
+X 29 s-taspri.ads
+45K16*Task_Primitives 5|36w13 65r19 6|35r13 45r14 54r14 63r21 72r14 81r14
+. 101r14 29|123e27
+56R9*Suspension_Object 5|65r35 29|100e14
+X 30 s-taprop.ads
+39K32*Operations 6|35w29 45r30 54r30 63r37 72r30 81r30 101r30 30|546e38
+474V13*Current_State{boolean} 6|63s48
+477U14*Set_False 6|72s41
+480U14*Set_True 6|81s41
+485U14*Suspend_Until_True 6|101s41
+492U14*Initialize 6|45s41
+495U14*Finalize 6|54s41
+X 31 s-taskin.ads
+47K16*Tasking 6|34w13 94r17 95r25 31|1130e19
+105R9*Ada_Task_Control_Block 1084e14
+107P9*Task_Id(105R9)
+114V13*Self{107P9} 6|95s33
+393V13*Detect_Blocking{boolean} 6|94s25
+496i7*Protected_Action_Nesting{natural} 6|95r45
+892r7*Common{449R9} 6|95r38
+

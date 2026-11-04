@@ -1,0 +1,146 @@
+V "GNAT Lib v10"
+A -gnatwa
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fpic
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U system.tasking.async_delays.enqueue_calendar%b  s-tadeca.adb  40937254 NE OL SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W system%s		system.ads		system.ali
+W system.os_constants%s	s-oscons.ads		s-oscons.ali
+W system.os_primitives%s  s-osprim.adb		s-osprim.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.task_primitives.operations%s  s-taprop.adb  s-taprop.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.async_delays%s  s-taasde.adb	s-taasde.ali
+W system.tasking.initialization%s  s-tasini.adb	s-tasini.ali
+
+U system.tasking.async_delays.enqueue_calendar%s  s-tadeca.ads  2c10ea81 NE OL SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W system.tasking.async_delays%s  s-taasde.adb	s-taasde.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-calend.ads		20230707070819 474d9720 ada.calendar%s
+D a-calend.adb		20230707070819 e65e26b2 ada.calendar%b
+D a-caldel.ads		20230707070819 9f20b83d ada.calendar.delays%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
+D a-taside.ads		20230707070818 00e3a3f6 ada.task_identification%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-bitops.ads		20230707070819 0765e3a3 system.bit_ops%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-intman.ads		20230707070818 47ba1e06 system.interrupt_management%s
+D s-inmaop.ads		20230707070818 5e0317cf system.interrupt_management.operations%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20251219045051 56602da1 system.os_constants%s
+D s-osinte.ads		20251219045051 baabc537 system.os_interface%s
+D s-osprim.ads		20230707070819 07fd65f6 system.os_primitives%s
+D s-osprim.adb		20230707070819 c5b00444 system.os_primitives%b
+D s-optide.adb		20230707070819 93bfb1f2 system.os_primitives.timed_delay
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-solita.ads		20230707070818 4e08c3ec system.soft_links.tasking%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
+D s-taprop.adb		20230707070818 c5df8e9b system.task_primitives.operations%b
+D s-tpoaal.adb		20230707070819 0239874f system.task_primitives.operations.atcb_allocation
+D s-tpopmo.adb		20230707070819 cc8f58f7 system.task_primitives.operations.monotonic
+D s-tporft.adb		20230707070819 8f1c0d3c system.task_primitives.operations.register_foreign_thread
+D s-tpopsp.adb		20230707070819 43d7f309 system.task_primitives.operations.specific
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-taasde.ads		20230707070818 422600df system.tasking.async_delays%s
+D s-taasde.adb		20230707070818 e0b1cb82 system.tasking.async_delays%b
+D s-tadeca.ads		20230707070818 297b7d7e system.tasking.async_delays.enqueue_calendar%s
+D s-tadeca.adb		20230707070818 6eb09f8d system.tasking.async_delays.enqueue_calendar%b
+D s-tasdeb.ads		20230707070818 dfa965f6 system.tasking.debug%s
+D s-tasini.ads		20230707070818 45f51104 system.tasking.initialization%s
+D s-tasini.adb		20230707070818 4701a39c system.tasking.initialization%b
+D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
+D s-tataat.ads		20230707070819 fbda52c1 system.tasking.task_attributes%s
+D s-tasuti.ads		20230707070818 4c20fd27 system.tasking.utilities%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [enqueue_calendar system__tasking__async_delays 38 38 none]
+X 1 ada.ads
+16K9*Ada 20e8 44|37r6 39r8 45|32r6 40r8 43r13 48r23 51r12
+X 2 a-calend.ads
+36K13*Calendar 409e17 44|37w10 39r12 45|32r10 40r12 43r17 48r27 51r16
+42I9*Time<222I9> 44|39r21 45|40r21 43r26
+56V13*Clock{42I9} 45|51s25
+121V14*"<="{boolean} 45|51s9
+222I9 Time_Rep<long_long_integer>
+X 4 a-caldel.ads
+37K22*Delays 53e24 45|32w19 48r36
+50V13*To_Duration{duration} 45|48s43
+X 12 system.ads
+37K9*System 156e11 44|38r10 45|34r6 35r6 36r6 37r6 39r10 45r25 46r25 53r7
+. 72r4 73r7 76r5
+X 20 s-oscons.ads
+44K16*OS_Constants 451e24 45|34w13 45r32
+427N4*CLOCK_REALTIME 45|66r33
+430N4*CLOCK_RT_Ada 45|66r12
+X 22 s-osprim.ads
+40K16*OS_Primitives 89e25 45|35w13 69r22
+64V13*Clock{duration} 45|69s36
+X 30 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 34 s-taspri.ads
+43K16*Task_Primitives 120e27 45|36r13 46r32 53r14 73r14
+X 35 s-taprop.ads
+39K32*Operations 571e38 45|36w29 46r48 53r30 73r30
+135V13*Self{41|109P9} 45|73s41
+314U14*Yield 45|53s41
+341V13*Monotonic_Clock{duration} 45|69s49
+X 41 s-taskin.ads
+47K16*Tasking 1215e19 44|38r17 45|37r13 39r17 72r11 76r12
+109P9*Task_Id(107R9)
+X 42 s-taasde.ads
+38K24*Async_Delays 147e32 44|38r25 45|39r25 76r20
+95P9*Delay_Block_Access(94R9) 44|40r8 45|41r8
+129b7*Timed_Out{boolean} 45|52m9
+139U14 Time_Enqueue 45|74s4
+X 44 s-tadeca.ads
+38V38*Enqueue_Calendar{boolean} 42|38k24 44|39>4 40>4 45|39b38 76l33 76t49
+39i4 T{2|42I9} 45|40b4 48r56 51r7
+40p4 D{42|95P9} 45|41b4 52r7 74r24
+X 45 s-tadeca.adb
+45K12 SOSC=45:32 66r7 66r28
+46K12 STPO=46:48 69r44
+48o4 RT_T{duration} 69m7 69r15 74r18
+X 47 s-tasini.ads
+35K24*Initialization 45|37w21 72r19 47|178e34
+95U14*Defer_Abort 45|72s34
+

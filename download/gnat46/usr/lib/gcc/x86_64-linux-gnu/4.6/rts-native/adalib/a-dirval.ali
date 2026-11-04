@@ -1,0 +1,71 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnn
+
+U ada.directories.validity%b  a-dirval.adb	e559f18d NE OL PK
+W ada.directories%s	a-direct.adb		a-direct.ali
+
+U ada.directories.validity%s  a-dirval.ads	a2334639 NE OL PK
+W ada.directories%s	a-direct.adb		a-direct.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-calend.ads		20090409150019 343c83dd
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-direct.ads		20101220072657 9d42e46d
+D a-dirval.ads		20090409150019 3f71a254
+D a-dirval.adb		20100910095424 da2853d9
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20101220072657 e684739b
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 6|35r17 52r5 7|35r14 113r5
+X 5 a-direct.ads
+76K13*Directories 1|16k9 5|487e20 6|35r21 52r9 7|35r18 113r9
+X 6 a-dirval.ads
+35K33*Validity 5|76k13 6|52l21 52e29 7|35b30 113l21 113t29
+37V13*Is_Valid_Simple_Name{boolean} 37>35 7|74b13 93l8 93t28
+37s35 Name{string} 7|74b35 79r10 83r19 84r16 84r39
+40V13*Is_Valid_Path_Name{boolean} 40>33 7|50b13 68l8 68t26
+40s33 Name{string} 7|50b33 54r10 58r19 59r16
+43V13*Is_Path_Name_Case_Sensitive{boolean} 7|41b13 44l8 44t35
+46V13*OpenVMS{boolean} 7|99b13 102l8 102t15
+49V13*Windows{boolean} 7|108b13 111l8 111t15
+X 7 a-dirval.adb
+58i14 J{integer} 59r22
+83i14 J{integer} 84r22 84r45
+

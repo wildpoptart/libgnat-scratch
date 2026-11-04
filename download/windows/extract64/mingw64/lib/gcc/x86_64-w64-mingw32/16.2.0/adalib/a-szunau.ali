@@ -1,0 +1,110 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U ada.strings.wide_wide_unbounded.aux%b  a-szunau.adb  b784aeec NE OL PK
+W ada.strings.wide_wide_unbounded%s  a-stzunb.adb  a-stzunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+
+U ada.strings.wide_wide_unbounded.aux%s  a-szunau.ads  6a44b075 BN NE OL PR PK
+W ada.strings.wide_wide_unbounded%s  a-stzunb.adb  a-stzunb.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-finali.ads		20260807074606 099c16e4 ada.finalization%s
+D a-stream.ads		20260807074606 cb01a8f8 ada.streams%s
+D a-string.ads		20260807074606 90ac6797 ada.strings%s
+D a-sttebu.ads		20260807074606 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260807074606 c6ced0ae ada.strings.utf_encoding%s
+D a-stzmap.ads		20260807074606 ca03e953 ada.strings.wide_wide_maps%s
+D a-stzunb.ads		20260807074606 e8dd6e42 ada.strings.wide_wide_unbounded%s
+D a-szunau.ads		20260807074606 8299de37 ada.strings.wide_wide_unbounded.aux%s
+D a-szunau.adb		20260807074606 351d70db ada.strings.wide_wide_unbounded.aux%b
+D a-tags.ads		20260807074606 2dbf449c ada.tags%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-atocou.ads		20260807074606 dc18efc3 system.atomic_counters%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-finpri.ads		20260807074606 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20260807074606 0a7c3ed4 system.finalization_root%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-putima.ads		20260807074606 1b989439 system.put_images%s
+D s-retsta.ads		20260807074606 0f6b06cb system.return_stack%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-stratt.ads		20260807074606 80b8dafb system.stream_attributes%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s b [get_wide_wide_string ada__strings__wide_wide_unbounded__aux 43 14 none]
+G c Z s b [set_wide_wide_string ada__strings__wide_wide_unbounded__aux 70 14 none]
+G c Z s b [set_wide_wide_string ada__strings__wide_wide_unbounded__aux 78 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 10|37r9 86r5 11|32r14 91r5
+X 5 a-string.ads
+16K13*Strings 1|18k9 5|35e16 10|37r13 86r9 11|32r18 91r9
+X 9 a-stzunb.ads
+48K21*Wide_Wide_Unbounded 5|16k13 9|518e36 10|37r21 86r17 11|32r26 91r17
+51R9*Unbounded_Wide_Wide_String<3|43R9> 469e14 10|44r11 61r16 71r19 79r20
+. 11|39r11 55r19 66r20
+58P9*Wide_Wide_String_Access(wide_wide_string) 10|72r12 11|56r12 58r11
+60U14*Free 11|62s7
+75U14*Set_Unbounded_Wide_Wide_String 10|63r15 11|61s7
+428i7*Last{natural} 11|47r24 87m10
+429a7*Data{wide_wide_string} 11|44m37 86m15
+434P9 Shared_Wide_Wide_String_Access(424R9) 11|70r21 71r12
+436U14 Reference 11|76s10
+439U14 Unreference 11|88s7
+443V13 Can_Be_Reused{boolean} 11|75s10
+452V13 Allocate{434P9} 11|82s16
+467p7*Reference{434P9} 11|44r27 47r14 70r57 83m12
+X 10 a-szunau.ads
+37K41*Aux 9|48k21 10|86l37 86e40 11|32b46 91l37 91t40
+40A12*Big_Wide_Wide_String{wide_wide_string}<integer> 41r51 11|43r19
+41P9*Big_Wide_Wide_String_Access(40A12) 45r15 11|40r15
+43U14*Get_Wide_Wide_String 44>7 45<7 46<7 47r19 11|38b14 48l8 48t28
+44r7 U{9|51R9} 11|39b7 44r25 47r12
+45p7 S{41P9} 11|40b7 46m7
+46i7 L{natural} 11|41b7 47m7
+60U14*Set_Wide_Wide_String=63:15
+61r7 UP{9|51R9}
+62a7 S{wide_wide_string}
+70U14*Set_Wide_Wide_String 71=7 72>7 11|54b14 63l8 63t28
+71r7 UP{9|51R9} 11|55b7 61m39
+72p7 S{9|58P9} 11|56b7 58r38 61r43
+78U14*Set_Wide_Wide_String 79<7 80>7 81^7 11|65b14 89l8 89t28
+79r7 U{9|51R9} 11|66b7 70r55 83m10
+80i7 Length{positive} 11|67b7 75r29 82r26 86r26 87r18
+81p7 Set 11|68b7 86r7
+81a43 S{wide_wide_string}
+X 11 a-szunau.adb
+43a7 X{10|40A12} 44m11 44r11 46m12 46r12
+58p7 X{9|58P9} 62m13 62r13
+68a43 S{wide_wide_string}
+70p7 TR{9|434P9} 75r25 76r21 77r16 88r20
+71p7 DR{9|434P9} 77m10 82m10 83r25 86r12 87r7
+

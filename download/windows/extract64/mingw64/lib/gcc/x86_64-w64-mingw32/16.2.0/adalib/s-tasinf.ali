@@ -1,0 +1,73 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U system.task_info%b	s-tasinf.adb		6c8afeef NE OL PK
+W system%s		system.ads		system.ali
+W system.os_interface%s	s-osinte.ads		s-osinte.ali
+
+U system.task_info%s	s-tasinf.ads		1eed0240 EB EE OL PR PK
+W system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.win32%s	s-win32.ads		s-win32.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260807074606 49eced87 interfaces.c.strings%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-osinte.ads		20260807074606 35a74841 system.os_interface%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-tasinf.ads		20260807074606 601f6b72 system.task_info%s
+D s-tasinf.adb		20260807074606 3932dddc system.task_info%b
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s s [thread_attributesIP system__task_info 90 9 none]
+G c Z s b [number_of_processors system__task_info 100 13 none]
+X 4 i-c.ads
+73M9*unsigned_long
+X 6 system.ads
+37K9*System 214e11 12|44r6 46r9 52r13 82r26 103r5 13|34r6 40r14 65r5
+X 8 s-osinte.ads
+50K16*OS_Interface 381e24 13|34w13 35r29
+X 12 s-tasinf.ads
+46K16*Task_Info 6|37k9 12|47r24 103l12 103e21 13|40b21 65l12 65t21
+82M12*CPU_Number{14|263M12} 84r23 91r13
+84m4*Any_CPU{82M12} 91r27
+86X4*Invalid_CPU_Number
+90R9*Thread_Attributes 92e14 94r41 96r38
+91m7*CPU{82M12}
+94r4*Default_Thread_Attributes{90R9}
+96P9*Task_Info_Type(90R9) 98r37
+98p4*Unspecified_Task_Info{96P9}
+100V13*Number_Of_Processors{positive} 13|51b13 63l8 63t28
+X 13 s-tasinf.adb
+42i4 N_CPU{natural} 43r19 53r10 58m13 62r14
+55r13 SI{14|265R9} 57m34 57r34 58r32
+X 14 s-win32.ads
+39K16*Win32 12|44w13 52r20 82r33 13|55r26 57r13 14|350e17
+61M9*DWORD<4|73M9>
+263M12*ProcessorId{61M9} 12|52r26 82r39
+265R9*SYSTEM_INFO 13|55r32 14|275e14
+271m7*dwNumberOfProcessors{61M9} 13|58r35
+278U14*GetSystemInfo 13|57s19
+

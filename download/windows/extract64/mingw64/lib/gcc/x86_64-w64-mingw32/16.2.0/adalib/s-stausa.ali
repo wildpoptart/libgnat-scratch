@@ -1,0 +1,205 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+
+U system.stack_usage%b	s-stausa.adb		7c6f2528 NE OL PK
+W system%s		system.ads		system.ali
+W system.crtl%s		s-crtl.adb		s-crtl.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+W system.io%s		s-io.adb		s-io.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+
+U system.stack_usage%s	s-stausa.ads		785c8e50 BN NE OL PR PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.address_to_access_conversions%s
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D system.ads		20260807074606 898beeee system%s
+D s-atacco.ads		20260807074606 5868e3ba system.address_to_access_conversions%s
+D s-crtl.ads		20260807074606 823b6536 system.crtl%s
+D s-imagei.ads		20260807074606 11a376a2 system.image_i%s
+D s-imgint.ads		20260807074606 86836590 system.img_int%s
+D s-io.ads		20260807074606 9e42f74f system.io%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stausa.ads		20260807074606 f470ae2d system.stack_usage%s
+D s-stausa.adb		20260807074606 35c8b220 system.stack_usage%b
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [initialize system__stack_usage 206 14 none]
+G c Z s b [fill_stack system__stack_usage 212 14 none]
+G c Z s b [initialize_analyzer system__stack_usage 228 14 none]
+G c Z s b [compute_result system__stack_usage 245 14 none]
+G c Z s b [report_result system__stack_usage 259 14 none]
+G c Z s b [output_results system__stack_usage 265 14 none]
+G c Z s s [to_pointer system__stack_usage__unsigned_32_addr 61 13 273_4]
+G c Z s s [to_address system__stack_usage__unsigned_32_addr 67 13 273_4]
+G c Z s s [stack_analyzerIP system__stack_usage 279 9 none]
+G c Z s b [stack_size system__stack_usage 327 13 none]
+G c Z s s [task_resultIP system__stack_usage 51 9 none]
+G c Z s s [result_array_typeIP system__stack_usage 62 9 none]
+G c Z b b [output_result system__stack_usage 107 14 none]
+X 1 interfac.ads
+47K9*Interfaces 247e15 9|34w6 234r22 274r44 276r28 10|39r8 275r22
+92M9*Unsigned_32 9|234r33 274r55 276r39 10|275r33
+X 2 system.ads
+37K9*System 214e11 9|32r6 33r6 36r9 39r24 44r39 45r12 232r22 274r6 283r20
+. 296r23 299r30 305r33 335r5 10|32r6 33r6 34r6 36r14 37r8 38r8 123r26 138r27
+. 150r30 252r13 273r22 348r10 572r5
+67M9*Address 9|44r46 232r29 283r27 296r30 299r37 305r40 10|123r33 273r29
+69m4*Null_Address{67M9} 10|145r30
+71N4*Storage_Unit 9|277r63
+78V14*"<="{boolean} 10|288r27
+79V14*">"{boolean} 10|426r30
+81V14*"="{boolean} 10|145r27
+X 3 s-atacco.ads
+42k16*Address_To_Access_Conversions 76e41 9|33w13 274r13
+X 4 s-crtl.ads
+36K16*CRTL 244e16 10|33w13 138r34 150r37
+95V13*atoi{integer} 10|150s42
+165V13*getenv{2|67M9} 10|138s39
+X 7 s-io.ads
+37K16*IO 64e14 10|34w13 38r15
+44U14*Put 10|395s7 396s7 397s7 398s7 399s7 400s7 401s7 471s13 491s10
+47U14*New_Line 10|402s7 477s10 500s10
+51V13*Standard_Error{49E9} 10|394s19 419s19
+54U14*Set_Output 10|394s7 419s7
+X 8 s-parame.ads
+50K16*Parameters 182e22 10|32w13 190r10 252r20 332r10 348r17
+87b4*Stack_Grows_Down{boolean} 10|190r21 252r31 332r21 348r28
+X 9 s-stausa.ads
+36K16*Stack_Usage 2|37k9 9|273E12 335l12 335e23 10|36b21 572l12 572t23
+39K12*SSE=39:31 41r29
+41M12*Stack_Address{11|92M9} 44r62 328r16 328r41 10|192r15 217r15 306r16
+. 306r41
+44V13*To_Stack_Address=45:36{11|92M9} 10|191s13 193s15 204s13 205s15 210s24
+. 211s24 216s13 218s15 229s13 230s12 236s18 237s20 524s15 525s15
+44m31 Value{2|67M9}
+47N4*Task_Name_Length 52r32 280r32 10|288r30 293r52 415r31
+51R9*Task_Result 60e14 62r59 10|109r28 373r28 509r16
+52a7*Task_Name{string} 10|131m13 397r19 510m10
+54i7*Value{natural} 10|131m49 379r65 435r33 436r52 512m10 519m17 522m17 539r37
+58i7*Stack_Size{natural} 10|131m61 378r65 439r33 440r51 511m10
+62A9*Result_Array_Type(51R9)<integer> 318r40 10|128r27
+64R9*Stack_Analyzer 212r44 229r29 245r48 259r40 279c9 312e14 314r32 10|177r44
+. 270r29 319r48 508r40
+206U14*Initialize 206>26 207i<c,__gnat_stack_usage_initialize>22 10|122b14
+. 171l8 171t18
+206i26 Buffer_Size{natural} 10|122b26 128r51
+212U14*Fill_Stack 212=26 10|161s13 177b14 263l8 263t18
+212r26 Analyzer{64R9} 10|177b26 191r31 192r30 197m13 201m10 202r12 202r50
+. 204r31 209m13 211r42 214m10 214r46 216r31 217r30 222m13 226m10 227r12 227r50
+. 229r31 234m13 236r36 240m10 241r12 241r53 248r28 249r34 254r31 259r31
+228U14*Initialize_Analyzer 229=7 230>7 231>7 232>7 233>7 234>7 10|154s13
+. 269b14 299l8 299t27
+229r7 Analyzer{64R9} 10|270b7 279m7 280m7 281m7 282m7 283m7 284m7 289m10
+. 291m10
+230a7 Task_Name{string} 10|271b7 288r10 289r35 289r56 292r12 293r15 293r34
+231i7 Stack_Size{natural} 10|272b7 280r32
+232m7 Stack_Base{2|67M9} 10|273b7 279r32
+233i7 Pattern_Size{natural} 10|274b7 281r32
+234m7 Pattern{1|92M9} 10|275b7 282r32
+242b4*Is_Enabled{boolean} 10|136m7
+245U14*Compute_Result 245=30 10|319b14 365l8 365t22 422s10
+245r30 Analyzer{64R9} 10|319b30 326r33 327r29 333m10 334r12 334r53 336m10
+. 337r12 337r53 340r10 350r29 351m16 358r29 359m16
+259U14*Report_Result 259>29 10|423s10 508b14 570l8 570t21
+259r29 Analyzer{64R9} 10|508b29 510r24 511r24 514r10 519r26 524r33 525r33
+. 528r10 532r24 541r30 564r16
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22 10|409b14
+. 502l8 502t22
+273K12 Unsigned_32_Addr[3|42]
+276M12 Pattern_Type{1|92M9} 277r36 293r17 10|49r52 50r39
+277N4 Bytes_Per_Pattern 10|248r52 326r57
+280a7*Task_Name{string} 10|284m16 289m19 291m19 510r33
+283m7*Stack_Base{2|67M9} 10|191r40 202r21 204r40 216r40 229r40 279m16 525r42
+287i7*Stack_Size{natural} 10|280m16 511r33 519r35 541r39
+290i7*Pattern_Size{natural} 10|192r39 197m22 202r59 209m22 217r39 222m22
+. 234m22 248r37 281m16 326r42 334r62 340r19 514r19
+293m7*Pattern{276M12} 10|254r40 259r40 282m16 350r38 358r38
+296m7*Pattern_Limit{2|67M9} 10|201m19 211r51 214r55 226m19 236r45 334r21
+299m7*Topmost_Touched_Mark{2|67M9} 10|333m19 336m19 351m25 359m25 524r42
+305m7*Pattern_Overlay_Address{2|67M9} 10|214m19 240m19 249r43 327r38
+309i7*Result_Id{positive} 10|283m16 528r19 532r33 564r25
+314r4 Environment_Task_Analyzer{64R9} 10|155m16 155r16 161m25 161r25 422m26
+. 422r26 423r25
+316b4 Compute_Environment_Task{boolean} 10|163m13 169m10 421r10
+318P9 Result_Array_Ptr(62A9) 320r19
+320p4 Result_Array{318P9} 321m22 321r22 10|128m7 129r7 426r10 431r19 435r16
+. 436r35 439r16 440r34 481r19 485r19 528r32 532r10
+324i4 Next_Id{positive} 10|283r32 298m7 298r18 433r28 483r28
+327V13 Stack_Size{natural} 328>7 328>31 329r19 10|305b13 313l8 313t18 523s12
+328m7 SP_Low{41M12} 10|306b7 308r10 309r26 311r36
+328m31 SP_High{41M12} 10|306b31 308r19 309r35 311r26
+X 10 s-stausa.adb
+49A9 Stack_Slots(9|276M12)<integer> 50r8 55r36 247r28 326r15
+102a4 Index_Str{string} 382r31 472r16 492r13
+103a4 Task_Name_Str{string} 415r50 472r36 494r15
+104a4 Stack_Size_Str{string} 454r53 463r16 464r38 473r18 497r15 551r34 553r21
+105a4 Actual_Size_Str{string} 459r53 467r16 468r38 474r39 499r15 559r36 561r21
+107U14 Output_Result 108>7 109>7 110>7 111>7 371b14 403l8 403t21 484s13 563s13
+108i7 Result_Id{natural} 372b7 377r58 395r46
+109r7 Result{9|51R9} 373b7 378r58 379r58 397r12
+110i7 Max_Stack_Size_Len{natural} 374b7 386r31
+111i7 Max_Actual_Use_Len{natural} 375b7 390r31
+123m7 Stack_Size_Chars{2|67M9} 138m7 145r10 150r48 158m16 158r16
+147i13 My_Stack_Size{integer} 150m13 157r16 159r16
+184i7 Current_Stack_Level{integer} 193m33 193r33 205m33 205r33 210m42 210r42
+. 218m33 218r33 230m30 230r30 237m38 237r38
+186N7 Guard 193r64 205r64 210r73 218r64 230r61 237r69
+247a10 Pattern{49A9} 249m14 249r14 253r30 254m16 258r22 259m16
+253i17 J{integer} 254r25
+258i17 J{integer} 259r25
+326a7 Stack{49A9} 327m11 327r11 349r19 350r16 351m49 351r49 357r27 358r16
+. 359m49 359r49
+349i14 J{integer} 350r23 351r56
+357i14 J{integer} 358r23 359r56
+377a7 Result_Id_Str{string} 382r50
+378a7 Stack_Size_Str{string} 386r52 399r32
+379a7 Actual_Use_Str{string} 390r52 401r32
+381a7 Result_Id_Blanks{string} 395r12
+385a7 Stack_Size_Blanks{string} 399r12
+389a7 Actual_Use_Blanks{string} 401r12
+410i7 Max_Stack_Size{natural} 439r46 440m16 444r47
+411i7 Max_Stack_Usage{natural} 435r41 436m16 446r47
+412i7 Max_Stack_Size_Len{natural} 444m10 454r32 463r40 464m16 485r37
+412i27 Max_Actual_Use_Len{natural} 446m10 459r32 467r41 468m16 485r57
+414a7 Task_Name_Blanks{string} 472r52 495r15
+431i14 J{integer} 433r23 435r30 436r49 439r30 440r48
+452a13 Stack_Size_Blanks{string} 473r35
+457a13 Stack_Usage_Blanks{string} 474r18
+481i14 J{integer} 483r23 485r16 485r33
+509r7 Result{9|51R9} 519m10 522m10 532r47 539r30 565r16
+538i13 Result_Str_Len{natural} 559r19 560r21
+540i13 Size_Str_Len{natural} 551r19 552r21
+543i13 Max_Stack_Size_Len{natural} 550m13 566r16
+544i13 Max_Actual_Use_Len{natural} 558m13 567r16
+X 11 s-stoele.ads
+43K16*Storage_Elements 9|32w13 39r31 45r19 10|37r15 11|104e28
+54I9*Storage_Offset<long_long_integer> 10|202r34 227r34 241r37 334r37 337r37
+74V14*"+"{2|67M9} 10|227r32 334r35
+79V14*"-"{2|67M9} 10|202r32 241r35 337r35
+92M9*Integer_Address 9|41r33
+100V13*To_Integer{92M9} 9|45r36
+

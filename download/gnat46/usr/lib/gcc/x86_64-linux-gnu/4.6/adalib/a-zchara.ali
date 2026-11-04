@@ -1,0 +1,28 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U ada.wide_wide_characters%s  a-zchara.ads	1e347caa NE OL PU PK
+W ada%s			ada.ads			ada.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-zchara.ads		20070406091342 21c8f2b2
+D system.ads		20120503154647 23e1f70b
+X 1 ada.ads
+16K9*Ada 19e8 2|16r9 18r5
+X 2 a-zchara.ads
+16K13*Wide_Wide_Characters 1|16k9 2|18l9 18e29
+

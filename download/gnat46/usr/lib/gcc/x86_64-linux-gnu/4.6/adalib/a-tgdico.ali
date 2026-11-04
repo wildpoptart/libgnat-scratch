@@ -1,0 +1,42 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U ada.tags.generic_dispatching_constructor%s  a-tgdico.ads  b127544e NE OL GE
+W ada.tags%s		a-tags.adb		a-tags.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-tags.ads		20101021101406 c7695348
+D a-tgdico.ads		20070406091342 764e0706
+D system.ads		20120503154647 23e1f70b
+D s-stoele.ads		20090417130712 facd7d98
+X 1 ada.ads
+16K9*Ada 19e8 3|25r10
+X 2 a-tags.ads
+39K13*Tags 1|16k9 2|577e13 3|25r14
+43P9*Tag(231A12) 3|26r14
+228P9 Prim_Ptr
+229A9 Address_Array(228P9)<integer>
+231A12 Dispatch_Table{229A9}<integer>
+X 3 a-tgdico.ads
+20H9 T 22r75 27r49
+21+9 Parameters 22r56 27r30
+22y18 Constructor{20R9} 22^31
+22p31 Params(21+9)
+25v19*Generic_Dispatching_Constructor 26>4 27^4 28r25 29b27
+26p4 The_Tag{2|43P9}
+27p4 Params(21+9)
+

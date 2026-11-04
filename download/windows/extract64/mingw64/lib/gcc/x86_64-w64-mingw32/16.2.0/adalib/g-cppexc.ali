@@ -1,0 +1,176 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+
+U gnat.cpp_exceptions%b	g-cppexc.adb		d4fb50fe NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.unchecked_conversion%s
+W gnat%s		gnat.ads		gnat.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+U gnat.cpp_exceptions%s	g-cppexc.ads		a6502f1a BN EE NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.cpp%s		g-cpp.ads		g-cpp.ali
+W gnat.cpp.std%s	g-cppstd.adb		g-cppstd.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-string.ads		20260807074606 90ac6797 ada.strings%s
+D a-sttebu.ads		20260807074606 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260807074606 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260807074606 2dbf449c ada.tags%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D gnat.ads		20260807074606 b5988c27 gnat%s
+D g-cpp.ads		20260807074606 71147c8f gnat.cpp%s
+D g-cppstd.ads		20260807074606 d32eb61c gnat.cpp.std%s
+D g-cstyin.ads		20260807074606 4e57d047 gnat.cpp.std.type_info%s
+D g-cppexc.ads		20260807074606 cff42c30 gnat.cpp_exceptions%s
+D g-cppexc.adb		20260807074606 5b570e5e gnat.cpp_exceptions%b
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cexten.ads		20260807074606 be1de098 interfaces.c.extensions%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+G a e
+G c Z s b [get_object_address gnat__cpp_exceptions 45 13 none]
+G c Z s b [get_type_info gnat__cpp_exceptions 81 13 none]
+G c Z s b [get_type_info gnat__cpp_exceptions 86 13 none]
+G c Z b b [to_exception_data_ptr gnat__cpp_exceptions 45 13 none]
+G c Z b b [get_exception_machine_occurrence gnat__cpp_exceptions 51 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 12|35r6 35r26 13|34r6 46r6 182r14 203r14
+X 2 a-except.ads
+44K13*Exceptions 309e19 12|35w10 35w30
+48P9*Exception_Id<23|82P9> 12|41r40 86r33 13|47r9 62r40 117r21 215r33
+53R9*Exception_Occurrence 281e14 12|46r11 55r29 63r39 73r46 81r32 13|52r11
+. 108r11 156r29 173r39 194r46 240r32
+92V13*Exception_Identity{48P9} 13|117s37 254s33
+X 7 a-unccon.ads
+23v14*Unchecked_Conversion 13|34w10 46r10 182r18 203r18
+X 8 gnat.ads
+40K9*GNAT 63e9 12|36r6 36r24 38r9 92r5 13|37r14 270r5
+X 9 g-cpp.ads
+35K14*CPP 36e13 12|36r11 36r29
+X 10 g-cppstd.ads
+40K18*Std 97e17 12|36w15 36w33
+41P9*Type_Info_Ptr 12|81r61 86r54 13|215r54 240r61 245r50 248r12
+44p4*No_Type_Info{41P9} 13|228r20 262r15
+46V13*To_Type_Info_Ptr{41P9} 13|233s14
+X 12 g-cppexc.ads
+38K14*CPP_Exceptions 8|40k9 12|92l10 92e24 13|37b19 270l10 270t24
+40+12 T 41r62 13|62r62 67r32 92r38
+41u14*Raise_Cpp_Exception 41>35 41>54 13|62b14 101l8 101t27
+41p35 Id{2|48P9} 13|62b35 64r71
+41*54 Value{40+12} 13|62b54 96r18
+45V13*Get_Object_Address{17|67M9} 46>7 13|107b13 150l8 150t26 158s48 176s48
+. 197s48
+46r7 X{2|53R9} 13|108b7 111r43 117r57
+54+12 T 55r58 13|156r58 162r25
+55v13*Get_Object 55>25 13|156b13 167l8 167t18
+55r25 X{2|53R9} 13|156b25 158r68
+62+12 T 64r48 13|174r48 179r28
+63v13*Get_Access_To_Object 63>35 13|173b13 188l8 188t28
+63r35 X{2|53R9} 13|173b35 176r68
+72H12 T 74r55 13|195r55 200r28
+73v13*Get_Access_To_Tagged_Object 73>42 13|194b13 209l8 209t35
+73r42 X{2|53R9} 13|194b42 197r68
+81V13*Get_Type_Info{10|41P9} 81>28 13|240b13 268l8 268t21
+81r28 X{2|53R9} 13|240b28 242r43 254r53
+86V13*Get_Type_Info{10|41P9} 86>28 13|215b13 234l8 234t21
+86p28 Id{2|48P9} 13|215b28 216r71
+X 13 g-cppexc.adb
+45V13 To_Exception_Data_Ptr[7|23]{23|82P9} 64s48 119s48 216s48 254s10
+51V13 Get_Exception_Machine_Occurrence{17|67M9} 52>7 53b<ada,__gnat_get_exception_machine_occurrence>24
+. 111s9 242s9
+52r7 X{2|53R9}
+64p7 Id_Data{23|82P9} 86r10 100r23
+67P12 T_Acc(12|40+12) 68r29 71r13 74r62 78r34
+71p7 Occ{67P12} 92m7 96r7 100r18
+74V16 cxa_allocate_exception{67P12} 74>40 75b<c,__cxa_allocate_exception>25
+. 92s14
+74m40 Size{15|92M9}
+78U17 cxa_throw 78>28 78>41 79>41 80b<c,__cxa_throw>25 81r25 100s7
+78p28 Obj{67P12}
+78m41 Tinfo{17|67M9}
+79m41 Dest{17|67M9}
+110m7 Exception_Addr{17|67M9} 134r10 144r16
+114m7 Object_Addr{17|67M9} 142m25 149r14
+117p7 Id{2|48P9} 119r71
+119p7 Id_Data{23|82P9} 138r10 143r16 143r38
+122i7 Success{integer} 142m16 145r10
+124U17*Convert 124<26 125<26 126>26 127>26 128>26 129b<c,__gnat_obtain_caught_object>25
+. 142s7
+124i26 Success{integer}
+125m26 Object_Addr{17|67M9}
+126m26 Catch_Type{17|67M9}
+127e26 Convention{character}
+128m26 Unw_Except{17|67M9}
+158m7 Object_Addr{17|67M9} 164r30
+162*7 Result{12|54+12} 163r27 164m11 164r11 166r14
+176m7 Object_Addr{17|67M9} 185r44
+179P12 T_Acc(12|62+12) 182r56 185r25
+181V16 To_T_Acc[7|23]{179P12} 185s34
+185p7 Result{179P12} 187r14
+197m7 Object_Addr{17|67M9} 206r44
+200P12 T_Acc(12|72R12) 203r56 206r25
+202V16 To_T_Acc[7|23]{200P12} 206s34
+206p7 Result{200P12} 208r14
+216p7 Id_Data{23|82P9} 223r10 224r13 226r12 233r32
+219r7*Foreign_Exception{23|97R9} 221m15 221r15 226m22 226r22
+241m7 Exception_Addr{17|67M9} 250r10 260r26
+245V16*Get_MO_RTTI{10|41P9} 245>29 246b<cpp,__gnat_get_cxx_exception_type_info>27
+. 260s13
+245m29 MO{17|67M9}
+248p7 TI{10|41P9} 260m7 262r10 266r14
+X 14 interfac.ads
+47K9*Interfaces 13|33r6 33r24 14|247e15
+X 15 i-c.ads
+33K20*C 13|33w17 33w35 15|605e17
+92M9*size_t 13|74r47
+X 17 system.ads
+37K9*System 12|34w6 46r40 13|32w6 32w18 35r6 35r35 52r40 78r49 79r49 92r47
+. 100r45 108r40 158r30 176r30 182r40 197r30 203r40 17|214e11
+67M9*Address 12|46r47 13|52r47 78r56 79r56 108r47 110r33 114r21 125r44 126r40
+. 128r40 158r37 176r37 182r47 197r37 203r47 241r33 245r34
+69m4*Null_Address{67M9} 13|100r52 134r27 250r27
+71N4*Storage_Unit 13|92r54
+81V14*"="{boolean} 13|134r25 250r25
+X 23 s-stalib.ads
+49K16*Standard_Library 13|35w13 35w42 23|261e28
+81R9*Exception_Data 13|219r35 23|133e14
+82P9*Exception_Data_Ptr(81R9) 13|47r23 64r26 119r26 216r26
+97R9*Exception_Data
+105e7*Lang{character} 13|86r18 138r18 143r46 223r18 224r21 254r57
+123m7*Foreign_Data{17|67M9} 13|100r31 143r24 233r40
+

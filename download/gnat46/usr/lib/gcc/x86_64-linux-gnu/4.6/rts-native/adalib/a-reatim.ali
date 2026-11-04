@@ -1,0 +1,177 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnvnnnnnnnnnnnnnnnn
+
+U ada.real_time%b	a-reatim.adb		00dc945f OL PK
+W ada%s			ada.ads			ada.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_64%s	s-arit64.adb		s-arit64.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+U ada.real_time%s	a-reatim.ads		5bfb6637 BN EE OL PK
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.task_primitives.operations%s  s-taprop.adb  s-taprop.ali  EA
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-reatim.ads		20090409150019 63f07669
+D a-reatim.adb		20100623063157 d1c60c3e
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-atacco.ads		20090409150019 1dc856ad
+D s-arit64.ads		20090409150019 a011a169
+D s-exctab.ads		20090417131547 66e51330
+D s-linux.ads		20090730092306 47911ab1
+D s-multip.ads		20101011073009 38ac9f73
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stausa.ads		20101018101807 bba781f7
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-tasinf.ads		20090409150019 21316953
+D s-taspri.ads		20080408071349 af44aca8
+D s-taprop.ads		20090409150019 07f79e46
+D s-taskin.ads		20101021101406 b2eaee08
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 3|39r9 139r5 4|37r14 253r5
+X 3 a-reatim.ads
+39K13*Real_Time 1|16k9 3|139l9 139e18 4|37b18 253l9 253t18
+41O9*Time 42r26 43r26 53r26 55r26 55r63 56r45 56r63 57r26 57r63 58r26 58r45
+. 60r33 61r33 62r33 63r33 100r25 101r65 104c9 106r26 106r34 108r26 108r34
+. 4|63r25 63r57 66r14 69r44 69r57 72r14 87r25 87r57 90r14 93r32 133r26 135r14
+. 187r25 188r15 208r10 219r65 221r14
+42o4*Time_First{41O9} 106c4 4|194r24
+43o4*Time_Last{41O9} 108c4 4|194r45
+44N4*Time_Unit
+46O9*Time_Span 47r31 48r31 49r31 50r31 52r20 55r45 56r26 57r45 58r63 65r33
+. 65r63 66r33 66r63 67r27 67r63 68r26 68r63 69r45 69r63 70r33 71r26 71r63
+. 73r28 73r46 75r33 76r33 77r33 78r33 80r32 81r50 83r48 84r48 85r48 87r42
+. 90r42 100r64 101r47 110c9 112r31 112r44 114r31 114r44 116r31 118r31 120r20
+. 121r13 4|45r25 45r60 48r14 51r42 51r60 54r14 63r39 69r25 75r32 75r50 78r14
+. 87r39 93r45 96r14 99r32 99r50 102r14 105r26 105r44 117r32 123r25 123r60
+. 126r14 142r48 151r48 160r42 169r47 178r42 187r64 199r52 212r13 219r47 228r31
+. 237r48 244r14
+47o4*Time_Span_First{46O9} 112c4
+48o4*Time_Span_Last{46O9} 114c4
+49o4*Time_Span_Zero{46O9} 116c4 4|108r14
+50o4*Time_Span_Unit{46O9} 118c4 4|144r14 153r14 171r14
+52o4*Tick{46O9} 120c4
+53V13*Clock{41O9} 4|133b13 136l8 136t13
+55V13*"+"{41O9} 55>19 55>37 4|63b13 67l8 67t11 221s24
+55o19 Left{41O9} 4|63b18 66r30
+55o37 Right{46O9} 4|63b31 66r48
+56V13*"+"{41O9} 56>19 56>37 4|69b13 73l8 73t11
+56o19 Left{46O9} 4|69b18 72r30
+56o37 Right{41O9} 4|69b36 72r48
+57V13*"-"{41O9} 57>19 57>37 4|87b13 91l8 91t11
+57o19 Left{41O9} 4|87b18 90r30
+57o37 Right{46O9} 4|87b31 90r48
+58V13*"-"{46O9} 58>19 58>37 4|93b13 97l8 97t11 199s69
+58o19 Left{41O9} 4|93b18 96r35
+58o37 Right{41O9} 4|93b24 96r53
+60V13*"<"{boolean} 60>19 60>25 127b30 4|199r19 201r12
+60o19 Left{41O9}
+60o25 Right{41O9}
+61V13*"<="{boolean} 61>19 61>25 128b30
+61o19 Left{41O9}
+61o25 Right{41O9}
+62V13*">"{boolean} 62>19 62>25 129b30 4|208r20
+62o19 Left{41O9}
+62o25 Right{41O9}
+63V13*">="{boolean} 63>19 63>25 130b30
+63o19 Left{41O9}
+63o25 Right{41O9}
+65V13*"+"{46O9} 65>19 65>25 4|75b13 79l8 79t11
+65o19 Left{46O9} 4|75b18 78r35
+65o25 Right{46O9} 4|75b24 78r53
+66V13*"-"{46O9} 66>19 66>25 4|99b13 103l8 103t11 108s29
+66o19 Left{46O9} 4|99b18 102r35
+66o25 Right{46O9} 4|99b24 102r53
+67V13*"-"{46O9} 67>19 4|105b13 109l8 109t11
+67o19 Right{46O9} 4|105b18 108r31
+68V13*"*"{46O9} 68>19 68>37 4|45b13 49l8 49t11 144s29 144s34 153s29 153s34
+. 162s31 171s29 180s31
+68o19 Left{46O9} 4|45b18 48r35
+68i37 Right{integer} 4|45b36 48r43
+69V13*"*"{46O9} 69>19 69>37 4|51b13 55l8 55t11
+69i19 Left{integer} 4|51b18 54r25
+69o37 Right{46O9} 4|51b34 54r42
+70V13*"/"{integer} 70>19 70>25 4|117b13 121l8 121t11
+70o19 Left{46O9} 4|117b18 120r33
+70o25 Right{46O9} 4|117b24 120r51
+71V13*"/"{46O9} 71>19 71>37 4|123b13 127l8 127t11
+71o19 Left{46O9} 4|123b18 126r35
+71i37 Right{integer} 4|123b36 126r43
+73V13*"abs"{46O9} 73>20 131b30
+73o20 Right{46O9}
+75V13*"<"{boolean} 75>19 75>25 127b30
+75o19 Left{46O9}
+75o25 Right{46O9}
+76V13*"<="{boolean} 76>19 76>25 128b30
+76o19 Left{46O9}
+76o25 Right{46O9}
+77V13*">"{boolean} 77>19 77>25 129b30
+77o19 Left{46O9}
+77o25 Right{46O9}
+78V13*">="{boolean} 78>19 78>25 130b30
+78o19 Left{46O9}
+78o25 Right{46O9}
+80V13*To_Duration{duration} 80>27 4|228b13 231l8 231t19
+80o27 TS{46O9} 4|228b26 230r24
+81V13*To_Time_Span{46O9} 81>27 4|237b13 245l8 245t20
+81o27 D{duration} 4|237b27 244r25
+83V13*Nanoseconds{46O9} 83>27 135r19 4|169b13 172l8 172t19
+83i27 NS{integer} 4|169b26 171r31
+84V13*Microseconds{46O9} 84>27 133r19 4|142b13 145l8 145t20
+84i27 US{integer} 4|142b27 144r31
+85V13*Milliseconds{46O9} 85>27 134r19 4|151b13 154l8 154t20 162s14 180s14
+85i27 MS{integer} 4|151b27 153r31
+87V13*Seconds{46O9} 87>22 88r19 136r19 4|178b13 181l8 181t15
+87i22 S{integer} 4|178b22 180r28
+90V13*Minutes{46O9} 90>22 91r19 137r19 4|160b13 163l8 163t15
+90i22 M{integer} 4|160b22 162r28
+98I9*Seconds_Count<long_integer> 100r40 101r27 4|187r40 199r37 219r27
+100U14*Split 100>21 100<31 100<55 4|187b14 213l8 213t13
+100o21 T{41O9} 4|187b21 194r20 194r66 201r10 208r22 212r34
+100i31 SC{98I9} 4|187b31 198m7 202m10 202r17 208r16 209m10 209r16 212r49
+100o55 TS{46O9} 4|187b55 212m7
+101V13*Time_Of{41O9} 101>22 101>42 4|219b13 222l8 222t15
+101i22 SC{98I9} 4|219b22 221r20
+101o42 TS{46O9} 4|219b42 221r26
+X 4 a-reatim.adb
+188o7 T_Val{3|41O9} 194m7 199r13 199r63
+X 8 system.ads
+37K9*System 3|36r6 121r24 4|35r6 135r20 252r4 8|153e11
+X 23 s-taspri.ads
+45K16*Task_Primitives 3|36r13 121r31 4|135r27 23|123e27
+X 24 s-taprop.ads
+39K32*Operations 3|36w29 121r47 4|135r43 24|546e38
+325V13*Monotonic_Clock{duration} 4|135s54
+331V13*RT_Resolution{duration} 3|121s58
+X 25 s-taskin.ads
+47K16*Tasking 4|35w13 252r11 25|1130e19
+1090U14*Initialize 4|252s19
+

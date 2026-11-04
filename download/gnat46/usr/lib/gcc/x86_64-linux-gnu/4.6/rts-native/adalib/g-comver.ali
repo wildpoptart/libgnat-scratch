@@ -1,0 +1,38 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U gnat.compiler_version%b  g-comver.adb		94de7355 NE OL PK GE
+W gnat%s		gnat.ads		gnat.ali
+
+U gnat.compiler_version%s  g-comver.ads		3e64eee3 BN NE OL PU PK GE
+W gnat%s		gnat.ads		gnat.ali
+
+D gnat.ads		20050905075125 fd2ad2f1
+D g-comver.ads		20050905080700 c34e3c12
+D g-comver.adb		20101203044856 57904f47
+D system.ads		20120503154647 23e1f70b
+X 1 gnat.ads
+36K9*GNAT 39e9 2|51r9 63r5 3|38r14 74r5
+X 2 g-comver.ads
+51k14*Compiler_Version 1|36k9 2|63l10 63e26 3|38b19 74l10 74t26
+54V13*Version{string} 3|55b13 72l8 72t15
+X 3 g-comver.adb
+40N4 Ver_Len_Max 48r41
+44a4 Ver_Prefix{string} 48r55 59r16 61r34 65r34
+48a4 GNAT_Version{string} 49m22 59r41 60r13 61r20 64r13 65r20 71r14
+59i11 J{integer} 60r27 61r59 64r27 65r59
+

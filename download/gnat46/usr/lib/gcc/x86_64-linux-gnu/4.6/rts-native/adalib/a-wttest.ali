@@ -1,0 +1,85 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnn
+
+U ada.wide_text_io.text_streams%b  a-wttest.adb	f5f72109 NE OL PK
+W ada.wide_text_io%s	a-witeio.adb		a-witeio.ali
+W system%s		system.ads		system.ali
+W system.file_io%s	s-fileio.adb		s-fileio.ali
+
+U ada.wide_text_io.text_streams%s  a-wttest.ads	85489c14 EE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.finalization.list_controller%s  a-filico.adb  a-filico.ali
+W ada.streams%s		a-stream.ads		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.wide_text_io%s	a-witeio.adb		a-witeio.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-witeio.ads		20091028133151 551dcbf1
+D a-wttest.ads		20070406091342 fcf1b9d2
+D a-wttest.adb		20090409150019 5b9d2e62
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20120503154647 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-fileio.ads		20091027141444 529bb6b9
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 10|16r6 18r9 24r5 11|34r14 46r5
+X 6 a-stream.ads
+36K13*Streams 69e16 10|16w10 20r37
+39H9*Root_Stream_Type 67e64 10|20r45
+X 9 a-witeio.ads
+52K13*Wide_Text_IO 1|16k9 9|496e21 10|18r13 24r9 11|34r18 46r9
+54P9*File_Type(373R9) 10|22r28 11|40r28
+371K12 FCB=371:31 11|42r39
+X 10 a-wttest.ads
+18K26*Text_Streams 9|52k13 10|24l22 24e34 11|34b31 46l22 46t34
+20P9*Stream_Access(6|39R9) 22r46 11|40r46 43r14
+22V13*Stream{20P9} 22>21 11|40b13 44l8 44t14
+22p21 File{9|54P9} 11|40b21 42r53 43r29
+X 14 system.ads
+37K9*System 11|32r6 42r7 14|153e11
+X 17 s-ficobl.ads
+81P9*AFCB_Ptr(83R9) 11|42r43
+X 18 s-fileio.ads
+39K16*File_IO 11|32w13 42r14 18|254e19
+151U14*Check_File_Open 11|42s22
+

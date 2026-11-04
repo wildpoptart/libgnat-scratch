@@ -1,0 +1,82 @@
+V "GNAT Lib v10"
+A -gnatwa
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fpic
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_UNCHECKED_CONVERSION
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.random_seed%b	s-ransee.adb		15692802 OL PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+
+U system.random_seed%s	s-ransee.ads		1d25c55f EE NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-calend.ads		20230707070819 474d9720 ada.calendar%s
+D a-calend.adb		20230707070819 e65e26b2 ada.calendar%b
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-osprim.ads		20230707070819 07fd65f6 system.os_primitives%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-ransee.ads		20230707070819 01a57b33 system.random_seed%s
+D s-ransee.adb		20230707070819 5d1ae37e system.random_seed%b
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+G a e
+G c Z s b [get_seed system__random_seed 46 13 none]
+G c Z b b [to_u64 system__random_seed 43 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|34r6 34r24 35r6 44r10
+X 2 a-calend.ads
+36K13*Calendar 409e17 13|34w10 34r28
+42I9*Time<222I9> 13|39r19
+48I12*Year_Number{integer}
+49I12*Month_Number{integer}
+50I12*Day_Number{integer}
+54O12*Day_Duration{duration}
+56V13*Clock{42I9} 13|52s22
+83V13*Time_Of{42I9} 13|40s12
+84i7 Year{48I12} 13|40r21
+85i7 Month{49I12} 13|40r35
+86i7 Day{50I12} 13|40r47
+87o7 Seconds{54O12} 13|40r57
+112V14*"-"{duration} 13|52s28
+222I9 Time_Rep<long_long_integer>
+X 5 a-unccon.ads
+20v14*Unchecked_Conversion 13|35w10 44r14
+X 6 interfac.ads
+38K9*Interfaces 184e15 12|42w6 46r29 13|44r46 50r29
+77M9*Unsigned_64 12|46r40 13|44r57 50r40
+X 8 system.ads
+37K9*System 156e11 12|44r9 49r5 13|37r14 55r5
+X 12 s-ransee.ads
+44K16*Random_Seed 8|37k9 12|49l12 49e23 13|37b21 55l12 55t23
+46V13*Get_Seed{6|77M9} 13|50b13 53l8 53t16
+X 13 s-ransee.adb
+39i4 Y2K{2|42I9} 52r30
+43V13 To_U64[5|20]{6|77M9} 52s14
+

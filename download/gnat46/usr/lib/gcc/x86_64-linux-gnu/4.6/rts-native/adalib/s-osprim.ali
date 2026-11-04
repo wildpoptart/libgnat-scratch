@@ -1,0 +1,76 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U system.os_primitives%b  s-osprim.adb		22d03640 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.os_primitives%s  s-osprim.ads		93307b22 BN NE OL PR PK
+W system%s		system.ads		system.ali
+
+D system.ads		20120503154647 23e1f70b
+D s-osprim.ads		20090409150019 b0d18c29
+D s-osprim.adb		20091121120111 9201ba69
+X 1 system.ads
+37K9*System 153e11 2|40r9 91r5 3|34r14 74r15 74r33 86r42 173r5
+64M9*Address 3|74r22
+66m4*Null_Address{64M9} 3|74r40 86r49
+X 2 s-osprim.ads
+40K16*OS_Primitives 1|37k9 2|91l12 91e25 3|34b21 173l12 173t25
+43o4*Max_Sensible_Delay{duration}
+55U14*Initialize 3|168b14 171l8 171t18
+60V13*Clock{duration} 61r19 3|56b13 89l8 89t13 95r53 136s41 155s27
+66V13*Monotonic_Clock{duration} 67r19 3|95b13
+72N4*Relative 3|143r17
+73N4*Absolute_Calendar
+74N4*Absolute_RT
+79U14*Timed_Delay 79>27 79>44 3|128b14 162l8 162t19
+79o27 Time{duration} 3|129b7 144r22 145r22 147r22 148r22
+79i44 Mode{integer} 3|130b7 143r10
+X 3 s-osprim.adb
+41I9 time_t<long_integer> 44r17 104r11 108r12
+43R9 timespec 46e14 47r26 49r53 101r47 103r47 120r9 132r28 133r28
+44i7*tv_sec{41I9} 120m19
+45i7*tv_nsec{long_integer} 121m19
+49V13 nanosleep{integer} 49^24 49^30 50b<c,nanosleep>22 154s23
+49p24 rqtp(43R9)
+49p30 rmtp(43R9)
+57A12 timeval(long_integer)<integer> 60r33 68r24 73r22
+59U17*timeval_to_duration 60^10 61^10 62^10 63b<c,__gnat_timeval_to_duration>25
+. 87s7
+60p10 T(57A12)
+61p10 sec(long_integer)
+62p10 usec(long_integer)
+65N7 Micro 88r49
+66i7 sec{long_integer} 87m39 88r24
+67i7 usec{long_integer} 87m51 88r41
+68a7 TV{57A12} 86m31 87m28
+69i7 Result{integer} 70r28 86m7
+72V16*gettimeofday{integer} 73^10 74>10 75b<c,gettimeofday>25 86s17
+73p10 Tv(57A12)
+74m10 Tz{1|64M9}
+101V13 To_Timespec{43R9} 101>26 103b13 122l8 122t19 153s24
+101o26 D{duration} 103b26 108r39 109r12
+104i7 S{41I9} 108m7 109r26 115m10 115r15 120r30
+105o7 F{duration} 109m7 114r10 116m10 116r15 121r63
+132r7 Request{43R9} 153m13 154m34
+133r7 Remaind{43R9} 154m50
+134o7 Rel_Time{duration} 144m10 147m10 151r10 153r37 159m13
+135o7 Abs_Time{duration} 145m10 148m10 157r23 159r25
+136o7 Base_Time{duration} 137r32 157r67
+137o7 Check_Time{duration} 145r29 147r29 155m13 157r35 157r54 159r36
+139i7 Result{integer} 140r28 154m13
+

@@ -1,0 +1,126 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U system.interrupt_management%b  s-intman.adb	2a8bb2a4 NE OL PK
+W system%s		system.ads		system.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+
+U system.interrupt_management%s  s-intman.ads	8aeaffc0 NE OL PR PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.os_interface%s	s-osinte.adb		s-osinte.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-intman.ads		20090409150019 47ba1e06
+D s-intman.adb		20090409150019 c275000a
+D s-linux.ads		20090730092306 47911ab1
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-stalib.ads		20101021102512 c4241c00
+D s-taspri.ads		20080408071349 af44aca8
+D s-unstyp.ads		20090409150019 6ae15c76
+X 3 interfac.ads
+36K9*Interfaces 171e15 7|48r6 55r29 8|64r8 71r31 116r16
+X 4 i-c.ads
+18K20*C 230e17 7|48w17 55r40 8|64r19 71r42 116r27
+35I9*int<integer> 7|55r42 8|71r44 116r29
+45M9*unsigned_long
+47M9*unsigned_char
+X 5 system.ads
+37K9*System 153e11 7|46r6 50r9 56r17 98r31 102r18 103r18 111r5 8|60r6 62r14
+. 65r8 95r18 96r18 111r18 112r18 156r17 159r31 293r5
+64M9*Address 7|103r25 8|95r25 96r25 111r25 112r25
+X 7 s-intman.ads
+50K16*Interrupt_Management 5|37k9 7|111l12 111e32 8|62b21 293l12 293t32
+53A9*Interrupt_Mask 98c9
+55I9*Interrupt_ID<4|35I9> 58r33 73r27 8|67r34 67r60 79r26 214r39 215r33 258r16
+. 268r25 269r19 275r19
+58A9*Interrupt_Set(boolean)<55I9> 77r20 86r14
+73i4*Abort_Task_Interrupt{55I9} 8|174m7 242r17 243r25 244r19
+77a4*Keep_Unmasked{58A9} 8|214r22 221m13 243m10 251m10 260m13 268m10 282m10
+86a4*Reserve{58A9} 8|215r22 222m13 244m10 252m10 261m13 269m10 275m10 283m10
+. 290m7
+92U14*Initialize 8|153b14 291l8 291t18
+101U14 Adjust_Context_For_Raise 102>7 103>7 105b<c,__gnat_adjust_context_for_raise>10
+. 8|128s7
+102i7 Signo{10|82I9}
+103m7 Ucontext{5|64M9}
+X 8 s-intman.adb
+67A9 Interrupt_List(7|55I9)<7|55I9> 68r36
+68a4 Exception_Interrupts{67A9} 204r16 205r20 207r52 219r16 220r20 221r28
+. 222r22 224r23 228r27 235r29
+71i4 Unreserve_All_Interrupts{4|35I9} 73m10 281r10
+79V13 State{character} 79>20 80b<c,__gnat_get_interrupt_state>22 205s13 220s13
+. 224s16 242s10 250s10 259s13 259s41
+79i20 Int{7|55I9}
+84e4 User{character} 220r49 242r42 250r28
+85e4 Runtime{character} 259r53
+86e4 Default{character} 205r49 224r52 259r25
+93U14 Notify_Exception 94>7 95>7 96>7 109b14 145l8 145t24 176r25
+94i7 signo{10|82I9} 110b7 128r33 133r12
+95m7 siginfo{5|64M9} 111b7 114r28
+96m7 ucontext{5|64M9} 112b7 128r40
+106a4 Signal_Mask{10|157A9} 122m47 199m30 207m24 212r22
+116i7 Result{4|35I9} 122m7 123r22
+151b4 Initialized{boolean} 163r10 167m7
+154r7 act{10|183R9} 176m7 212m7 225m16 230m19 230r35 235m56
+155r7 old_act{10|183R9} 236m21
+156i7 Result{10|52I12} 199m7 200r22 206m13 208r28 233m16 237r31
+158b7 Use_Alternate_Stack{boolean} 227r19
+204i11 J<4|35I9> 205r42 207r74
+219i11 J<4|35I9> 220r42 221r50 222r44 224r45 228r49 235r51
+258i11 J{7|55I9} 259r20 259r48 260r28 261r22
+267i11 J{integer} 268r49 269r43
+274i11 J{integer} 275r43
+X 10 s-osinte.ads
+47K16*OS_Interface 7|46w13 56r24 98r38 102r25 8|65r15 156r24 10|568e24
+52I12*int{4|35I9} 8|156r37
+59M12*unsigned_char{4|47M9}
+81N4*Max_Interrupt 7|56r37
+82I9*Signal<4|35I9> 7|102r38 8|94r18 110r18 207r44 235r21
+86N4*SIGINT 8|250r17 251r25 252r19 282r25 283r19
+88N4*SIGILL 8|69r15 136r15
+92N4*SIGFPE 8|69r7 134r15
+94N4*SIGBUS 8|69r32 140r15
+95N4*SIGSEGV 8|69r23 138r15 228r54
+124N4*SIGADAABORT 8|174r31
+128A9*Signal_Set(82I9)<integer>
+130a4*Unmasked{128A9} 8|267r16 268r39 269r33
+152a4*Reserved{128A9} 8|274r16 275r33
+157A9*sigset_t(59M12) 7|98r51 8|106r26
+159V13*sigaddset{52I12} 8|207s13
+171V13*sigemptyset{52I12} 8|199s17
+183R9*struct_sigaction 8|154r25 155r25 10|188e14
+184m7*sa_handler{5|64M9} 8|176m11
+185a7*sa_mask{157A9} 8|212m11
+186m7*sa_flags{4|45M9} 8|225m20 230m23 230r39
+203N4*SA_SIGINFO 8|225r32
+204N4*SA_ONSTACK 8|230r50
+207N4*SIG_UNBLOCK 8|122r34
+213V13*sigaction{52I12} 8|234s18
+318U14*pthread_init 8|172s7
+332V13*pthread_sigmask{52I12} 8|122s17
+X 13 s-taspri.ads
+45K16*Task_Primitives 8|60w13 159r38 13|123e27
+77N4*Alternate_Stack_Size 8|159r54
+

@@ -1,0 +1,235 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U ada.real_time%b	a-reatim.adb		363dd500 OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+N A310:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A363:7 gnatcheck exempt_off "Improper_Returns"
+
+U ada.real_time%s	a-reatim.ads		cd39c108 BN EE OL PK
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.task_primitives.operations%s  s-taprop.adb  s-taprop.ali  EA
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-reatim.ads		20260807074606 d11673fd ada.real_time%s
+D a-reatim.adb		20260807074606 0a05f7c9 ada.real_time%b
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260807074606 49eced87 interfaces.c.strings%s
+D system.ads		20260807074606 898beeee system%s
+D s-atacco.ads		20260807074606 5868e3ba system.address_to_access_conversions%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-multip.ads		20260807074606 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20260807074606 35a74841 system.os_interface%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260807074606 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260807074606 601f6b72 system.task_info%s
+D s-taspri.ads		20260807074606 af22d192 system.task_primitives%s
+D s-taprop.ads		20260807074606 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260807074606 e3b5765b system.tasking%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s b [clock ada__real_time 69 13 none]
+G c Z s b [Oadd ada__real_time 73 13 none]
+G c Z s b [Oadd ada__real_time 75 13 none]
+G c Z s b [Osubtract ada__real_time 77 13 none]
+G c Z s b [Osubtract ada__real_time 79 13 none]
+G c Z s s [Olt ada__real_time 82 13 none]
+G c Z s s [Ole ada__real_time 84 13 none]
+G c Z s s [Ogt ada__real_time 86 13 none]
+G c Z s s [Oge ada__real_time 88 13 none]
+G c Z s b [Oadd ada__real_time 91 13 none]
+G c Z s b [Osubtract ada__real_time 93 13 none]
+G c Z s b [Osubtract ada__real_time 95 13 none]
+G c Z s b [Omultiply ada__real_time 97 13 none]
+G c Z s b [Omultiply ada__real_time 99 13 none]
+G c Z s b [Odivide ada__real_time 101 13 none]
+G c Z s b [Odivide ada__real_time 103 13 none]
+G c Z s s [Oabs ada__real_time 106 13 none]
+G c Z s s [Olt ada__real_time 109 13 none]
+G c Z s s [Ole ada__real_time 111 13 none]
+G c Z s s [Ogt ada__real_time 113 13 none]
+G c Z s s [Oge ada__real_time 115 13 none]
+G c Z s b [to_duration ada__real_time 118 13 none]
+G c Z s b [to_time_span ada__real_time 120 13 none]
+G c Z s b [nanoseconds ada__real_time 123 13 none]
+G c Z s b [microseconds ada__real_time 125 13 none]
+G c Z s b [milliseconds ada__real_time 127 13 none]
+G c Z s b [seconds ada__real_time 130 13 none]
+G c Z s b [minutes ada__real_time 134 13 none]
+G c Z s b [split ada__real_time 147 14 none]
+G c Z s b [time_of ada__real_time 150 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 3|46r9 193r5 4|33r6 36r14 131r13 395r5
+X 3 a-reatim.ads
+46K13*Real_Time 1|18k9 3|162E9 193l9 193e18 4|36b18 395l9 395t18
+48@22*Clock_Time 49r21 71r16
+57O9*Time<duration> 58r26 59r26 69r26 73r26 73r63 75r45 75r63 77r26 77r63
+. 79r26 79r45 82r33 84r33 86r33 88r33 147r25 150r65 162c9 164r26 164r34 166r26
+. 166r34 4|64r25 64r57 67r14 70r44 70r57 73r14 88r25 88r57 91r14 94r32 158r26
+. 160r14 212r25 213r15 233r10 244r65 346r20 357r20
+58o4*Time_First{57O9} 164c4 4|219r24
+59o4*Time_Last{57O9} 166c4 4|219r44
+60N4*Time_Unit
+62O9*Time_Span<duration> 63r31 64r31 65r31 66r31 68r20 73r45 75r26 77r45
+. 79r63 91r33 91r63 93r33 93r63 95r27 95r63 97r26 97r63 99r45 99r63 101r33
+. 103r26 103r63 106r28 106r46 109r33 111r33 113r33 115r33 118r32 120r50 123r48
+. 125r48 127r48 130r42 134r42 147r64 150r47 168c9 170r31 170r44 172r31 172r44
+. 174r31 176r31 178r20 179r13 4|46r25 46r60 49r14 52r42 52r60 55r14 64r39
+. 70r25 76r32 76r50 79r14 88r39 94r45 97r14 100r32 100r50 103r14 106r26 106r44
+. 118r32 137r25 137r60 151r14 167r48 176r48 185r42 194r47 203r42 212r64 224r52
+. 237r13 244r47 370r31 379r48 386r14
+63o4*Time_Span_First{62O9} 170c4 4|147r17 269r42
+64o4*Time_Span_Last{62O9} 172c4 4|271r42
+65o4*Time_Span_Zero{62O9} 174c4 4|109r14
+66o4*Time_Span_Unit{62O9} 176c4 4|169r14 178r14 196r14
+68o4*Tick{62O9} 178c4
+69V13*Clock{57O9} 4|158b13 161l8 161t13
+73V14*"+"{57O9} 73>19 73>37 4|64b14 68l9 68t11
+73o19 Left{57O9} 4|64b18 67r30
+73o37 Right{62O9} 4|64b31 67r48
+75V14*"+"{57O9} 75>19 75>37 4|70b14 74l9 74t11
+75o19 Left{62O9} 4|70b18 73r30
+75o37 Right{57O9} 4|70b36 73r48
+77V14*"-"{57O9} 77>19 77>37 4|88b14 92l9 92t11
+77o19 Left{57O9} 4|88b18 91r30
+77o37 Right{62O9} 4|88b31 91r48
+79V14*"-"{62O9} 79>19 79>37 4|94b14 98l9 98t11 224s69
+79o19 Left{57O9} 4|94b18 97r35
+79o37 Right{57O9} 4|94b24 97r53
+82V14*"<"{boolean} 82>19 82>25 181b31 4|224r19 226r12
+82o19 Left{57O9}
+82o25 Right{57O9}
+84V14*"<="{boolean} 84>19 84>25 182b31
+84o19 Left{57O9}
+84o25 Right{57O9}
+86V14*">"{boolean} 86>19 86>25 183b31 4|233r20
+86o19 Left{57O9}
+86o25 Right{57O9}
+88V14*">="{boolean} 88>19 88>25 184b31
+88o19 Left{57O9}
+88o25 Right{57O9}
+91V14*"+"{62O9} 91>19 91>25 4|76b14 80l9 80t11
+91o19 Left{62O9} 4|76b18 79r35
+91o25 Right{62O9} 4|76b24 79r53
+93V14*"-"{62O9} 93>19 93>25 4|100b14 104l9 104t11 109s29
+93o19 Left{62O9} 4|100b18 103r35
+93o25 Right{62O9} 4|100b24 103r53
+95V14*"-"{62O9} 95>19 4|106b14 110l9 110t11
+95o19 Right{62O9} 4|106b18 109r31
+97V14*"*"{62O9} 97>19 97>37 4|46b14 50l9 50t11 169s29 169s34 178s29 178s34
+. 187s31 196s29 205s31
+97o19 Left{62O9} 4|46b18 49r35
+97i37 Right{integer} 4|46b36 49r43
+99V14*"*"{62O9} 99>19 99>37 4|52b14 56l9 56t11
+99i19 Left{integer} 4|52b18 55r25
+99o37 Right{62O9} 4|52b34 55r42
+101V14*"/"{integer} 101>19 101>25 4|118b14 135l9 135t11
+101o19 Left{62O9} 4|118b18 134r39
+101o25 Right{62O9} 4|118b24 134r70
+103V14*"/"{62O9} 103>19 103>37 4|137b14 152l9 152t11
+103o19 Left{62O9} 4|137b18 147r10 151r35
+103i37 Right{integer} 4|137b36 147r42 151r43
+106V14*"abs"{62O9} 106>20 185b31
+106o20 Right{62O9}
+109V14*"<"{boolean} 109>19 109>25 181b31
+109o19 Left{62O9}
+109o25 Right{62O9}
+111V14*"<="{boolean} 111>19 111>25 182b31
+111o19 Left{62O9}
+111o25 Right{62O9}
+113V14*">"{boolean} 113>19 113>25 183b31
+113o19 Left{62O9}
+113o25 Right{62O9}
+115V14*">="{boolean} 115>19 115>25 184b31
+115o19 Left{62O9}
+115o25 Right{62O9}
+118V13*To_Duration{duration} 118>27 4|370b13 373l8 373t19
+118o27 TS{62O9} 4|370b26 372r24
+120V13*To_Time_Span{62O9} 120>27 4|379b13 387l8 387t20
+120o27 D{duration} 4|379b27 386r25
+123V13*Nanoseconds{62O9} 123>27 189r19 4|194b13 197l8 197t19
+123i27 NS{integer} 4|194b26 196r31
+125V13*Microseconds{62O9} 125>27 187r19 4|167b13 170l8 170t20
+125i27 US{integer} 4|167b27 169r31
+127V13*Milliseconds{62O9} 127>27 188r19 4|176b13 179l8 179t20 187s14 205s14
+127i27 MS{integer} 4|176b27 178r31
+130V13*Seconds{62O9} 130>22 132r19 190r19 4|203b13 206l8 206t15
+130i22 S{integer} 4|203b22 205r28
+134V13*Minutes{62O9} 134>22 136r19 191r19 4|185b13 188l8 188t15
+134i22 M{integer} 4|185b22 187r28
+138I9*Seconds_Count<long_long_integer> 147r40 150r27 4|212r40 224r37 244r27
+. 268r24 269r17 270r24 271r17 275r15 281r19 284r24 323r16
+147U14*Split 147>21 147<31 147<55 4|212b14 238l8 238t13
+147o21 T{57O9} 4|212b21 219r20 219r63 226r10 233r22 237r34
+147i31 SC{138I9} 4|212b31 223m7 227m10 227r17 233r16 234m10 234r16 237r49
+147o55 TS{62O9} 4|212b55 237m7
+150V13*Time_Of{57O9} 150>22 150>42 4|244b13 364l8 364t15
+150i22 SC{138I9} 4|244b22 317r10 317r33 328r20
+150o42 TS{62O9} 4|244b42 323r41 324r32
+X 4 a-reatim.adb
+128I12 Duration_Rep<long_long_integer> 131r49
+130V16 To_Integer[5|23]{128I12} 134s17 134s48
+213o7 T_Val{3|57O9} 219m7 224r13 224r63
+268i7 SC_Lo{3|138I9} 317r19 330r23
+270i7 SC_Hi{3|138I9} 317r42 330r55
+275i7 TS_SC{3|138I9} 323m7 324r48 328r25
+278o7 TS_Fraction{duration} 324m7 343r58 354r58
+281i7 Result_SC{3|138I9} 328m7 330r10 330r42 342r10 343r37 354r37
+284i7 Fudge{3|138I9} 287r47 343r49 354r49
+287o7 FudgeD{duration} 345r46 346r42 356r47 357r42
+290o7 Fudged_Result{duration} 343m10 345r13 346r26 354m10 356r13 357r26
+293U17 Out_Of_Range 294r25 301b17 305l11 305t23 318s10 331s10 348s13 359s13
+X 5 a-unccon.ads
+23v14*Unchecked_Conversion 4|33w10 131r17
+X 9 system.ads
+37K9*System 3|43r6 179r24 4|34r6 160r20 394r4 9|214e11
+X 19 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+X 23 s-taspri.ads
+38K16*Task_Primitives 3|43r13 179r31 4|160r27 23|89e27
+X 24 s-taprop.ads
+39K32*Operations 3|43w29 44r46 179r47 4|160r43 24|543e38
+338V13*Monotonic_Clock{duration} 4|160s54
+344V13*RT_Resolution{duration} 3|179s58
+X 25 s-taskin.ads
+47K16*Tasking 4|34w13 394r11 25|1235e19
+1190U14*Initialize 4|394s19
+

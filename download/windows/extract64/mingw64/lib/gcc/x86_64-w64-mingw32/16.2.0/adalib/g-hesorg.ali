@@ -1,0 +1,54 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U gnat.heap_sort_g%b	g-hesorg.adb		d7387194 NE OL PK GE
+W gnat%s		gnat.ads		gnat.ali
+N A48:7 codepeer skip_analysis
+
+U gnat.heap_sort_g%s	g-hesorg.ads		a5f1aefd BN NE OL PU PK GE
+W gnat%s		gnat.ads		gnat.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D gnat.ads		20260807074606 b5988c27 gnat%s
+D g-hesorg.ads		20260807074606 106922da gnat.heap_sort_g%s
+D g-hesorg.adb		20260807074606 c751534e gnat.heap_sort_g%b
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+G a e
+G c Z s b [heap_sort_g gnat 78 14 none]
+X 3 gnat.ads
+40K9*GNAT 63e9 4|78r9 88r5 5|32r14 142r5
+X 4 g-hesorg.ads
+55U19 Move 55>25 55>41 5|97s13 107s16 116s10 126s10 135s10 136s10
+55i25 From{natural}
+55i41 To{natural}
+61V18 Lt{boolean} 61>22 61>27 5|90s19 106s16
+61i22 Op1{natural}
+61i27 Op2{natural}
+78k14*Heap_Sort_G 3|40k9 4|55z19 61z18 88l10 88e21 5|32b19 142l10 142t21
+81U14*Sort 81>20 5|47b14 140l8 140t12
+81i20 N{natural} 5|47b20 51r24 125r29
+X 5 g-hesorg.adb
+51i7 Max{natural} 89r22 93r25 134r13 135r16 136r19 137m10 137r17
+54U17 Sift 54>23 66b17 117l11 117t15 127s10 138s10
+54i23 S{positive} 66b23 67r31 103r21
+67i10 C{positive} 85r23 87r24 97r24 98m13 103r16 104r23 107r30 108m16 116r19
+68i10 Son{positive} 87m13 89r16 90r23 90r28 91m19 91r26 93r19 97r19 98r18
+69i10 Father{positive} 104m13 106r20 107r22 108r21
+125i11 J{integer} 126r16 127r16
+

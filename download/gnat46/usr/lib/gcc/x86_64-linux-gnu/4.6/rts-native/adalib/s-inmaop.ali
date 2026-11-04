@@ -1,0 +1,167 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnvnvnnnnnnnnnnnnnnnn
+
+U system.interrupt_management.operations%b  s-inmaop.adb  fab12c74 OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.interrupt_management%s  s-intman.adb	s-intman.ali
+W system.os_interface%s	s-osinte.adb		s-osinte.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+U system.interrupt_management.operations%s  s-inmaop.ads  19b909c9 BD BN EE NE OL PK
+W system.interrupt_management%s  s-intman.adb	s-intman.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-intman.ads		20090409150019 47ba1e06
+D s-inmaop.ads		20090409150019 5e0317cf
+D s-inmaop.adb		20080326073519 b0ce50ee
+D s-linux.ads		20090730092306 47911ab1
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-unstyp.ads		20090409150019 6ae15c76
+X 3 interfac.ads
+36K9*Interfaces 171e15 9|39r6 46r8 67r16 86r16 101r16 111r17 122r16 135r16
+. 153r16 166r16 177r16 188r16 202r16 216r16 230r16 253r16 276r17
+X 4 i-c.ads
+18K20*C 230e17 9|39w17 46r19 67r27 86r27 101r27 111r28 122r27 135r27 153r27
+. 166r27 177r27 188r27 202r27 216r27 230r27 253r27 276r28
+35I9*int<integer> 9|67r29 86r29 101r29 111r30 122r29 135r29 153r29 166r29
+. 177r29 188r29 202r29 216r29 230r29 253r29 276r30
+45M9*unsigned_long
+47M9*unsigned_char
+X 5 system.ads
+37K9*System 153e11 8|32r9 125r5 9|41r6 42r6 44r14 47r8 338r5
+64M9*Address
+X 7 s-intman.ads
+50K16*Interrupt_Management 5|37k9 7|111e32 8|32r16 125r12 9|44r21 279r7 338r12
+53A9*Interrupt_Mask 8|42r48 46r22 47r22 52r48 56r43 69r49 73r50 78r26 84r26
+. 90r26 95r43 95r63 116r31 121r29 9|100r48 108r22 109r22 121r48 133r21 176r49
+. 187r50 199r26 213r26 227r26 242r15 243r11 333r27 335r25
+55I9*Interrupt_ID<4|35I9> 8|34r50 38r52 56r66 61r50 65r49 79r19 85r19 91r19
+. 99r50 9|65r19 83r19 133r44 145r14 152r50 165r49 200r19 214r19 228r19 252r50
+. 312r16
+58A9*Interrupt_Set(boolean)<55I9>
+77a4*Keep_Unmasked{58A9} 9|313r13
+92U14*Initialize 9|279s28
+X 8 s-inmaop.ads
+32K37*Operations 7|50k16 8|125l33 125e43 9|44b42 338l33 338t43
+34U14*Thread_Block_Interrupt 34>38 35r19 9|64b14 76l8 76t30
+34i38 Interrupt{7|55I9} 9|65b7 72r49
+38U14*Thread_Unblock_Interrupt 38>40 39r19 9|82b14 94l8 94t32
+38i40 Interrupt{7|55I9} 9|83b7 90r49
+42U14*Set_Interrupt_Mask 42^34 9|100b14 105l8 105t26 269s7
+42p34 Mask(7|53A9) 9|100b34 103r47
+45U14*Set_Interrupt_Mask 46^7 47^7 9|107b14 115l8 115t26
+46p7 Mask(7|53A9) 9|108b7 113r47
+47p7 OMask(7|53A9) 9|109b7 113r53
+52U14*Get_Interrupt_Mask 52^34 53r19 9|121b14 126l8 126t26
+52p34 Mask(7|53A9) 9|121b34 124r53
+56V13*Interrupt_Wait{7|55I9} 56^29 57r19 9|132b13 146l8 146t22
+56p29 Mask(7|53A9) 9|133b7 139r26
+61U14*Install_Default_Action 61>38 62r19 9|152b14 159l8 159t30
+61i38 Interrupt{7|55I9} 9|152b38 156r18 157r34
+65U14*Install_Ignore_Action 65>37 66r19 9|165b14 170l8 170t29
+65i37 Interrupt{7|55I9} 9|165b37 168r36
+69U14*Fill_Interrupt_Mask 69^35 70r19 9|176b14 181l8 181t27
+69p35 Mask(7|53A9) 9|176b35 179r29
+73U14*Empty_Interrupt_Mask 73^36 74r19 9|187b14 192l8 192t28
+73p36 Mask(7|53A9) 9|187b36 190r30
+77U14*Add_To_Interrupt_Mask 78^7 79>7 80r19 9|198b14 206l8 206t29
+78p7 Mask(7|53A9) 9|199b7 204r28
+79i7 Interrupt{7|55I9} 9|200b7 204r42
+83U14*Delete_From_Interrupt_Mask 84^7 85>7 86r19 9|212b14 220l8 220t34
+84p7 Mask(7|53A9) 9|213b7 218r28
+85i7 Interrupt{7|55I9} 9|214b7 218r42
+89V13*Is_Member{boolean} 90^7 91>7 92r19 9|226b13 235l8 235t17
+90p7 Mask(7|53A9) 9|227b7 232r30
+91i7 Interrupt{7|55I9} 9|228b7 232r44
+95U14*Copy_Interrupt_Mask 95<35 95>59 96r19 9|241b14 246l8 246t27
+95a35 X{7|53A9} 9|242b7 245m7
+95a59 Y{7|53A9} 9|243b7 245r12
+99U14*Interrupt_Self_Process 99>38 100r19 9|252b14 257l8 257t30
+99i38 Interrupt{7|55I9} 9|252b38 255r39
+103U14*Setup_Interrupt_Mask 9|263b14 270l8 270t28
+116a4*Environment_Mask{7|53A9} 9|333m7
+121a4*All_Tasks_Mask{7|53A9} 9|269m27 335m7
+X 9 s-inmaop.adb
+53a4 Initial_Action(11|183R9) 157m10 283m24
+55r4 Default_Action{11|183R9} 56r26 300m7 301m7 302m7
+58r4 Ignore_Action{11|183R9} 168m48 306m7 307m7 308m7
+67i7 Result{4|35I9} 70m7 71r22 72m7 73r22 74m7 75r22
+68a7 Mask{11|157A9} 70m30 72m28 74m45
+85a7 Mask{11|157A9} 88m30 90m28 92m47
+86i7 Result{4|35I9} 88m7 89r22 90m7 91r22 92m7 93r22
+101i7 Result{4|35I9} 103m7 104r22
+111i7 Result{4|35I9} 113m7 114r22
+122i7 Result{4|35I9} 124m7 125r22
+135i7 Result{4|35I9} 139m7 141r10
+136i7 Sig{11|82I9} 139m32 145r28
+153i7 Result{4|35I9} 155m7 158r22
+166i7 Result{4|35I9} 168m7 169r22
+177i7 Result{4|35I9} 179m7 180r22
+188i7 Result{4|35I9} 190m7 191r22
+202i7 Result{4|35I9} 204m7 205r22
+216i7 Result{4|35I9} 218m7 219r22
+230i7 Result{4|35I9} 232m7 233r22 233r41 234r14
+253i7 Result{4|35I9} 255m7 256r22
+274a7 mask{11|157A9} 294m30 301r36 307r35 314m34 323m47 328m53 333r43
+275a7 allmask{11|157A9} 297m29 316m34 335r41
+276i7 Result{4|35I9} 282m10 294m7 295r22 297m7 298r22 314m13 315r28 316m13
+. 317r28 323m7 324r22 328m7 329r22
+281i11 Sig<4|35I9> 283r13 283r40
+312i11 J{7|55I9} 313r28 314r55 316r58
+X 11 s-osinte.ads
+47K16*OS_Interface 9|41w13 47r15 11|568e24
+52I12*int{4|35I9}
+59M12*unsigned_char{4|47M9}
+82I9*Signal<4|35I9> 9|53r28 72r41 90r41 136r24 156r10 157r26 168r28 204r34
+. 218r34 232r36 255r31 281r23 314r47 316r50
+157A9*sigset_t(59M12) 9|68r24 85r24 274r25 275r25
+159V13*sigaddset{52I12} 9|72s17 90s17 204s17 314s23
+162V13*sigdelset{52I12} 9|218s17 316s23
+165V13*sigfillset{52I12} 9|179s17 297s17
+168V13*sigismember{52I12} 9|232s17
+171V13*sigemptyset{52I12} 9|70s17 88s17 190s17 294s17
+183R9*struct_sigaction 9|53r47 55r29 58r28 11|188e14
+184m7*sa_handler{5|64M9} 9|302m22 308m21
+185a7*sa_mask{157A9} 9|301m22 307m21
+186m7*sa_flags{4|45M9} 9|300m22 306m21
+206N4*SIG_BLOCK 9|74r34
+207N4*SIG_UNBLOCK 9|92r34 323r34
+208N4*SIG_SETMASK 9|103r34 113r34 124r34 328r34
+210N4*SIG_DFL 9|304r46
+211N4*SIG_IGN 9|310r46
+213V13*sigaction{52I12} 9|155s17 168s17 282s20
+253I9*pid_t
+255V13*kill{52I12} 9|255s17
+258V13*getpid{253I9} 9|255s23
+326V13*sigwait{52I12} 9|139s17
+332V13*pthread_sigmask{52I12} 9|74s17 92s17 103s17 113s17 124s17 323s17 328s17
+X 14 s-stoele.ads
+42K16*Storage_Elements 9|42w13 303r9 304r12 309r9 310r12 14|117e28
+105M9*Integer_Address 9|304r29 310r29
+107V13*To_Address{5|64M9} 9|303s26 309s26
+

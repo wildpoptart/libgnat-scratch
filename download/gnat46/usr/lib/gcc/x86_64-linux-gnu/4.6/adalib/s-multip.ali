@@ -1,0 +1,51 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U system.multiprocessors%b  s-multip.adb	17ae9ccc NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+U system.multiprocessors%s  s-multip.ads	1b4d6878 NE OL PR PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-multip.ads		20101011073009 38ac9f73
+D s-multip.adb		20101011073009 af9e3b7b
+D s-parame.ads		20091130110856 9c5d83fa
+D s-stalib.ads		20101021102512 c4241c00
+X 3 interfac.ads
+36K9*Interfaces 171e15 8|29r6 29r24
+X 4 i-c.ads
+18K20*C 230e17 8|29w17 29r35
+35I9*int<integer> 8|33r40
+X 5 system.ads
+37K9*System 153e11 7|16r9 28r5 8|31r14 45r5
+X 7 s-multip.ads
+16K16*Multiprocessors 5|37k9 7|17r25 28l12 28e27 8|31b21 45l12 45t27
+19I9*CPU_Range<integer> 21r19 21r40 23r34
+21I12*CPU{19I9} 25r35 8|40r35 42r14
+23i4*Not_A_Specific_CPU{19I9}
+25V13*Number_Of_CPUs{21I12} 8|40b13 43l8 43t22
+X 8 s-multip.adb
+33V13 Gnat_Number_Of_CPUs{4|35I9} 34b<c,__gnat_number_of_cpus>22 42s19
+

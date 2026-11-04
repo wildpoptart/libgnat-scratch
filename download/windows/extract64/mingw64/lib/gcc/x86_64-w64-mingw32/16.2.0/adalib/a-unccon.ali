@@ -1,0 +1,32 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U ada.unchecked_conversion%s  a-unccon.ads	78e3bace NE OL PU GE
+W ada%s			ada.ads			ada.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D system.ads		20260807074606 898beeee system%s
+G a e
+X 1 ada.ads
+18K9*Ada 22e8 2|23r10 26r33 27r14 28r27
+X 2 a-unccon.ads
+20+9 Source 23r40
+21+9 Target 23r55
+23v14*Unchecked_Conversion 23>36 26r37 27r18 28b31
+23*36 S{20+9}
+

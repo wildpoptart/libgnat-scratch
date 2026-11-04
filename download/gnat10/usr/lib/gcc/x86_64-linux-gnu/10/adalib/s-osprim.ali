@@ -1,0 +1,91 @@
+V "GNAT Lib v10"
+A -gnatwa
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fpic
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FIXED_POINT
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U system.os_primitives%b  s-osprim.adb		51f2d040 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.os_primitives%s  s-osprim.ads		41c889f2 BN NE OL PR PK
+W system%s		system.ads		system.ali
+
+D system.ads		20230707070819 4635ec04 system%s
+D s-osprim.ads		20230707070819 07fd65f6 system.os_primitives%s
+D s-osprim.adb		20230707070819 c5b00444 system.os_primitives%b
+D s-optide.adb		20230707070819 93bfb1f2 system.os_primitives.timed_delay
+G a e
+G c Z s b [initialize system__os_primitives 59 14 none]
+G c Z s b [clock system__os_primitives 64 13 none]
+G c Z s b [timed_delay system__os_primitives 77 14 none]
+G c Z b b [nanosleep system__os_primitives 49 13 none]
+G c Z b b [timespecIP system__os_primitives 43 9 none]
+G c Z b b [to_timespec system__os_primitives 100 13 none]
+X 1 system.ads
+37K9*System 156e11 2|40r9 89r5 3|34r14 79r15 79r33 91r42 141r5 4|34r11
+67M9*Address 3|79r22
+69m4*Null_Address{67M9} 3|79r40 91r49
+X 2 s-osprim.ads
+40K16*OS_Primitives 1|37k9 2|89l12 89e25 3|34b21 141l12 141t25 4|34r18
+43o4*Max_Sensible_Delay{duration} 55r44 4|67r32
+55o4*Max_System_Delay{duration} 4|67r13 68r26 70r27
+59U14*Initialize 3|136b14 139l8 139t18
+64V13*Clock{duration} 65r19 3|56b13 94l8 94t13 4|43s38 77s24
+70N4*Relative 4|51r14
+71N4*Absolute_Calendar
+72N4*Absolute_RT
+77U14*Timed_Delay 77>27 77>44 3|127b14 4|35b11 84l5 84t16
+77o27 Time{duration} 3|128b7 4|36b4 52r19 53r19 55r19 56r19
+77i44 Mode{integer} 3|129b7 4|37b4 51r7
+X 3 s-osprim.adb
+41I9 time_t<long_integer> 44r17 103r11 107r12
+43R9 timespec 46e14 47r26 49r53 100r47 102r47 119r9 4|39r25 40r25
+44i7*tv_sec{41I9} 119m19
+45i7*tv_nsec{long_integer} 120m19
+49V13 nanosleep{integer} 49^24 49^30 50b<c,nanosleep>22 4|75s20
+49p24 rqtp(43R9)
+49p30 rmtp(43R9)
+58A12 timeval(long_integer)<integer> 65r33 73r24 78r22
+64U17*timeval_to_duration 65^10 66^10 67^10 68b<c,__gnat_timeval_to_duration>25
+. 92s7
+65p10 T(58A12)
+66p10 sec(long_long_integer)
+67p10 usec(long_integer)
+70N7 Micro 93r49
+71i7 sec{long_long_integer} 92m39 92r39 93r24
+72i7 usec{long_integer} 92m51 92r51 93r41
+73a7 TV{58A12} 91m31 91r31 92m28 92r28
+74i7 Result{integer} 75r28 91m7
+77V16*gettimeofday{integer} 78^10 79>10 80b<c,gettimeofday>25 91s17
+78p10 Tv(58A12)
+79m10 Tz{1|67M9}
+100V13 To_Timespec{43R9} 100>26 102b13 121l8 121t19 4|74s21
+100o26 D{duration} 102b26 107r39 108r12
+103i7 S{41I9} 107m7 108r26 114m10 114r15 119r30
+104o7 F{duration} 108m7 113r10 115m10 115r15 120r63
+X 4 s-optide.adb
+39r4 Request{3|43R9} 74m10 75m31 75r31
+40r4 Remaind{3|43R9} 75m47 75r47
+41o4 Rel_Time{duration} 52m7 55m7 63r7 64r21
+42o4 Abs_Time{duration} 53m7 56m7 79r20 81r24
+43o4 Base_Time{duration} 44r29 79r64
+44o4 Check_Time{duration} 53r26 55r26 77m10 79r32 79r51 81r35
+45o4 Time_Chunk{duration} 64m7 68r13 70m13 74r34 81m10
+47i4 Result{integer} 48r25 75m10
+

@@ -1,0 +1,108 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U ada.wide_wide_characters.handling%b  a-zchhan.adb  3e74dc80 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.wide_wide_characters%s  a-zchara.ads	a-zchara.ali
+W ada.wide_wide_characters.unicode%s  a-zchuni.adb  a-zchuni.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U ada.wide_wide_characters.handling%s  a-zchhan.ads  965e5910 BN NE OL PK
+W ada.wide_wide_characters%s  a-zchara.ads	a-zchara.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-zchara.ads		20070406091342 21c8f2b2
+D a-zchhan.ads		20101007092627 b796aba2
+D a-zchhan.adb		20101007092627 bbfb21fb
+D a-zchuni.ads		20101007092627 321956d9
+D system.ads		20120503154647 23e1f70b
+D s-secsta.ads		20090707124243 eea35a36
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-utf_32.ads		20101007091606 fd857092
+X 1 ada.ads
+16K9*Ada 19e8 4|16r9 126r5 5|32r6 32r44 34r14 59r14 86r14 93r14 109r14 116r14
+. 123r14 130r14 155r14 173r14 186r5
+X 3 a-zchara.ads
+16K13*Wide_Wide_Characters 1|16k9 3|18e29 4|16r13 126r9 5|32r10 32r48 34r18
+. 59r18 86r18 93r18 109r18 116r18 123r18 130r18 155r18 173r18 186r9
+X 4 a-zchhan.ads
+16K34*Handling 3|16k13 4|126l30 126e38 5|34b39 186l30 186t38
+18V13*Is_Control{boolean} 18>25 19r19 5|49b13 52l8 52t18
+18e25 Item{wide_wide_character} 5|49b25 51r28
+23V13*Is_Letter{boolean} 23>24 24r19 5|42s14 85b13
+23e24 Item{wide_wide_character} 5|85b24
+30V13*Is_Lower{boolean} 30>23 31r19 5|99b13 102l8 102t16
+30e23 Item{wide_wide_character} 5|99b23 101r28
+35V13*Is_Upper{boolean} 35>23 36r19 5|145b13 148l8 148t16
+35e23 Item{wide_wide_character} 5|145b23 147r28
+40V13*Is_Digit{boolean} 40>23 41r19 46r14 5|42s39 58b13 76s14
+40e23 Item{wide_wide_character} 5|58b23
+45V13*Is_Decimal_Digit=46:14{boolean}
+45e31 Item{wide_wide_character}
+48V13*Is_Hexadecimal_Digit{boolean} 48>35 5|74b13 79l8 79t28
+48e35 Item{wide_wide_character} 5|74b35 76r24 77r17 78r17
+53V13*Is_Alphanumeric{boolean} 53>30 54r19 5|40b13 43l8 43t23 138s45
+53e30 Item{wide_wide_character} 5|40b30 42r25 42r49
+60V13*Is_Special{boolean} 60>25 61r19 5|136b13 139l8 139t18
+60e25 Item{wide_wide_character} 5|136b25 138r26 138r62
+67V13*Is_Line_Terminator{boolean} 67>33 68r19 5|92b13
+67e33 Item{wide_wide_character} 5|92b33
+74V13*Is_Mark{boolean} 74>22 75r19 5|108b13
+74e22 Item{wide_wide_character} 5|108b22
+80V13*Is_Other{boolean} 80>23 81r19 5|115b13
+80e23 Item{wide_wide_character} 5|115b23
+85V13*Is_Punctuation{boolean} 85>29 86r19 5|122b13
+85e29 Item{wide_wide_character} 5|122b29
+90V13*Is_Space{boolean} 90>23 91r19 5|129b13
+90e23 Item{wide_wide_character} 5|129b23
+95V13*Is_Graphic{boolean} 95>25 96r19 5|65b13 68l8 68t18 138s14
+95e25 Item{wide_wide_character} 5|65b25 67r34
+100V13*To_Lower{wide_wide_character} 100>23 101r19 5|154b13 162s24
+100e23 Item{wide_wide_character} 5|154b23
+107V13*To_Lower{wide_wide_string} 107>23 5|157b13 166l8 166t16
+107s23 Item{wide_wide_string} 5|157b23 158r34 162r34
+113V13*To_Upper{wide_wide_character} 113>23 114r19 5|172b13 180s24
+113e23 Item{wide_wide_character} 5|172b23
+120V13*To_Upper{wide_wide_string} 120>23 5|175b13 184l8 184t16
+120s23 Item{wide_wide_string} 5|175b23 176r34 180r34
+X 5 a-zchhan.adb
+158a7 Result{wide_wide_string} 161r16 162m10 165r14
+161i11 J{integer} 162r18 162r40
+176a7 Result{wide_wide_string} 179r16 180m10 183r14
+179i11 J{integer} 180r18 180r40
+X 6 a-zchuni.ads
+36K34*Unicode 5|32w31 32r69 59r39 86r39 93r39 109r39 116r39 123r39 130r39
+. 155r39 173r39 6|195e37
+42E9*Category<11|55E9>
+75V13*Get_Category{42E9} 5|51s14 101s14 147s14
+89V13*Is_Letter{boolean} 5|86r47
+101V13*Is_Digit{boolean} 5|59r47
+108V13*Is_Line_Terminator{boolean} 5|93r47
+116V13*Is_Mark{boolean} 5|109r47
+125V13*Is_Other{boolean} 5|116r47
+134V13*Is_Punctuation{boolean} 5|123r47
+142V13*Is_Space{boolean} 5|130r47
+149V13*Is_Non_Graphic{boolean} 5|67s18
+179V13*To_Lower_Case{wide_wide_character} 5|155r47
+187V13*To_Upper_Case{wide_wide_character} 5|173r47
+X 11 s-utf_32.ads
+56n6*Cc{55E9} 5|51r36
+61n6*Ll{55E9} 5|101r36
+65n6*Lu{55E9} 5|147r36
+

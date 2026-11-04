@@ -1,0 +1,31 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+
+U ada.unchecked_deallocation%s  a-uncdea.ads	b5d031c4 NE OL PR GE
+W ada%s			ada.ads			ada.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-uncdea.ads		20260807074606 c3a8ac65 ada.unchecked_deallocation%s
+D system.ads		20260807074606 898beeee system%s
+G a e
+X 1 ada.ads
+18K9*Ada 22e8 2|23r11 31r27
+X 2 a-uncdea.ads
+20+9 Object 21r24
+21P9 Name(20+9) 23r50
+23u15*Unchecked_Deallocation 23=39 29r22 31b31
+23*39 X{21P9} 24r15 25r23 26r11
+

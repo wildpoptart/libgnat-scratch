@@ -1,0 +1,211 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+
+U system.finalization_primitives%b  s-finpri.adb  8e328749 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+U system.finalization_primitives%s  s-finpri.ads  94cebe17 BN NE OL PR PK
+W system%s		system.ads		system.ali
+W system.os_locks%s	s-oslock.ads		s-oslock.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-finpri.ads		20260807074606 5970d55a system.finalization_primitives%s
+D s-finpri.adb		20260807074606 02c85f69 system.finalization_primitives%b
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s b [attach_object_to_master system__finalization_primitives 72 14 none]
+G c Z s b [attach_object_to_node system__finalization_primitives 83 14 none]
+G c Z s b [chain_node_to_master system__finalization_primitives 92 14 none]
+G c Z s b [finalize_master system__finalization_primitives 99 14 none]
+G c Z s b [finalize_object system__finalization_primitives 104 14 none]
+G c Z s b [suppress_object_finalize_at_end system__finalization_primitives 114 14 none]
+G c Z s b [initialize system__finalization_primitives 146 14 none]
+G c Z s b [finalize system__finalization_primitives 149 14 none]
+G c Z s b [attach_object_to_collection system__finalization_primitives 154 14 none]
+G c Z s b [detach_object_from_collection system__finalization_primitives 164 14 none]
+G c Z s s [header_alignment system__finalization_primitives 169 13 none]
+G c Z s s [header_size system__finalization_primitives 173 13 none]
+G c Z s s [collection_nodeIP system__finalization_primitives 226 9 none]
+G c Z s s [master_nodeIP system__finalization_primitives 185 9 none]
+G c Z s s [finalization_masterIP system__finalization_primitives 194 9 none]
+G c Z s s [finalization_collectionIP system__finalization_primitives 246 9 none]
+G c Z b b [raise_from_controlled_operation system__finalization_primitives 39 14 none]
+G c Z b b [to_collection_node_ptr system__finalization_primitives 43 13 none]
+G c Z b b [detach_node_from_collection system__finalization_primitives 46 14 none]
+G c Z b b [lock_collection system__finalization_primitives 51 14 none]
+G c Z b b [unlock_collection system__finalization_primitives 59 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 9|32r6 32r36 33r6 44r10
+X 2 a-except.ads
+44K13*Exceptions 309e19 9|32w10 32w40
+53R9*Exception_Occurrence 281e14 9|39r51 201r39 298r39
+113U14*Save_Occurrence 9|275s19 326s25
+X 3 a-unccon.ads
+23v14*Unchecked_Conversion 9|33w10 44r14
+X 6 system.ads
+37K9*System 214e11 8|32r6 33r6 40r9 42r13 44r57 73r26 84r26 155r26 164r62
+. 169r37 173r32 187r26 238r37 241r32 250r22 263r5 9|35r6 35r29 37r14 68r26
+. 121r26 136r26 182r24 366r23 420r5
+67M9*Address 8|44r64 73r33 84r33 155r33 164r69 187r33 9|44r36 68r33 121r33
+. 136r33 182r31 203r39 366r30
+69m4*Null_Address{67M9} 8|187r50 9|141r44 369r18 370r33 408r30
+71N4*Storage_Unit 8|242r37
+81V14*"="{boolean} 9|141r42 369r15
+X 8 s-finpri.ads
+40K16*Finalization_Primitives 6|37k9 8|185E9 263l12 263e35 9|37b21 420l12
+. 420t35
+44P9*Finalize_Address_Ptr 44>51 74r35 85r35 106r26 156r35 186r26 227r26 9|69r35
+. 122r35 137r35 364r26
+44m51 Obj{6|67M9}
+50R9*Master_Node 54r39 86r33 105r33 114r61 185c9 189e14 9|138r33 363r33 406r61
+54P9*Master_Node_Ptr(50R9) 55r8 75r35 93r25 188r26 199r14 9|123r35 153r25
+. 300r39
+65R9*Finalization_Master 66d7 67d7 68d7 76r33 94r23 99r47 194c9 200e14 9|124r33
+. 154r23 297r47
+66b7 Exceptions_OK{boolean} 195r7 9|308r17
+67b7 Extra_Info{boolean} 196r7 9|319r35 325r35 350r20
+68b7 Library_Level{boolean} 197r7 9|318r32 349r60
+72U14*Attach_Object_To_Master 73>7 74>7 75>7 76=7 204r19 9|120b14 129l8 129t31
+73m7 Object_Address{6|67M9} 9|121b7 127r30
+74p7 Finalize_Address{44P9} 9|122b7 127r46
+75p7 Node{54P9} 9|123b7 127r64 128r29
+76r7 Master{65R9} 9|124b7 128m35
+83U14*Attach_Object_To_Node 84>7 85>7 86=7 205r19 9|127s7 135b14 146l8 146t29
+84m7 Object_Address{6|67M9} 9|136b7 144r32
+85p7 Finalize_Address{44P9} 9|137b7 145r32
+86r7 Node{50R9} 9|138b7 141r22 142r18 144m7 145m7
+92U14*Chain_Node_To_Master 93>7 94=7 206r19 9|128s7 152b14 159l8 159t28
+93p7 Node{54P9} 9|153b7 157r7 158r22
+94r7 Master{65R9} 9|154b7 157r22 158m7
+99U14*Finalize_Master 99=31 9|297b14 356l8 356t23
+99r31 Master{65R9} 9|297b31 303r15 308r10 318r25 319r28 325r28 344m7 349r53
+. 350r13
+104U14*Finalize_Object 105=7 106>7 207r19 9|311s16 338s13 362b14 375l8 375t23
+105r7 Node{50R9} 9|363b7 366r41 370m10 372r25
+106p7 Finalize_Address{44P9} 9|364b7 372r49 373r10
+114U14*Suppress_Object_Finalize_At_End 114=47 208r19 9|406b14 409l8 409t39
+114r47 Node{50R9} 9|406b47 408m7
+132R9*Finalization_Collection 141r51 146r46 149r44 157r33 246c9 257e14 9|51r51
+. 59r53 70r33 199r44 381r46 397r51 415r53
+141P9*Finalization_Collection_Ptr(132R9) 142r8 230r30
+146U14*Initialize 133r51 146=26 261r19 9|381b14 391l8 391t18
+146r26 Collection{132R9} 9|381b26 385m7 385m31 385r31 386m7 386m31 386r31
+. 388m28 388r28 390m7
+149U14*Finalize 134r51 149=24 9|199b14 291l8 291t16
+149r24 Collection{132R9} 9|199b24 219m24 225r10 226m29 243m7 251m32 251r32
+. 252r22 267m29 281m27 284m26
+154U14*Attach_Object_To_Collection 155>7 156>7 157=7 9|67b14 114l8 114t35
+155m7 Object_Address{6|67M9} 9|68b7 73r40
+156p7 Finalize_Address{44P9} 9|69b7 94r10 97r36
+157r7 Collection{132R9} 9|70b7 76m24 85r10 96m36 96r36 98m36 98r36 99r36
+. 101m7 101r7 102m7 104m26 112m29
+164U14*Detach_Object_From_Collection 164>45 9|181b14 193l8 193t37
+164m45 Object_Address{6|67M9} 9|182b7 185r40
+169V13*Header_Alignment{16|56I12} 238b13
+173V13*Header_Size{16|56I12} 241b13 9|73s57 185s57 262s45
+186p7*Finalize_Address{44P9} 9|142r23 145m12 311r48 338r45 372r30
+187m7*Object_Address{6|67M9} 9|141r27 144m12 366r46 370m15 408m12
+188p7*Next{54P9} 9|157m12 331r26 340r26
+199p7*Head{54P9} 9|157r29 158m14 303r22 344m14
+212R9 Collection_Node 216r43 226c9 236e14 239r7 242r7 247r22
+216P9 Collection_Node_Ptr(212R9) 217r8 218r31 233r14 234r14 9|44r45 46r59
+. 72r23 166r23 184r23 200r39 205r44 212r44
+226R9 Collection_Node
+227p7*Finalize_Address{44P9} 9|97m12 270r22
+230p7*Enclosing_Collection{141P9} 9|96m12 188r29 192r31
+233p7*Prev{216P9} 9|98m12 101m28 169r15 170r15 171m20 171r33 172m15 215r39
+. 385m23
+234p7*Next{216P9} 9|99m12 99r52 101r23 102m23 169r42 170m20 170r33 171r15
+. 173m15 215r19 252r38 386m23
+247r7*Head{226R9} 9|98m47 99r47 101m18 102m18 251m43 252r33 385m18 385m42
+. 386m18 386m42
+250r7*Lock{10|42R12} 9|388m39 399m36 417m36
+253b7*Finalization_Started{boolean} 9|85r21 225r21 243m18 390m18
+X 9 s-finpri.adb
+39U14 Raise_From_Controlled_Operation 39>47 40b<ada,__gnat_raise_from_controlled_operation>24
+. 289s10 351s13
+39r47 X{2|53R9}
+43V13 To_Collection_Node_Ptr[3|23]{8|216P9} 73s16 185s16
+46U14 Detach_Node_From_Collection 46>43 165b14 175l8 175t35 190s7 257s10
+46p43 Node{8|216P9} 166b7 169r10 169r37 170r10 170r28 171r10 171r28 172r10
+. 173r10
+51U14 Lock_Collection 51=31 76s7 188s7 219s7 281s10 397b14 400l8 400t23
+51r31 Collection{8|132R9} 397b31 399m25 399r25
+59U14 Unlock_Collection 59=33 104s7 112s10 192s7 226s10 267s10 284s7 415b14
+. 418l8 418t25
+59r33 Collection{8|132R9} 415b33 417m25 417r25
+72p7 Node{8|216P9} 96r7 97r7 98r7 99r7 101r36 102r36
+184p7 Node{8|216P9} 188r24 190r36 192r26
+200p7 Curr_Ptr{8|216P9} 252m10 257r39 262r22 270r13
+201r7 Exc_Occur{2|53R9} 275m36 289r43
+202b7 Finalization_Exception_Raised{boolean} 273r23 274m19 288r10
+203m7 Obj_Addr{6|67M9} 262m10 270r40
+205V16 Is_Empty_List{boolean} 205>31 212b16 216l11 216t24 251s17
+205p31 L{8|216P9} 212b31 215r17 215r26 215r37 215r46
+272r18 Fin_Occur{2|53R9} 275r47
+298r7 Exc_Occur{2|53R9} 326m42 351r46
+299b7 Finalization_Exception_Raised{boolean} 315r26 316m22 349r10
+300p7 Node{8|54P9} 303m7 309r16 311r33 311r43 331m13 331r21 337r16 338r30
+. 338r40 340m13 340r21
+314r21 Exc{2|53R9} 320r53 326r53
+366m7 Addr{6|67M9} 369r10 373r28
+X 10 s-oslock.ads
+37K16*OS_Locks 8|32w13 250r29 10|62e20
+42R12*RTS_Lock{40R9} 8|250r38
+X 13 s-soflin.ads
+45K16*Soft_Links 9|35w13 35w36 13|430e22
+76P9*Set_Address_Call
+263p4*Initialize_RTS_Lock{76P9} 9|388r7
+265p4*Acquire_RTS_Lock{76P9} 9|399r7
+266p4*Release_RTS_Lock{76P9} 9|417r7
+330U14*Save_Library_Occurrence 9|320s28 322s28
+X 16 s-stoele.ads
+43K16*Storage_Elements 8|33w13 42r20 169r44 173r39 238r44 241r39 16|104e28
+54I9*Storage_Offset<long_long_integer> 8|42r37
+56I12*Storage_Count{54I9} 8|169r61 173r56 238r61 241r56
+74V14*"+"{6|67M9} 9|262r43
+79V14*"-"{6|67M9} 9|73r55 185r55
+

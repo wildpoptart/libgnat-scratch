@@ -1,0 +1,115 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_FIXED_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.c_time%b	s-c_time.adb		75266e31 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.c_time%s	s-c_time.ads		033bf813 BN NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.os_constants%s	s-oscons.ads		s-oscons.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-c_time.ads		20260807074606 e502d0c0 system.c_time%s
+D s-c_time.adb		20260807074606 9024bef1 system.c_time%b
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-oscons.ads		20261013120928 b46ffdda system.os_constants%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s b [to_duration system__c_time 74 13 none]
+G c Z s b [to_duration system__c_time 75 13 none]
+G c Z s b [to_timespec system__c_time 77 13 none]
+G c Z s b [to_timeval system__c_time 78 13 none]
+G c Z s b [in_timeval_duration system__c_time 80 13 none]
+G c Z s b [milliseconds_to_timeval system__c_time 83 13 none]
+G c Z s b [nanoseconds_to_timespec system__c_time 88 13 none]
+G c Z s b [to_timespec system__c_time 90 13 none]
+G c Z s s [timevalIP system__c_time 55 9 none]
+G c Z s s [timespecIP system__c_time 66 9 none]
+X 3 interfac.ads
+47K9*Interfaces 247e15 6|35r6 83r42 88r42 7|89r42 90r11 102r42 103r11
+X 4 i-c.ads
+33K20*C 605e17 6|35w17 83r53 88r53 7|89r53 90r22 102r53 103r22
+62I9*int<integer> 6|83r55 88r55 7|89r55 91r20 92r20 102r55 104r20 105r20
+X 5 system.ads
+37K9*System 214e11 6|37r6 39r9 93r5 7|32r14 203r5
+81V14*"="{boolean} 7|39r42
+X 6 s-c_time.ads
+39K16*C_Time 5|37k9 6|93l12 93e18 7|32b21 203l12 203t18
+45I9*time_t<integer> 56r17 67r17 7|70r23 70r40 72r23 95r25 108r25 142r17
+. 151r20 159r20 175r17 184r20 192r20
+49I9*usec_t<integer> 57r17 7|72r40 95r48 176r17 188r24 196r24
+55R9*timeval 59e6 75r30 78r47 80r38 83r67 90r30 7|61r38 89r67 117r30 136r30
+. 174r46
+56i7*tv_sec{45I9} 7|76r16 77r21 78r20 79r21 80r20 81r21 95m15 119r26 138r27
+57i7*tv_usec{49I9} 7|77r42 79r53 81r64 95m37 119r48 138r56
+61I9*nsec_t<integer> 68r17 7|108r48 138r46 143r17 155r24 163r24
+66R9*timespec 70e6 74r30 77r47 88r67 90r46 7|102r67 125r30 136r46 141r47
+67i7*tv_sec{45I9} 7|108m15 129r26 138m15
+68i7*tv_nsec{61I9} 7|108m37 129r48 138m35
+74V13*To_Duration{duration} 74>26 7|125b13 130l8 130t19
+74r26 T{66R9} 7|125b26 129r24 129r46
+75V13*To_Duration{duration} 75>26 7|117b13 120l8 120t19
+75r26 T{55R9} 7|117b26 119r24 119r46
+77V13*To_Timespec{66R9} 77>26 7|141b13 168l8 168t19
+77o26 D{duration} 7|141b26 146r10 150r13 151r28 152r13 155r33 159r28 160r13
+. 163r33
+78V13*To_Timeval{55R9} 78>26 7|174b13 201l8 201t18
+78o26 D{duration} 7|174b25 179r10 183r13 184r28 185r13 188r33 192r28 193r13
+. 196r33
+80V13*In_Timeval_Duration{boolean} 80>34 7|61b13 83l8 83t27
+80r34 T{55R9} 7|61b34 76r14 77r19 77r40 78r18 79r19 79r51 80r18 81r19 81r62
+83V13*Milliseconds_To_Timeval{55R9} 83>38 7|89b13 96l8 96t31
+83i38 M{4|62I9} 7|89b38 91r27 92r27
+88V13*Nanoseconds_To_Timespec{66R9} 88>38 7|102b13 109l8 109t31
+88i38 N{4|62I9} 7|102b38 104r27 105r27
+90V13*To_Timespec{66R9} 90>26 7|136b13 139l8 139t19
+90r26 T{55R9} 7|136b26 138r25 138r54
+X 7 s-c_time.adb
+39N4 Recip 63r40 64r43 64r60 126r30
+42N4 Milli 91r33 92r33 95r70 138r67
+43N4 Micro 64r52 95r62 119r59 188r58 196r58
+44N4 Nano 104r33 105r33 126r23 129r64 155r58 163r58
+62N7 Max_Dur 63r30 64r31
+63N7 Max_Sec 70r13 70r57 72r13
+64N7 Max_Usec 72r57
+69N7 Safe_Max_Sec 78r30 79r30
+71N7 Safe_Max_Usec 79r64
+91i7 Q{4|62I9} 95r33
+92i7 R{4|62I9} 95r56
+104i7 Q{4|62I9} 108r33
+105i7 R{4|62I9} 108r56
+126N7 S 129r58 129r71
+142i7 tv_sec{6|45I9} 147m10 151m10 152r27 155r47 159m10 160r27 163r47 167r15
+143i7 tv_nsec{6|61I9} 148m10 153m13 155m13 161m13 163m13 167r23
+175i7 tv_sec{6|45I9} 180m10 184m10 185r27 188r47 192m10 193r27 196r47 200r15
+176i7 tv_usec{6|49I9} 181m10 186m13 188m13 194m13 196m13 200r23
+X 9 s-oscons.ads
+45K16*OS_Constants 6|37w13 45r32 46r32 47r36 49r32 50r32 51r36 61r32 62r32
+. 63r36 7|80r30 81r30 9|410e24
+331N4*SIZEOF_tv_sec 6|45r45 46r45 47r49
+332N4*SIZEOF_tv_usec 6|49r45 50r45 51r49
+335N4*MAX_tv_sec 7|80r43 81r43
+338N4*SIZEOF_tv_nsec 6|61r45 62r45 63r49
+

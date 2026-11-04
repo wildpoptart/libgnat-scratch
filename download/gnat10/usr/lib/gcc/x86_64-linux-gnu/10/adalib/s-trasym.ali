@@ -1,0 +1,404 @@
+V "GNAT Lib v10"
+A -gnatwa
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -g
+A -gnatp
+A -gnatg
+A -gnatn
+A -fpic
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U system.traceback.symbolic%b  s-trasym.adb	448e9548 OL PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.generic_array_sort%s
+Z ada.containers.generic_constrained_array_sort%s
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.exceptions.traceback%s  a-exctra.adb	a-exctra.ali
+W ada.unchecked_deallocation%s
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.address_to_access_conversions%s
+W system.bounded_strings%s  s-boustr.adb	s-boustr.ali
+W system.crtl%s		s-crtl.ads		s-crtl.ali
+W system.dwarf_lines%s	s-dwalin.adb		s-dwalin.ali
+W system.exception_traces%s  s-exctra.adb	s-exctra.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.strings%s	s-string.adb		s-string.ali
+W system.traceback%s	s-traceb.adb		s-traceb.ali
+W system.traceback_entries%s  s-traent.adb	s-traent.ali
+L "-ldl"
+
+U system.traceback.symbolic%s  s-trasym.ads	46491211 EB EE NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system.traceback%s	s-traceb.adb		s-traceb.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chahan.ads		20230707070819 1601a50f ada.characters.handling%s
+D a-contai.ads		20230707070819 61e5e089 ada.containers%s
+D a-cgarso.ads		20230707070819 9129bfa8 ada.containers.generic_array_sort%s
+D a-cgarso.adb		20230707070819 59f5315a ada.containers.generic_array_sort%b
+D a-cgcaso.ads		20230707070819 9f1e835c ada.containers.generic_constrained_array_sort%s
+D a-cgcaso.adb		20230707070819 326e4f26 ada.containers.generic_constrained_array_sort%b
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-exctra.ads		20230707070819 0966bad0 ada.exceptions.traceback%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-addima.ads		20230707070819 a1ec9d3a system.address_image%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-boustr.ads		20230707070819 77fd2119 system.bounded_strings%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-dwalin.ads		20230707070819 f061826a system.dwarf_lines%s
+D s-dwalin.adb		20230707070819 cdf11ce9 system.dwarf_lines%b
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-exctra.ads		20230707070819 2484d6ea system.exception_traces%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-imguns.ads		20230707070819 9ff43cf7 system.img_uns%s
+D s-io.ads		20230707070819 9e42f74f system.io%s
+D s-mmap.ads		20230707070819 e1b5e14b system.mmap%s
+D s-objrea.ads		20230707070819 7f746e22 system.object_reader%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-string.ads		20230707070819 8fe54fb7 system.strings%s
+D s-traceb.ads		20230707070819 5e7928b4 system.traceback%s
+D s-trasym.ads		20230707070819 bf205bb0 system.traceback.symbolic%s
+D s-trasym.adb		20230707070819 aa17637c system.traceback.symbolic%b
+D s-tsmona.adb		20230707070819 e6a2be0c system.traceback.symbolic.module_name
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-traent.adb		20230707070819 9e8f6355 system.traceback_entries%b
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [symbolic_traceback system__traceback__symbolic 83 13 none]
+G c Z s b [symbolic_traceback_no_hex system__traceback__symbolic 85 13 none]
+G c Z s b [symbolic_traceback system__traceback__symbolic 92 13 none]
+G c Z s b [symbolic_traceback_no_hex system__traceback__symbolic 94 13 none]
+G c Z s b [enable_cache system__traceback__symbolic 102 14 none]
+G c Z b b [to_pointer system__traceback__symbolic__big_string_conv 57 13 61_4]
+G c Z b b [to_address system__traceback__symbolic__big_string_conv 58 13 61_4]
+G c Z b b [module_cacheIP system__traceback__symbolic 67 9 none]
+G c Z b b [free system__traceback__symbolic 77 14 none]
+G c Z b b [init_exec_module system__traceback__symbolic 97 14 none]
+G c Z b b [symbolic_traceback system__traceback__symbolic 100 13 none]
+G c Z b b [symbolic_traceback system__traceback__symbolic 103 13 none]
+G c Z b b [lt system__traceback__symbolic 109 13 none]
+G c Z b b [init_module system__traceback__symbolic 112 14 none]
+G c Z b b [close_module system__traceback__symbolic 119 14 none]
+G c Z b b [value system__traceback__symbolic 122 13 none]
+G c Z b b [add_module_to_cache system__traceback__symbolic 126 14 none]
+G c Z b b [build_cache_for_all_modules system__traceback__symbolic__module_name 133 17 none]
+G c Z b b [get system__traceback__symbolic__module_name 136 16 none]
+G c Z b b [is_supported system__traceback__symbolic__module_name 143 16 none]
+G c Z b b [is_shared_lib system__traceback__symbolic__module_name 41 13 none]
+G c Z b b [module_arrayIP system__traceback__symbolic 84 9 none]
+G c Z b b [executable_name system__traceback__symbolic 152 13 none]
+G c Z b b [get_executable_load_address system__traceback__symbolic 157 13 none]
+G c Z b b [hexa_traceback system__traceback__symbolic 164 14 none]
+G c Z b b [symbolic_traceback_no_lock system__traceback__symbolic 170 14 none]
+G c Z b b [module_symbolic_traceback system__traceback__symbolic 177 14 none]
+G c Z b b [multi_module_symbolic_traceback system__traceback__symbolic 184 14 none]
+G c Z b b [multi_module_symbolic_traceback system__traceback__symbolic 190 14 none]
+G c Z b b [module_cache_array_sortR system__traceback__symbolic__module_cache_array_sortGP10002 273 14 none]
+G c Z b b [module_cache_array_sort system__traceback__symbolic 273 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 38|78r6 93r11 95r11 39|38r6 40r6 40r36 41r6 77r26 104r22 273r45
+. 676r22 681r12 686r11 693r11
+X 4 a-contai.ads
+16K13*Containers 28e19 39|41r10 273r49
+X 5 a-cgarso.ads
+23u26*Generic_Array_Sort 4|16k13 39|41w21 273r60
+X 6 a-cgarso.adb
+41U14 Sort[7|24] 8|34b26[39|273]
+X 7 a-cgcaso.ads
+24u26*Generic_Constrained_Array_Sort 4|16k13
+X 9 a-except.ads
+48K13*Exceptions 335e19 38|78w10 93r15 95r15 39|40r10 40r40 104r26 676r26
+. 681r16 686r15 693r15
+57R9*Exception_Occurrence 311e14 38|93r26 95r26 39|104r37 676r37 686r26 693r26
+X 10 a-exctra.ads
+40K24*Traceback 63e29 39|40w21 40r51 681r27
+47A12*Tracebacks_Array{41|56A9}<integer> 39|165r29 171r29 178r29 185r29 191r29
+. 436r29 473r29 557r29 597r29 619r29 645r22
+50V13*Tracebacks{47A12} 39|681s37
+X 12 a-uncdea.ads
+20u15*Unchecked_Deallocation 39|38w10 77r30
+X 13 interfac.ads
+38K9*Interfaces 184e15 40|33r6 33r37
+X 14 i-c.ads
+18K20*C 230e17 40|33w17 33r48
+35I9*int<integer> 40|151r49
+72E9*char<character>
+79A9*char_array(72E9)<60M9> 40|68r20
+X 15 system.ads
+37K9*System 156e11 38|80r9 84r19 86r19 111r5 39|43r6 44r6 45r6 46r6 47r6
+. 48r6 49r6 50r6 51r6 53r14 55r8 56r8 61r35 101r22 122r27 127r50 136r28 137r40
+. 157r48 204r27 222r50 342r19 345r44 346r27 348r41 348r64 364r27 367r36 370r30
+. 371r37 382r13 529r33 601r11 650r7 653r7 659r10 664r19 670r19 718r5 40|35r11
+. 135r25 136r37 143r22 144r22 145r22 146r22 150r17 158r24
+67M9*Address 39|116r26 122r34 127r57 136r35 137r47 157r55 204r34 222r57 246r34
+. 342r26 345r51 348r48 348r71 364r34 367r43 370r37 407r26 487r36 529r40 40|41r35
+. 60r35 96r19 99r19 102r19 135r32 136r44 143r29 144r29 145r29 146r29 150r24
+69m4*Null_Address{67M9} 39|116r37 206r18 352r22 371r44 381r31 407r37 40|158r31
+77V14*"<"{boolean} 39|266r35 494r24
+81V14*"="{boolean} 39|206r15 352r20 371r34 381r28 479r27
+X 17 s-atacco.ads
+39k16*Address_To_Access_Conversions 63e41 39|43w13 61r42 346r34
+47P9 Object_Pointer(39|345A12)
+57V13*To_Pointer{47P9[39|61]} 39|208s32[61] 209s39[61] 365s20[346] 40|123s29[39|61]
+X 18 s-boustr.ads
+34K16*Bounded_Strings 62e27 39|51w13 55r15
+35R9*Bounded_String 61e14 39|167r29 173r29 181r29 187r29 194r29 439r29 475r29
+. 560r29 599r29 621r29 648r13
+39U14*Append 39|444s10 605s10 609s13
+40U14*Append 39|445s10 446s10 604s10 628s13
+44V13*To_String{string} 39|655s14
+48U14*Append_Address 39|608s13
+51V13*Is_Full{boolean} 39|479s39
+X 19 s-crtl.ads
+38K16*CRTL 241e16 39|45w13 382r20
+137U14*free 39|382s25
+X 20 s-dwalin.ads
+51K16*Dwarf_Lines 194e23 39|46w13 56r15 449r7
+56R9*Dwarf_Context 192e14 39|71r11
+63U14*Open 39|417s7
+67U14*Close 39|395s7
+70U14*Set_Load_Address 39|426s7
+74V13*Is_Inside{boolean} 39|496s22 518s13 576s36
+78V13*Low_Address{15|67M9} 39|266s14 266s37 494s26
+89U14*Enable_Cache 39|316s19
+92U14*Symbolic_Traceback 39|449s19
+X 21 s-dwalin.adb
+144V14 "<"{boolean} 5|21i19
+X 23 s-exctra.ads
+57K16*Exception_Traces 107e28 39|47w13 714r7
+95U14*Set_Trace_Decorator 39|714s24
+X 31 s-soflin.ads
+47K16*Soft_Links 416e22 39|44w13 650r14 653r14 659r17
+64P9*No_Param_Proc
+189p4*Lock_Task{64P9} 39|650r25
+199p4*Unlock_Task{64P9} 39|653r25 659r28
+X 33 s-stalib.ads
+55K16*Standard_Library 263e28 39|48w13 705r8
+219n7*RM_Convention{218E9} 39|715r40
+234n7*Unhandled_Raise_In_Main{218E9} 39|716r26
+246e4*Exception_Trace{218E9} 39|715r22 716m7
+X 36 s-string.ads
+42K16*Strings 63e19 39|50w13 68r14 396r7
+45P9*String_Access(string) 39|68r22
+49U14*Free[12|20] 39|396s15
+X 37 s-traceb.ads
+44K16*Traceback 15|37k9 37|87e21 38|80r16 111r12 39|53r21 718r12 40|35r18
+81V13*C_Call_Chain{natural} 84i<c,system__traceback__c_call_chain>22
+X 38 s-trasym.ads
+80K26*Symbolic 37|44k16 38|111l22 111e30 39|53b31 443r10 624r10 718l22 718t30
+. 40|35r28
+83V13*Symbolic_Traceback{string} 84>7 39|663b13 667l8 667t26 714r45
+84a7 Traceback{41|56A9} 39|664b7 666r34
+85V13*Symbolic_Traceback_No_Hex{string} 86>7 39|669b13 673l8 673t33
+86a7 Traceback{41|56A9} 39|670b7 672r34
+92V13*Symbolic_Traceback{string} 93>7 39|685b13 690l8 690t26
+93r7 E{9|57R9} 39|686b7 689r34
+94V13*Symbolic_Traceback_No_Hex{string} 95>7 39|692b13 696l8 696t33
+95r7 E{9|57R9} 39|693b7 695r34
+102U14*Enable_Cache 102>28 39|283b14 331l8 331t20
+102b28 Include_Modules{boolean} 39|283b28 300r10
+X 39 s-trasym.adb
+58A12 Big_String{string}<integer> 62r7 207r19
+61K12 Big_String_Conv[17|39] 208r16 209r23 40|123r13
+64R9 Module_Cache 65r40 67c9 75e14 78r7 90r26 113r26 119r44 179r29 192r29
+. 227r21 393r44 404r26 437r29 533r23 558r29
+65P9 Module_Cache_Acc(64R9) 74r15 79r7 81r18 84r53 109r31 224r17 264r31 275r7
+. 307r19
+67R9 Module_Cache
+68p7*Name{36|45P9} 396m28 428m14 445r30
+71r7*C{20|56R9} 266r32 266r56 316m40 395m21 417m33 426m32 450r17 494r59 496r53
+. 518r36 576r54
+74p7*Chain{65P9} 233m14 320r33
+77U14 Free[12|20] 230s10
+81p4 Cache_Chain{65P9} 233r23 234m7 286r10 298m7 311r23
+84A9 Module_Array(65P9)<integer> 85r36 276r7 324r37
+85P9 Module_Array_Acc(84A9) 87r20
+87p4 Modules_Cache{85P9} 318r19 324m16 330r32 483r10 490r19 491r19 494r39
+. 496r33 499r22
+90r4 Exec_Module{67R9} 249m26 298m22 298r22 518r24 521r16 633r16
+93E9 Init_State 93e59 94r24
+93n24 Uninitialized{93E9} 94r38 243r30
+93n39 Initialized{93E9} 252r37
+93n52 Failed{93E9} 254r37 293r30 627r33
+94e4 Exec_Module_State{93E9} 243r10 252m16 254m16 293r10 627r13
+97U14 Init_Exec_Module 241b14 258l8 258t24 291s7 651s7
+100V13 Symbolic_Traceback{string} 101>7 102>7 644b13 661l8 661t26 666s14
+. 672s14 680s14
+101a7 Traceback{41|56A9} 645b7 652r35
+102b7 Suppress_Hex{boolean} 646b7 652r46 666r45 672r45
+103V13 Symbolic_Traceback{string} 104>7 105>7 675b13 683l8 683t26 689s14
+. 695s14
+104r7 E{9|57R9} 676b7 681r49
+105b7 Suppress_Hex{boolean} 677b7 682r12 689r37 695r37
+109V13 Lt{boolean} 109>17 109>23 264b13 267l8 267t10 277r7
+109p17 Left{65P9} 264b17 266r27
+109p23 Right{65P9} 264b23 266r50
+112U14 Init_Module 113<7 114<7 115>7 116>7 228s7 249s13 403b14 429l8 429t19
+. 536s13
+113r7 Module{67R9} 404b7 417m26 417r26 426m25 426r25 428m7
+114b7 Success{boolean} 405b7 413m10 417m36 422r14
+115a7 Module_Name{string} 406b7 412r10 417r13 428r34
+116m7 Load_Address{15|67M9} 407b7 426r35
+119U14 Close_Module 119=28 393b14 397l8 397t20 543s16
+119r28 Module{67R9} 393b28 395m14 395r14 396m21 396r21
+122V13 Value{string} 122>20 204b13 215l8 215t13 375s38 40|125s34 169s17
+122m20 Item{15|67M9} 204b20 206r10 208r44 209r51
+126U14 Add_Module_To_Cache 126>35 127>35 221b14 235l8 235t27 40|125s13
+126a35 Module_Name{string} 221b35 228r41
+127m35 Load_Address{15|67M9} 222b35 228r54
+131K12 Module_Name 148l8 148e19 150b17 301r10 443r19 531r15 624r19 40|37b14
+. 191l5 191t16
+133U17*Build_Cache_For_All_Modules 301s22 40|90b14 129l8 129t35
+136V16*Get{string} 136>21 137^21 531s27 40|135b13 180l8 180t11
+136m21 Addr{15|67M9} 531r32 40|135b18 160r18
+137p21 Load_Addr(15|67M9) 532r32 40|136b18 158r7 166r13
+143V16*Is_Supported{boolean} 144r22 443s31 624s31 40|186b13 189l8 189t20
+152V13 Executable_Name{string} 245s45 337b13 387l8 387t23
+157V13 Get_Executable_Load_Address{15|67M9} 160b<c,__gnat_get_executable_load_address>7
+. 246s45
+164U14 Hexa_Traceback 165>7 166>7 167=7 457s10 509s13 546s16 596b14 612l8
+. 612t22 629s13
+165a7 Traceback{10|47A12} 597b7 607r19 608r42
+166b7 Suppress_Hex{boolean} 598b7 603r10
+167r7 Res{18|35R9} 599b7 604m18 605m18 608m29 609m21
+170U14 Symbolic_Traceback_No_Lock 171>7 172>7 173=7 618b14 638l8 638t34 652s7
+171a7 Traceback{10|47A12} 619b7 625r43 629r29 632r16
+172b7 Suppress_Hex{boolean} 620b7 625r54 629r40 634r16
+173r7 Res{18|35R9} 621b7 625m68 628m21 629m54 635m16
+177U14 Module_Symbolic_Traceback 178>7 179>7 180>7 181=7 435b14 466l8 466t33
+. 581s7 631s13
+178a7 Traceback{10|47A12} 436b7 451r10 457r26
+179r7 Module{67R9} 437b7 445r23 450r10
+180b7 Suppress_Hex{boolean} 438b7 452r10 457r37
+181r7 Res{18|35R9} 439b7 444m18 445m18 446m18 454m10 457m51
+184U14 Multi_Module_Symbolic_Traceback 185>7 186>7 187=7 472b14 510s13 547s16
+. 554l8 554t39 586s7 625s10
+185a7 Traceback{10|47A12} 473b7 477r31 479r10 487r47 498r22 509r29 511r16
+. 511r36 518r39 520r16 531r40 539r19 546r32 548r19 548r39
+186b7 Suppress_Hex{boolean} 474b7 500r22 509r49 512r16 522r16 541r19 546r52
+. 549r19
+187r7 Res{18|35R9} 475b7 479r48 501m22 509m63 513m16 523m16 542m19 546m66
+. 550m19
+190U14 Multi_Module_Symbolic_Traceback 191>7 192>7 193>7 194=7 497s19 519s13
+. 538s16 556b14 590l8 590t39
+191a7 Traceback{10|47A12} 557b7 566r14 572r38 576r57 582r10 582r21 587r10
+. 587r28
+192r7 Module{67R9} 558b7 576r47 583r10
+193b7 Suppress_Hex{boolean} 559b7 584r10 588r10
+194r7 Res{18|35R9} 560b7 585m10 589m10
+197N4 Max_String_Length 648r43
+207i14 J{integer} 208r51 209r63
+224p7 Module{65P9} 227m7 228r20 230m16 230r16 233r7 234r23
+225b7 Success{boolean} 228m32 229r14
+245a13 Exec_Path{string} 249r48
+246m13 Exec_Load{15|67M9} 249r59
+247b13 Success{boolean} 249m39 251r16
+273U14 Module_Cache_Array_Sort[5|23] 6|32b26 39|330s7
+306i10 Count{natural} 310m13 313m16 313r25 318r34 324r56
+307p10 Module{65P9} 311m13 312r19 316r33 318r44 320m16 320r26
+309i14 Phase{integer} 315r19 323r16
+342m7*Gnat_Argv{15|67M9} 343m25 343r25 352r10 365r32
+345A12 Argv_Array(15|67M9)<integer> 346r65
+346K15 Conv[17|39] 365r15
+348V16*locate_exec_on_path{15|67M9} 348>37 349b<c,__gnat_locate_exec_on_path>25
+. 368s15
+348m37 A{15|67M9}
+364m10 Argv0{15|67M9} 368r36 373r21
+367m10 Resolved_Argv0{15|67M9} 371r19 372r21 381r13 382r31
+370m10 Exe_Argv{15|67M9} 375r45
+375a10 Result{string} 385r17
+441b7 Success{boolean} 453m10 453r10 456r14
+477i7 F{natural} 487r58 509r40 509r45 511r27 518r50 531r51 546r43 546r48
+. 548r30
+487m13 Addr{15|67M9} 494r19 496r56
+488i13 Hi{natural} 491m13 492r25 493r29 495m19
+488i17 Lo{natural} 490m13 492r19 493r24 504m19
+488i21 Mid{natural} 493m16 494r54 495r25 496r48 499r37 504r25
+529m13 Load_Addr{15|67M9} 532m45 532r45 536r51
+530a13 M_Name{string} 536r43
+533r13 Module{67R9} 536m26 540r19 543m30 543r30
+534b13 Success{boolean} 536m34 537r16
+562i7 Pos{positive} 566m7 572r32 576r68 578m10 578r17 582r40 587r21
+570l7 Same_Module 572r15 576r15 579l16 579e27
+607i14 J{integer} 608r53
+648r7 Res{18|35R9} 652m60 652r60 655r25
+698i4 Exception_Tracebacks_Symbolic{integer} 701m7 701r7 713r7
+X 40 s-tsmona.adb
+41V13 Is_Shared_Lib{boolean} 41>28 60b13 84l8 84t21 165s13
+41m28 Base{15|67M9} 60b28 77r30
+61N7 EI_NIDENT 68r37
+62M12 u16 69r20
+67R12 Elf32_Ehdr 70e17 74r16
+68a10 e_ident{14|79A9}
+69m10 e_type{62M12} 80r21
+72N7 ET_DYN 80r30
+74r7 Header{67R12} 75m27 75r27 77m11 77r11 80r14
+91R12 link_map 92r39 95c12 107e17 108r29
+92P12 link_map_acc(91R12) 93r29 105r27 112r18 119r12
+96m10 l_addr{15|67M9} 125r56
+99m10 l_name{15|67M9} 123r44 125r44
+102m10 l_ld{15|67M9}
+105p10 l_next{92P12} 127r19
+105p18 l_prev{92P12}
+110R12 r_debug_type 113e17 114r29 116r17
+111i10 r_version{integer}
+112p10 r_map{92P12} 121r21
+116r7*r_debug{110R12} 117m25 117r25 121r13
+119p7 lm{92P12} 121m7 122r13 123r41 125r41 125r53 127m10 127r16
+142R12 Dl_info 147e17 151r33 155r22
+143m10 dli_fname{15|67M9} 169r29
+144m10 dli_fbase{15|67M9} 165r33 166r35
+145m10 dli_sname{15|67M9}
+146m10 dli_saddr{15|67M9}
+149V16*dladdr{14|35I9} 150>10 151^10 152b<c,dladdr>25 160s10
+150m10 addr{15|67M9}
+151p10 info(142R12)
+155r7 info{142R12} 160m24 160r24 165r28 166r30 169r24
+X 41 s-traent.ads
+47K16*Traceback_Entries 38|84r26 86r26 39|49w13 101r29 601r18 664r26 670r26
+. 41|67e29
+56A9*Tracebacks_Array(50M12)<integer> 38|84r44 86r44 39|101r47 664r44 670r44
+58V13*PC_For{15|67M9} 39|608s34
+

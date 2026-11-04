@@ -1,0 +1,38 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+
+U system.exn_int%s	s-exnint.ads		6837b29e NE OL PK
+W system%s		system.ads		system.ali
+W system.exponn%s
+
+D system.ads		20260807074606 898beeee system%s
+D s-exnint.ads		20260807074606 a1b0c4b7 system.exn_int%s
+D s-exponn.ads		20260807074606 400c98c7 system.exponn%s
+D s-exponn.adb		20260807074606 12850e72 system.exponn%b
+G a e
+G c Z s s [expon system__exn_int__exponn_integer 41 13 40_4]
+X 1 system.ads
+37K9*System 214e11 2|34r6 36r9 54r5
+X 2 s-exnint.ads
+36K16*Exn_Int 1|37k9 2|54l12 54e19
+40K12*Exponn_Integer[3|38] 43r14
+42V13*Exn_Integer=43:29{integer}
+42i26 Left{integer}
+42i42 Right{natural}
+X 3 s-exponn.ads
+38k16*Exponn 2|34w13 40r34 3|50e18
+41V13*Expon{integer} 2|43r29[40]
+

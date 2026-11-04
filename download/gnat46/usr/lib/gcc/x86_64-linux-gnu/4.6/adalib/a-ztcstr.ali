@@ -1,0 +1,119 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnvnnnvnnvnnnnnnnnnnnnnnnnnn
+
+U ada.wide_wide_text_io.c_streams%b  a-ztcstr.adb  6e8f0021 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_conversion%s
+W ada.wide_wide_text_io%s  a-ztexio.adb		a-ztexio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c_streams%s  i-cstrea.adb		i-cstrea.ali
+W system%s		system.ads		system.ali
+W system.file_control_block%s  s-ficobl.ads	s-ficobl.ali
+W system.file_io%s	s-fileio.adb		s-fileio.ali
+
+U ada.wide_wide_text_io.c_streams%s  a-ztcstr.ads  a24a8fdc NE OL PK
+W ada.wide_wide_text_io%s  a-ztexio.adb		a-ztexio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c_streams%s  i-cstrea.adb		i-cstrea.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-ztexio.ads		20091028133151 b1a2c6bb
+D a-ztcstr.ads		20090409150019 083f6555
+D a-ztcstr.adb		20090409150019 922ced9f
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20120503154647 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-fileio.ads		20091027141444 529bb6b9
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 10|38r9 53r5 11|35r6 37r14 44r27 85r5
+X 8 a-unccon.ads
+20v14*Unchecked_Conversion 11|35w10 44r31
+X 9 a-ztexio.ads
+52K13*Wide_Wide_Text_IO 1|16k9 9|498e26 10|38r13 53r9 11|37r18 85r9
+54P9*File_Type(373R9) 10|42r27 46r25 11|50r27 61r25
+55E9*File_Mode 55e54 10|47r18 11|44r53 62r18
+373R9 Wide_Wide_Text_AFCB<17|83R9> 424e14 11|67r34
+X 10 a-ztcstr.ads
+38K31*C_Streams 9|52k13 10|53l27 53e36 11|37b36 85l27 85t36
+40K12*ICS=40:35 42r45 48r18
+42V13*C_Stream{13|41M12} 42>23 11|50b13 54l8 54t16
+42p23 F{9|54P9} 11|50b23 52r32 53r14
+45U14*Open 46=7 47>7 48>7 49>7 50>7 11|60b14 83l8 83t12
+46p7 File{9|54P9} 11|61b7 73m34
+47e7 Mode{9|55E9} 11|62b7 75r38
+48m7 C_Stream{13|41M12} 11|63b7 81r30
+49s7 Form{string} 11|64b7 77r30
+50s7 Name{string} 11|65b7 76r30
+X 11 a-ztcstr.adb
+39K12 FIO=39:31 52r7 73r7
+40K12 FCB=40:31 42r18 44r64
+42P12 AP{17|81P9} 52r28 73r30
+44V13 To_FCB[8|20]{17|62E9} 75s30
+67r7 Dummy_File_Control_Block{9|373R9} 68r29 74r30
+X 12 interfac.ads
+36K9*Interfaces 10|36r6 40r24 11|32r6 32r32 12|171e15
+X 13 i-cstrea.ads
+37K20*C_Streams 10|36w17 40r35 11|32w17 32r43 13|274e25
+41M12*FILEs{15|50M12} 10|42r49 48r22 11|50r45 63r18
+X 14 system.ads
+37K9*System 11|33r6 34r6 39r24 40r24 14|153e11
+64M9*Address
+X 15 s-crtl.ads
+50M12*FILEs{14|64M9}
+X 17 s-ficobl.ads
+42K16*File_Control_Block 11|34w13 40r31 17|161e30
+62E9*File_Mode 11|44r68 17|62e66
+81P9*AFCB_Ptr(83R9) 11|42r22
+85m7*Stream{13|41M12} 11|53r16
+X 18 s-fileio.ads
+39K16*File_IO 11|33w13 39r31 18|254e19
+48U14*Open 11|73s11
+49p7 File_Ptr{17|81P9} 11|73r17
+50c7 Dummy_FCB<17|83R9> 11|74r17
+51e7 Mode{17|62E9} 11|75r17
+52s7 Name{string} 11|76r17
+53s7 Form{string} 11|77r17
+54e7 Amethod{character} 11|78r17
+55b7 Creat{boolean} 11|79r17
+56b7 Text{boolean} 11|80r17
+57m7 C_Stream{13|41M12} 11|81r17
+151U14*Check_File_Open 11|52s11
+

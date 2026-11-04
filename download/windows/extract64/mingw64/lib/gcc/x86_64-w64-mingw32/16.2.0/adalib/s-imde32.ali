@@ -1,0 +1,67 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.img_decimal_32%s  s-imde32.ads		977aad33 NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.image_d%s
+Z system.image_i%s
+W system.img_util%s	s-imguti.adb		s-imguti.ali
+
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D system.ads		20260807074606 898beeee system%s
+D s-imaged.ads		20260807074606 13371993 system.image_d%s
+D s-imaged.adb		20260807074606 70bd7361 system.image_d%b
+D s-imagei.ads		20260807074606 11a376a2 system.image_i%s
+D s-imagei.adb		20260807074606 e81b26f1 system.image_i%b
+D s-imde32.ads		20260807074606 9cd7a38f system.img_decimal_32%s
+D s-imguti.ads		20260807074606 7719a4b9 system.img_util%s
+G a e
+G c Z s s [image_decimal system__img_decimal_32__impl 40 14 43_4]
+G c Z s s [set_image_decimal system__img_decimal_32__impl 52 14 43_4]
+G c Z s s [image_integer system__img_decimal_32__impl__image_i 40 14 37_4_43_4]
+G c Z s s [set_image_integer system__img_decimal_32__impl__image_i 48 14 37_4_43_4]
+G c Z s s [set_digits system__img_decimal_32__impl__image_i 36 14 37_4_43_4]
+X 1 interfac.ads
+47K9*Interfaces 247e15 7|36w6 41r21
+65I9*Integer_32<integer> 7|41r32
+X 2 system.ads
+37K9*System 214e11 7|37r6 39r9 76r5
+X 3 s-imaged.ads
+38k16*Image_D 69e19 7|37w13 43r24
+40U14*Image_Decimal 7|50r19[43]
+52U14*Set_Image_Decimal 7|66r19[43]
+X 7 s-imde32.ads
+39K16*Img_Decimal_32 2|37k9 7|76l12 76e26
+41I12*Int32{1|65I9} 43r33 46r15 59r15
+43K12*Impl[3|38] 50r14 66r14
+45U14*Image_Decimal32=50:19
+46i7 V{1|65I9}
+47a7 S{string}
+48i7 P{natural}
+49i7 Scale{integer}
+58U14*Set_Image_Decimal32=66:19
+59i7 V{1|65I9}
+60a7 S{string}
+61i7 P{natural}
+62i7 Scale{integer}
+63i7 Fore{natural}
+64i7 Aft{natural}
+65i7 Exp{natural}
+

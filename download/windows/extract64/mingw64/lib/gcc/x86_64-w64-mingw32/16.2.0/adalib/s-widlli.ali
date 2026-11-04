@@ -1,0 +1,38 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.wid_lli%s	s-widlli.ads		420b4a79 NE OL PK
+W system%s		system.ads		system.ali
+W system.width_i%s
+
+D system.ads		20260807074606 898beeee system%s
+D s-widlli.ads		20260807074606 537cda65 system.wid_lli%s
+D s-widthi.ads		20260807074606 98fc7ef2 system.width_i%s
+D s-widthi.adb		20260807074606 dc1ca476 system.width_i%b
+G a e
+G c Z s s [width_long_long_integerR system__wid_lli__width_long_long_integerGP2510 39 13 none]
+G c Z s s [width_long_long_integer system__wid_lli 39 13 none]
+X 1 system.ads
+37K9*System 214e11 2|34r6 36r9 41r5
+X 2 s-widlli.ads
+36K16*Wid_LLI 1|37k9 2|41l12 41e19
+39V13*Width_Long_Long_Integer[3|39]{natural} 40r26 4|32b17
+X 3 s-widthi.ads
+39v17*Width_I 1|37k9 2|34w13 39r44
+

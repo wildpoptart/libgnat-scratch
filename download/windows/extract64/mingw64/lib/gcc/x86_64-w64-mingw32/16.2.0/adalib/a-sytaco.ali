@@ -1,0 +1,153 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.synchronous_task_control%b  a-sytaco.adb	34208739 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.task_primitives.operations%s  s-taprop.adb  s-taprop.ali
+
+U ada.synchronous_task_control%s  a-sytaco.ads	a7b29b07 BN NE OL PR PK
+W ada%s			ada.ads			ada.ali
+W ada.task_identification%s  a-taside.adb	a-taside.ali
+W system%s		system.ads		system.ali
+W system.os_locks%s	s-oslock.ads		s-oslock.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-sytaco.ads		20260807074606 7a33e96e ada.synchronous_task_control%s
+D a-sytaco.adb		20260807074606 ff556b16 ada.synchronous_task_control%b
+D a-taside.ads		20260807074606 c0a7c8d8 ada.task_identification%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260807074606 49eced87 interfaces.c.strings%s
+D system.ads		20260807074606 898beeee system%s
+D s-atacco.ads		20260807074606 5868e3ba system.address_to_access_conversions%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-multip.ads		20260807074606 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20260807074606 35a74841 system.os_interface%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260807074606 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260807074606 601f6b72 system.task_info%s
+D s-taspri.ads		20260807074606 af22d192 system.task_primitives%s
+D s-taprop.ads		20260807074606 6a572f54 system.task_primitives.operations%s
+D s-taskin.ads		20260807074606 e3b5765b system.tasking%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s b [set_true ada__synchronous_task_control 50 14 none]
+G c Z s b [set_false ada__synchronous_task_control 55 14 none]
+G c Z s b [current_state ada__synchronous_task_control 60 13 none]
+G c Z s b [suspend_until_true ada__synchronous_task_control 64 14 none]
+G c Z s b [initialize ada__synchronous_task_control 72 14 none]
+G c Z s b [finalize ada__synchronous_task_control 75 14 none]
+G c Z s s [suspension_objectIP ada__synchronous_task_control 78 9 none]
+X 1 ada.ads
+18K9*Ada 22e8 3|39r6 41r9 62r16 96r5 4|32r6 37r14 139r10 211r5
+X 2 a-except.ads
+44K13*Exceptions 309e19 4|32w10 139r14
+80U14*Raise_Exception 4|139s25
+X 3 a-sytaco.ads
+41K13*Synchronous_Task_Control 1|18k9 3|72E14 96l9 96e33 4|37b18 211l9 211t33
+47R9*Suspension_Object 50r35 55r36 60r32 64r45 72r37 75r35 78c9 83e4 4|48r37
+. 59r35 68r32 77r36 92r35 129r45
+50U14*Set_True 50=24 89r19 4|92b14 123l8 123t16
+50r24 S{47R9} 52r18 53r26 4|92b24 99m19 99r19 101r10 104r28 105m10 107m10
+. 110m15 110r15
+55U14*Set_False 55=25 90r19 4|77b14 86l8 86t17
+55r25 S{47R9} 57r18 58r26 4|77b25 80m19 80r19 82m7 84m15 84r15
+60V13*Current_State{boolean} 60>28 91r19 4|68b13 71l8 71t21
+60r28 S{47R9} 4|68b28 70r14
+64U14*Suspend_Until_True 64=34 92r19 4|129b14 209l8 209t26
+64r34 S{47R9} 66r18 67r26 4|129b34 144m19 144r19 146r10 147m18 147r18 152r13
+. 153m13 155m21 155r21 163m24 163r24 168m13 170m21 170r21 183m28 183r28 189r19
+. 195m19 199m24 199r24 203m21 203r21
+72U14 Initialize 72=26 85r33 93r19 4|48b14 53l8 53t18
+72r26 S{47R9} 4|48b26 50m24 50r24 52m7
+75U14 Finalize 75=24 86r33 94r19 4|59b14 62l8 62t16
+75r24 S{47R9} 4|59b24 61m22 61r22
+79r7*L{15|42R12} 4|50m26 61m24 80m21 84m17 99m21 110m17 144m21 147m20 155m23
+. 163m26 170m23 183m30 199m26 203m23
+80b7*State{boolean} 4|52m9 70r16 82m9 107m12 152r15 153m15
+81p7*Suspended_Task{26|109P9} 4|101r12 104r30 105m12 146r12 168m15 189r21
+. 195m21
+X 4 a-sytaco.adb
+42K12 SSL=42:31 79r7 85r7 96r10 121r10 143r7 148r10 164r16 206r10
+93p7 Suspended_Task{26|109P9} 104m10 112r10 113r22 115r18 117r18
+130p7 Self_ID{26|109P9} 157r25 161r16 161r44 162r24 168r33 172r13 181r23
+. 189r39 194r22 194r50 202r13 204r21
+X 5 a-taside.ads
+47K13*Task_Identification 3|39w10 62r20 5|108e28
+49@22*Tasking_State 3|62r40
+X 10 system.ads
+37K9*System 3|36r6 37r6 79r32 81r24 4|34r6 35r6 35r45 40r13 42r24 93r24 115r34
+. 130r26 136r10 137r18 172r37 181r32 202r37 10|214e11
+X 15 s-oslock.ads
+37K16*OS_Locks 3|36w13 79r39 15|62e20
+42R12*RTS_Lock{40R9} 3|79r48
+X 18 s-soflin.ads
+45K16*Soft_Links 4|34w13 42r31 18|430e22
+62P9*No_Param_Proc
+172p4*Abort_Defer{62P9} 4|79r11 96r14 143r11
+176p4*Abort_Undefer{62P9} 4|85r11 121r14 148r14 164r20 206r14
+X 20 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+X 24 s-taspri.ads
+38K16*Task_Primitives 4|35r13 35r52 24|89e27
+X 25 s-taprop.ads
+39K32*Operations 4|35w29 35w68 25|543e38
+135V13*Self{26|109P9} 4|130s52
+140n7*PO_Level{139E9} 4|50r36
+151U14*Initialize_Lock 4|50s7
+176U14*Finalize_Lock 4|61s7
+184U14*Write_Lock 4|80s7 99s7 144s7 183s16
+185U14*Write_Lock 4|113s10 157s13
+232U14*Unlock 4|84s7 110s7 147s10 155s13 163s16 170s13 199s16 203s13
+233U14*Unlock 4|117s10 162s16 204s13
+356U14*Sleep 4|181s16
+394U14*Wakeup 4|115s10
+533V13*Is_Task_Context{boolean} 4|95s10 120s10
+X 26 s-taskin.ads
+47K16*Tasking 3|37w13 81r31 4|40r20 93r31 115r41 130r33 136r17 137r25 172r44
+. 181r39 202r44 26|1235e19
+109P9*Task_Id(107R9) 3|81r39 4|40r28 93r39 130r41
+116V13*Self{109P9} 4|137s33
+147n7*Runnable{132E9} 4|115r49 202r52
+211n7*Suspension_Object_Sleep{132E9} 4|172r52 181r47
+450V13*Detect_Blocking{boolean} 4|136s25
+506e7*State{132E9} 4|172m28 202m28
+563i7*Protected_Action_Nesting{natural} 4|137r45
+841I12*ATC_Level_Base{integer}
+856I12*ATC_Level{841I12}
+991r7*Common{505R9} 4|137r38 172m21 202m21
+1123i7*ATC_Nesting_Level{856I12} 4|161r52 194r58
+1143i7*Pending_ATC_Level{841I12} 4|161r24 194r30
+

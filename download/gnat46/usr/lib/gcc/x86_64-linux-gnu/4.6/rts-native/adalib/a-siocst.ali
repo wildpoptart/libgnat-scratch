@@ -1,0 +1,123 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnvnnvnnnnnnnnnnnnnnnnnn
+
+U ada.sequential_io.c_streams%b  a-siocst.adb	ed1a4aea NE OL PK GE
+W ada%s			ada.ads			ada.ali
+W ada.sequential_io%s
+W ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c_streams%s  i-cstrea.adb		i-cstrea.ali
+W system%s		system.ads		system.ali
+W system.file_control_block%s  s-ficobl.ads	s-ficobl.ali
+W system.file_io%s	s-fileio.adb		s-fileio.ali
+W system.sequential_io%s  s-sequio.adb		s-sequio.ali
+
+U ada.sequential_io.c_streams%s  a-siocst.ads	2069b951 BN NE OL PK GE
+W ada%s			ada.ads			ada.ali
+W ada.sequential_io%s
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c_streams%s  i-cstrea.adb		i-cstrea.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-sequio.ads		20090409150019 7b5d9d38
+D a-siocst.ads		20090409150019 40e3085b
+D a-siocst.adb		20090409150019 a510aafd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20120503154647 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-fileio.ads		20091027141444 529bb6b9
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-sequio.ads		20090409150019 fc7560a7
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 7|39r9 54r5 8|36r6 38r14 46r27 86r5
+X 6 a-sequio.ads
+43k13*Sequential_IO 1|16k9 6|158e22 7|39r13 54r9 8|38r18 86r9
+53P9*File_Type(23|43R9) 7|43r27 47r25 8|52r27 63r25
+55E9*File_Mode 55e54 7|48r18 8|46r53 64r18
+X 7 a-siocst.ads
+39k27 C_Streams 6|43k13 7|54l23 54e32 8|38b32 86l23 86t32
+41K12*ICS=41:35 43r45 49r18
+43V13*C_Stream{13|41M12} 43>23 8|52b13 56l8 56t16
+43p23 F{6|53P9} 8|52b23 54r32 55r14
+46U14*Open 47=7 48>7 49>7 50>7 51>7 8|62b14 84l8 84t12
+47p7 File{6|53P9} 8|63b7 75m34
+48e7 Mode{6|55E9} 8|64b7 77r38
+49m7 C_Stream{13|41M12} 8|65b7 83r30
+50s7 Form{string} 8|66b7 79r30
+51s7 Name{string} 8|67b7 78r30
+X 8 a-siocst.adb
+40K12 FIO=40:31 54r7 75r7
+41K12 FCB=41:31 44r18 46r64
+42K12 SIO=42:31 69r34
+44P12 AP{17|81P9} 54r28 75r30
+46V13 To_FCB[11|20]{17|62E9} 77s30
+69r7 Dummy_File_Control_Block{23|43R9} 70r29 76r30
+X 11 a-unccon.ads
+20v14*Unchecked_Conversion 8|36w10 46r31
+X 12 interfac.ads
+36K9*Interfaces 7|36r6 41r24 8|32r6 32r32 12|171e15
+X 13 i-cstrea.ads
+37K20*C_Streams 7|36w17 41r35 8|32w17 32r43 13|274e25
+41M12*FILEs{15|50M12} 7|43r49 49r22 8|52r45 65r18
+X 14 system.ads
+37K9*System 8|33r6 34r6 35r6 40r24 41r24 42r24 14|153e11
+64M9*Address
+X 15 s-crtl.ads
+50M12*FILEs{14|64M9}
+X 17 s-ficobl.ads
+42K16*File_Control_Block 8|34w13 41r31 17|161e30
+62E9*File_Mode 8|46r68 17|62e66
+81P9*AFCB_Ptr(83R9) 8|44r22
+85m7*Stream{13|41M12} 8|55r16
+X 18 s-fileio.ads
+39K16*File_IO 8|33w13 40r31 18|254e19
+48U14*Open 8|75s11
+49p7 File_Ptr{17|81P9} 8|75r17
+50c7 Dummy_FCB<17|83R9> 8|76r17
+51e7 Mode{17|62E9} 8|77r17
+52s7 Name{string} 8|78r17
+53s7 Form{string} 8|79r17
+54e7 Amethod{character} 8|80r17
+55b7 Creat{boolean} 8|81r17
+56b7 Text{boolean} 8|82r17
+57m7 C_Stream{13|41M12} 8|83r17
+151U14*Check_File_Open 8|54s11
+X 23 s-sequio.ads
+39K16*Sequential_IO 8|35w13 42r31 23|78e25
+43R9*Sequential_AFCB<17|83R9> 8|69r38 23|43e57
+

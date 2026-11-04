@@ -1,0 +1,31 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+
+U system.vectors%s	s-vector.ads		f44e415e NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20260807074606 898beeee system%s
+D s-vector.ads		20260807074606 7dc5afb0 system.vectors%s
+G a e
+X 1 system.ads
+37K9*System 214e11 2|42r9 45r26 47r35 47r54 48r24 52r5
+71N4*Storage_Unit 2|47r61
+72N4*Word_Size 2|45r33 47r42 48r31
+X 2 s-vector.ads
+42K16*Vectors 1|37k9 2|52l12 52e19
+45M9*Vector 46r8 48r8
+

@@ -1,0 +1,58 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U direct_io%s		directio.ads		708fca39 NE OL
+W ada%s			ada.ads			ada.ali
+W ada.direct_io%s
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-direio.ads		20260807074606 a93c9b31 ada.direct_io%s
+D a-direio.adb		20260807074606 48224b26 ada.direct_io%b
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-ioexce.ads		20260807074606 40018c65 ada.io_exceptions%s
+D a-stream.ads		20260807074606 cb01a8f8 ada.streams%s
+D a-string.ads		20260807074606 90ac6797 ada.strings%s
+D a-sttebu.ads		20260807074606 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260807074606 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260807074606 2dbf449c ada.tags%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D directio.ads		20260807074606 d9b35108 direct_io%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-cstrea.ads		20260807074606 ffd01b9d interfaces.c_streams%s
+D system.ads		20260807074606 898beeee system%s
+D s-crtl.ads		20260807074606 823b6536 system.crtl%s
+D s-direio.ads		20260807074606 7c86ede3 system.direct_io%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-ficobl.ads		20260807074606 dc5161d4 system.file_control_block%s
+D s-fileio.ads		20260807074606 45ce2f0f system.file_io%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-putima.ads		20260807074606 1b989439 system.put_images%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+G a e
+X 1 ada.ads
+18K9*Ada 22e8 12|22r6 24r35
+X 2 a-direio.ads
+43k13*Direct_IO 193e18 12|22w10 24r39
+X 12 directio.ads
+24k17*Direct_IO
+

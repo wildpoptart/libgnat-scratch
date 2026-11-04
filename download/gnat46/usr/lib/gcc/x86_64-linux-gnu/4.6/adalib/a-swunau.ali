@@ -1,0 +1,84 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U ada.strings.wide_unbounded.aux%b  a-swunau.adb  014f3844 NE OL PK
+W ada.strings.wide_unbounded%s  a-stwiun.adb	a-stwiun.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+
+U ada.strings.wide_unbounded.aux%s  a-swunau.ads  3933ea97 BN NE OL PR PK
+W ada.strings.wide_unbounded%s  a-stwiun.adb	a-stwiun.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-stwima.ads		20090409150019 a17edcba
+D a-stwiun.ads		20101220173206 141d91a6
+D a-swunau.ads		20100618122949 2d2e7b31
+D a-swunau.adb		20100623125137 2c614375
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 8|37r9 76r5 9|32r14 65r5
+X 5 a-string.ads
+16K13*Strings 1|16k9 5|35e16 8|37r13 76r9 9|32r18 65r9
+X 7 a-stwiun.ads
+49K21*Wide_Unbounded 5|16k13 7|492e31 8|37r21 76r17 9|32r26 65r17
+52R9*Unbounded_Wide_String 453e14 8|44r11 60r40 69r19 9|39r11 55r19
+59P9*Wide_String_Access(wide_string) 8|70r12 9|56r12 58r11
+61U14*Free 9|62s7
+76U14*Set_Unbounded_Wide_String 8|61r14 9|61s7
+412R9 Shared_Wide_String
+416i7*Last{natural} 9|47r24
+417a7*Data{wide_string} 9|44m37
+422P9 Shared_Wide_String_Access(412R9)
+452p7*Reference{422P9} 9|44r27 47r14
+X 8 a-swunau.ads
+37K36*Aux 7|49k21 8|76l32 76e35 9|32b41 65l32 65t35
+40A12*Big_Wide_String{wide_string}<integer> 41r46 9|43r19
+41P9*Big_Wide_String_Access(40A12) 45r15 9|40r15
+43U14*Get_Wide_String 44>7 45<7 46<7 47r19 9|38b14 48l8 48t23
+44r7 U{7|52R9} 9|39b7 44m25 47r12
+45p7 S{41P9} 9|40b7 46m7
+46i7 L{natural} 9|41b7 47m7
+60U14*Set_Wide_String=61:14
+60r31 UP{7|52R9}
+60s63 S{wide_string}
+68U14*Set_Wide_String 69=7 70>7 9|54b14 63l8 63t23
+69r7 UP{7|52R9} 9|55b7 61m34
+70p7 S{7|59P9} 9|56b7 58r33 61r38
+X 9 a-swunau.adb
+43a7 X{8|40A12} 44m11 46m12
+58p7 X{7|59P9} 62m13
+

@@ -1,0 +1,258 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnvvnnnnnnnvnnnnnnnnnvvnnnvnnvnvnnnnnnnnnnnnvnnnnnnnnvvvnnvnvvnvnnnnnnnnnnnnnnnn
+
+U system.tasking.protected_objects.entries%b  s-tpoben.adb  7a9a5f5e NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.restrictions%s	s-restri.adb		s-restri.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.task_primitives.operations%s  s-taprop.adb  s-taprop.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.initialization%s  s-tasini.adb	s-tasini.ali  EA
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U system.tasking.protected_objects.entries%s  s-tpoben.ads  a416dd28 EB EE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.finalization%s	a-finali.adb		a-finali.ali
+W ada.finalization.list_controller%s  a-filico.adb  a-filico.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_conversion%s
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-uncdea.ads		20070406091342 f15a5ed1
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-atacco.ads		20090409150019 1dc856ad
+D s-exctab.ads		20090417131547 66e51330
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-linux.ads		20090730092306 47911ab1
+D s-multip.ads		20101011073009 38ac9f73
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-restri.ads		20091130110856 ba60cf37
+D s-rident.ads		20101018103456 4282a67a
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stausa.ads		20101018101807 bba781f7
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-tasinf.ads		20090409150019 21316953
+D s-taspri.ads		20080408071349 af44aca8
+D s-taprop.ads		20090409150019 07f79e46
+D s-taskin.ads		20101021101406 b2eaee08
+D s-tasini.ads		20090409150019 cd8187f9
+D s-taprob.ads		20090409150019 502249e3
+D s-tpoben.ads		20090409150019 e8374469
+D s-tpoben.adb		20100618194843 8fbc1094
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 36|45r6 46r6 77r6 153r10 155r10 37|44r6 165r9
+X 2 a-except.ads
+63P9*Exception_Id(26|122R9)
+X 3 a-finali.ads
+42K13*Finalization 71e21 36|45w10 77r10
+53H9*Limited_Controlled 69e55 36|77r23
+56U14*Initialize<15|58p14>
+X 7 a-unccon.ads
+20v14*Unchecked_Conversion 36|46w10 153r14 155r14
+X 8 a-uncdea.ads
+20u15*Unchecked_Deallocation 37|44w10 165r13
+X 11 system.ads
+37K9*System 153e11 36|48r9 56r13 84r23 90r17 93r21 111r27 153r63 155r36 158r50
+. 172r27 206r16 230r5 37|46r6 47r6 48r6 50r6 54r14 56r25 84r27 182r50 207r27
+. 217r27 222r39 240r34 241r34 397r16 453r13 463r5
+64M9*Address 36|56r20 84r30 153r70 155r43 172r34 37|207r34
+105I12*Any_Priority{integer} 36|90r24 93r28 111r34 158r57 206r23 37|84r34
+. 182r57 240r41 241r41 397r23
+106I12*Priority{105I12} 37|217r34
+107I12*Interrupt_Priority{105I12} 37|222r46
+X 15 s-finroo.ads
+60U14*Adjust
+X 19 s-parame.ads
+51K16*Parameters 204e22 37|48w13 58r8
+150b4*Single_Lock{boolean} 37|93r10 108r13 118r13 148r10
+X 20 s-restri.ads
+45K16*Restrictions 73e24 37|47w13 296r23
+61V13*Abort_Allowed{boolean} 37|296s36
+X 26 s-stalib.ads
+122R9*Exception_Data
+X 31 s-taspri.ads
+45K16*Task_Primitives 123e27 36|79r35 37|46r13 56r32 59r8 453r20
+48R9*Lock 36|79r51
+X 32 s-taprop.ads
+39K32*Operations 546e38 37|46w29 56r48 59r24 453r36
+120V13*Self{33|107P9} 37|83s52 213s48 295s15
+133U14*Initialize_Lock 37|237s7
+160U14*Finalize_Lock 37|154s12
+166U14*Write_Lock 37|91s12 112s15 298s7
+172U14*Write_Lock 37|102s15 135s18
+197U14*Read_Lock 37|364s7
+221U14*Unlock 37|152s12 460s7
+226U14*Unlock 37|106s15 137s18
+287U14*Set_Ceiling 37|453s47
+418U14*Lock_RTS 37|94s10 119s13
+421U14*Unlock_RTS 37|109s13 149s10
+X 33 s-taskin.ads
+47K16*Tasking 11|37k9 33|1130e19 36|48r16 230r12 37|50r13 54r21 463r12
+105R9*Ada_Task_Control_Block 1084e14
+107P9*Task_Id(105R9) 36|103r15 37|81r27 83r36 213r32 306r32 376r32 429r32
+110p4*Null_Task{107P9} 37|242r34 441r29
+114V13*Self{107P9} 37|280s50 306s43 360s50 376s43 429s43
+229I9*Entry_Index<integer> 37|256r40 414r27
+238R9*Entry_Call_Record 849e14
+240P9*Entry_Call_Link(238R9) 36|87r26 37|80r27
+242R9*Entry_Queue 245e14 36|68r48
+243p7*Head{240P9} 37|129r48 250m34
+244p7*Tail{240P9} 37|139r60 251m34
+253P9*String_Access(string) 36|212r16 37|409r16
+255A9*Entry_Names_Array(253P9)<229I9> 37|166r12 256r16
+258P9*Entry_Names_Array_Access(255A9) 36|139r21 37|162r15 166r31
+260U14*Free_Entry_Names_Array 37|173s7
+280n7*Done{267E9} 37|136r70
+393V13*Detect_Blocking{boolean} 37|280s10 304s10 360s10 374s10 427s10
+462i7*Base_Priority{11|105I12} 37|103r46
+496i7*Protected_Action_Nesting{natural} 37|315m28 316r30 385m28 386r30 436r43
+. 443m28 444r30
+707i4*Unspecified_Priority{integer} 37|216r26
+766p7*Self{107P9} 37|132r34
+787p7*Exception_To_Raise{2|63P9} 37|133m24
+793p7*Next{240P9} 37|140r38
+892r7*Common{449R9} 37|103r39 315m21 316r23 385m21 386r23 436r36 443m21 444r23
+907i7*New_Base_Priority{11|105I12} 37|104m18
+1041i7*Deferral_Level{natural} 37|295r20
+X 34 s-tasini.ads
+35K24*Initialization 190e34 37|50w21 105r10 136r13 236r7 238r7
+115U14*Defer_Abort_Nestable 37|236s22
+118U14*Undefer_Abort_Nestable 37|238s22
+136U14*Change_Base_Priority 37|105s25
+161U14*Wakeup_Entry_Caller 37|136s28
+X 35 s-taprob.ads
+48K24*Protected_Objects 33|47k16 35|246e37 36|48r24 230r20 37|54r29 463r20
+126I9*Protected_Entry_Index<33|229I9> 36|52r6 52r40 57r13 58r16 68r13 76r43
+. 211r16 37|408r16
+150R9*Entry_Body 153e14 36|61r57
+X 36 s-tpoben.ads
+48K42*Entries 35|48k24 36|230l38 230e45 37|54b47 463l38 463t45
+51I12*Positive_Protected_Entry_Index{35|126I9} 61r13
+54P9*Find_Body_Index_Access(35|126I9) 133r25 174r27 37|209r27
+56m9 O{11|64M9}
+57i9 E{35|126I9}
+60A9*Protected_Entry_Body_Array(35|150R9)<35|126I9> 65r51
+65P9*Protected_Entry_Body_Access(60A9) 129r22 173r27 37|208r27
+67A9*Protected_Entry_Queue_Array(33|242R9)<35|126I9> 137r22
+76R9*Protection_Entries<3|53R9> 3|56P14 15|60p14 36|76d29 143e14 148r49 210r16
+. 226P25 226r51 37|65r41 79r51 161r41 407r16
+76i29*Num_Entries{35|126I9} 137r56 37|256r60
+79r7*L{31|48R9} 37|91m31 112m34 152m27 154m34 237m46 298m26 364m25 454m23
+. 460m22
+84m7*Compiler_Info{11|64M9} 37|243m14
+87p7*Call_In_Progress{33|240P9} 37|245m14
+90i7*Ceiling{11|105I12} 37|104r46 240m14 451r39 457m17
+93i7*New_Ceiling{11|105I12} 37|184r21 241m14 399m14 451r17 454r40 457r35
+103p7*Owner{33|107P9} 37|242m14 280r42 311m20 360r42 381m20 437r46 441m20
+111i7*Old_Base_Priority{11|105I12} 37|122m17
+114b7*Pending_Action{boolean} 37|123m17 244m14
+126b7*Finalized{boolean} 37|87r17 146m14 269r17 341r17
+129p7*Entry_Bodies{65P9} 37|246m14
+133p7*Find_Body_Index{54P9} 37|247m14
+137a7*Entry_Queues{67A9} 37|128r23 129r31 139r43 249r23 250m17 251m17
+139p7*Entry_Names{33|258P9} 37|162r50 255m17 412r29 414r14
+148P9*Protection_Entries_Access(76R9) 153r36 155r52 158r16 162r16 170r27
+. 179r37 187r27 192r47 205r16 216r39 37|182r16 192r16 205r27 265r27 322r37
+. 337r47 396r16 421r39
+152V13*To_Address[7|20]{11|64M9}
+154V13*To_Protection[7|20]{148P9}
+157V13*Get_Ceiling{11|105I12} 158>7 37|181b13 185l8 185t19
+158p7 Object{148P9} 37|182b7 184r14
+161V13*Has_Interrupt_Or_Attach_Handler{boolean} 162>7 37|191b13 198l8 198t39
+. 221s18
+162p7 Object{148P9} 37|192b7 195r29
+169U14*Initialize_Protection_Entries 170>7 171>7 172>7 173>7 174>7 175>7
+. 37|204b14 258l8 258t37
+170p7 Object{148P9} 37|205b7 221r51 237m39 240r7 241r7 242r7 243r7 244r7
+. 245r7 246r7 247r7 249r16 250r10 251r10 255r10 256r53
+171i7 Ceiling_Priority{integer} 37|206b7 212r34
+172m7 Compiler_Info{11|64M9} 37|207b7 243r34
+173p7 Entry_Bodies{65P9} 37|208b7 246r34
+174p7 Find_Body_Index{54P9} 37|209b7 247r34
+175b7 Build_Entry_Names{boolean} 37|210b7 254r10
+179U14*Lock_Entries 179>28 37|322b14 331l8 331t20
+179p28 Object{148P9} 37|322b28 326r21
+186U14*Lock_Entries 187>7 188<7 37|264b14 320l8 320t20 326s7
+187p7 Object{148P9} 37|265b7 269r10 280r35 298m19 311r13
+188b7 Ceiling_Violation{boolean} 37|266b7 298m36
+192U14*Lock_Read_Only_Entries 192>38 37|337b14 389l8 389t30
+192p38 Object{148P9} 37|337b38 341r10 360r35 364m18 381r13
+204U14*Set_Ceiling 205>7 206>7 37|395b14 400l8 400t19
+205p7 Object{148P9} 37|396b7 399r7
+206i7 Prio{11|105I12} 37|397b7 399r29
+209U14*Set_Entry_Name 210>7 211>7 212>7 37|406b14 415l8 415t22
+210c7 Object<76R9> 37|407b7 412r22 414r7
+211i7 Pos{35|126I9} 37|408b7 414r40
+212p7 Val{33|253P9} 37|409b7 414r49
+216U14*Unlock_Entries 216>30 37|421b14 461l8 461t22
+216p30 Object{148P9} 37|421b30 437r39 441r13 451r10 451r32 454m16 454r33
+. 457r10 457r28 460m15
+226U25 Finalize<3|57p14> 226=35 37|79b25 155l8 155t16
+226r35 Object{76R9} 37|79b35 87r10 91m24 104r39 112m27 122m10 123m10 128r16
+. 129r24 139r36 144r25 146m7 152m20 154m27
+X 37 s-tpoben.adb
+56K12 STPO=56:48 83r47 91r7 102r10 106r10 112r10 135r13 137r13 152r7 154r7
+. 213r43 295r10
+65U14 Free_Entry_Names 65>32 144s7 161b14 175l8 175t24
+65r32 Object{36|76R9} 161b32 162r43
+72e4 Locking_Policy{character} 73m22 220r10 452r13
+80p7 Entry_Call{33|240P9} 129m10 131r16 132r23 133r13 136r58 139r23 140m13
+. 140r27
+81p7 Caller{33|107P9} 132m13 135r30 137r26
+82b7 Ceiling_Violation{boolean} 91m54 97r10 112m57 114r13
+83p7 Self_ID{33|107P9} 102r27 103r31 104r10 105r47 106r23 136r49
+84i7 Old_Base_Priority{11|105I12} 103m10 122r38
+128i11 E<33|229I9> 129r45 139r57
+162p7 Names{33|258P9} 169r10 173r31 174m38
+164U17 Free_Entry_Names_Array_Access[8|20] 174s7
+212i7 Init_Priority{integer} 216r10 217m10 222r18 237r24 240r55 241r55
+213p7 Self_ID{33|107P9} 236r44 238r46
+249i11 E<33|229I9> 250r31 251r31
+306p13 Self_Id{33|107P9} 311r29 315r13 316r15
+323b7 Ceiling_Violation{boolean} 326m29 328r10
+338b7 Ceiling_Violation{boolean} 364m35 366r10
+376p13 Self_Id{33|107P9} 381r29 385r13 386r15
+429p13 Self_Id{33|107P9} 436r28 437r54 443r13 444r15
+

@@ -1,0 +1,94 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnvvnnnnnnnnnnnnnnnnnn
+
+U system.memory%b	s-memory.adb		0936cab5 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.crtl%s		s-crtl.ads		s-crtl.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+U system.memory%s	s-memory.ads		e96a4b1e EB NE OL PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-unccon.ads		20070406091342 f9eb8f06
+D system.ads		20120503154647 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-memory.ads		20090417131547 ca8bbc15
+D s-memory.adb		20090417131547 6bf297be
+D s-parame.ads		20091130110856 9c5d83fa
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-traent.ads		20090417130712 5221ee41
+X 1 ada.ads
+16K9*Ada 19e8 7|46r6 53r8
+X 2 a-except.ads
+55K13*Exceptions 370e19 7|46w10 53r12
+95U14*Raise_Exception 7|76s10 97s10 132s10 144s10
+X 4 system.ads
+37K9*System 153e11 6|45r9 53r42 68r26 77r14 78r29 107r5 7|47r6 48r6 49r6
+. 51r14 54r8 56r30 56r57 57r13 59r28 60r14 63r13 63r36 63r63 64r14 70r42
+. 71r21 89r30 92r30 96r19 107r26 123r14 125r14 127r21 136r36 139r36 143r19
+. 150r5
+64M9*Address 6|53r49 68r33 77r21 78r36 7|56r64 59r35 63r20 63r70 70r49 71r28
+. 107r33 123r21 125r21 127r28
+66m4*Null_Address{64M9} 7|96r26 143r26
+78V13*"="{boolean} 7|96r17 143r17
+X 5 s-crtl.ads
+38K16*CRTL 199e16 7|49w13 56r37 57r20 60r21 63r43 64r21 89r37 92r37 136r43
+. 139r43
+60M9*size_t 7|56r42 63r48 89r42 92r42 136r48 139r48
+109U14*free 7|60r26
+137V13*malloc{4|64M9} 7|57r25
+155V13*realloc{4|64M9} 7|64r26
+X 6 s-memory.ads
+45K16*Memory 4|37k9 6|107l12 107e18 7|51b21 150l12 150t18
+48M9*size_t 53r27 78r14 7|70r27 72r21 75r17 124r14 128r30 131r17
+53V13*Alloc{4|64M9} 53>20 103r22 7|70b13 101l8 101t13
+53m20 Size{48M9} 7|70b20 72r31 75r10 84r10
+68U14*Free 68>20 104r22 7|107b14 116l8 116t12
+68m20 Ptr{4|64M9} 7|107b20 110r18 113r18
+76V13*Realloc{4|64M9} 77>7 78>7 105r22 7|122b13 148l8 148t15
+77m7 Ptr{4|64M9} 7|123b7 136r31 139r31
+78m7 Size{48M9} 7|124b7 128r40 131r10
+X 7 s-memory.adb
+56V13 c_malloc=57:25{4|64M9} 89s20 92s20
+56m23 Size{5|60M9}
+59U14 c_free=60:26 110s10 113s10
+59m22 Ptr{4|64M9}
+62V13 c_realloc=64:26{4|64M9} 136s20 139s20
+63m7 Ptr{4|64M9}
+63m29 Size{5|60M9}
+71m7 Result{4|64M9} 89m10 92m10 96r10 100r14
+72m7 Actual_Size{6|48M9} 85m10 89r50 92r50
+127m7 Result{4|64M9} 136m10 139m10 143r10 147r14
+128m7 Actual_Size{6|48M9} 136r56 139r56
+X 8 s-parame.ads
+51K16*Parameters 7|48w13 88r10 109r10 135r10 8|204e22
+163b4*No_Abort{boolean} 7|88r21 109r21 135r21
+X 9 s-soflin.ads
+45K16*Soft_Links 7|47w13 54r15 9|397e22
+60P9*No_Param_Proc
+167p4*Abort_Defer{60P9} 7|91r10 112r10 138r10
+171p4*Abort_Undefer{60P9} 7|93r10 114r10 140r10
+

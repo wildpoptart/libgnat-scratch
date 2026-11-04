@@ -1,0 +1,83 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.command_line%b	a-comlin.adb		63d98acc NE OL PK
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+N A105:7 gnatcheck exempt_on "Improper_Returns" "early returns for performance"
+N A118:7 gnatcheck exempt_off "Improper_Returns"
+
+U ada.command_line%s	a-comlin.ads		3cdef8c9 NE OL PR PK
+W ada%s			ada.ads			ada.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-comlin.ads		20260807074606 4aa66568 ada.command_line%s
+D a-comlin.adb		20260807074606 a0f4014a ada.command_line%b
+D system.ads		20260807074606 898beeee system%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+G a e
+G c Z s b [argument_count ada__command_line 43 13 none]
+G c Z s b [argument ada__command_line 56 13 none]
+G c Z s b [command_name ada__command_line 66 13 none]
+G c Z s s [set_exit_status ada__command_line 79 14 none]
+G c Z s s [arg_numsIP ada__command_line 135 9 none]
+G c Z b b [arg_count ada__command_line 36 13 none]
+G c Z b b [fill_arg ada__command_line 39 14 none]
+G c Z b b [len_arg ada__command_line 42 13 none]
+G c Z b b [initialized ada__command_line 49 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 2|40r9 148r5 3|34r14 121r5
+X 2 a-comlin.ads
+40K13*Command_Line 1|18k9 2|121E4 148l9 148e21 3|34b18 121l9 121t21
+43V13*Argument_Count{natural} 57s24 3|60s19 78b13 85l8 85t22
+56V13*Argument{string} 56>23 3|58b13 72l8 72t16
+56i23 Number{positive} 57r14 3|58b23 60r10 66r46 66r71
+66V13*Command_Name{string} 3|103b13 119l8 119t20
+74I9*Exit_Status<integer> 76r23 77r23 79r38 121r23 122r23
+76i4*Success{74I9} 121c4
+77i4*Failure{74I9} 122c4
+79U14*Set_Exit_Status 79>31 146b<c,__gnat_set_exit_status>22
+79i31 Code{74I9}
+131i4 Remove_Count{natural} 3|83r16
+135A9 Arg_Nums(positive)<integer> 136r32
+136P9 Arg_Nums_Ptr(135A9) 141r18
+141p4 Remove_Args{136P9} 3|66r22 66r58 82r17
+X 3 a-comlin.adb
+36V13 Arg_Count{natural} 37b<c,__gnat_arg_count>22 82s41
+39U14 Fill_Arg 39>24 39>44 40b<c,__gnat_fill_arg>22 69s10 115s10
+39m24 A{4|67M9}
+39i44 Arg_Num{integer}
+42V13 Len_Arg{integer} 42>22 43b<c,__gnat_len_arg>22 67s37 112s37
+42i22 Arg_Num{integer}
+49V13 Initialized{boolean} 81s18 91b13 97l8 97t19 107s14
+65i10 Num{positive} 67r46 69r33
+67a10 Arg{string} 69m20 69r20 70r17
+92m7*gnat_argv{4|67M9} 93m25 93r25 96r14
+112a10 Arg{string} 115m20 115r20 116r17
+X 4 system.ads
+37K9*System 3|32w6 32w18 39r28 92r19 96r27 4|214e11
+67M9*Address 3|39r35 92r26
+69m4*Null_Address{67M9} 3|96r34
+81V14*"="{boolean} 3|96r24
+

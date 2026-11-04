@@ -1,0 +1,291 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_FIXED_POINT
+RV NO_LONG_LONG_INTEGERS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.win32%s	s-win32.ads		a52f52d5 NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s s [getlasterror system__win32 87 13 none]
+G c Z s s [createfilea system__win32 179 13 none]
+G c Z s s [createfile system__win32 189 13 none]
+G c Z s s [getfilesize system__win32 199 13 none]
+G c Z s s [setfilepointer system__win32 204 13 none]
+G c Z s s [writefile system__win32 211 13 none]
+G c Z s s [readfile system__win32 219 13 none]
+G c Z s s [closehandle system__win32 227 13 none]
+G c Z s s [createfilemapping system__win32 230 13 none]
+G c Z s s [mapviewoffile system__win32 239 13 none]
+G c Z s s [unmapviewoffile system__win32 247 13 none]
+G c Z s s [multibytetowidechar system__win32 250 13 none]
+G c Z s s [getsysteminfo system__win32 278 14 none]
+G c Z s s [getsystemtime system__win32 297 14 none]
+G c Z s s [getsystemtimeasfiletime system__win32 300 14 none]
+G c Z s s [filetimetosystemtime system__win32 303 13 none]
+G c Z s s [systemtimetofiletime system__win32 308 13 none]
+G c Z s s [filetimetolocalfiletime system__win32 313 13 none]
+G c Z s s [localfiletimetofiletime system__win32 318 13 none]
+G c Z s s [sleep system__win32 323 14 none]
+G c Z s s [queryperformancecounter system__win32 326 13 none]
+G c Z s s [getmodulehandleex system__win32 335 13 none]
+G c Z s s [getmodulefilename system__win32 341 13 none]
+G c Z s s [freelibrary system__win32 347 13 none]
+G c Z s s [overlappedIP system__win32 163 9 none]
+G c Z s s [security_attributesIP system__win32 172 9 none]
+G c Z s s [system_infoIP system__win32 265 9 none]
+G c Z s s [systemtimeIP system__win32 285 9 none]
+X 3 interfac.ads
+47K9*Interfaces 247e15 9|37r6 55r23 60r26 61r26 62r26 63r26 64r26 65r26 66r26
+. 69r26 70r22
+X 4 i-c.ads
+33K20*C 605e17 9|37w17 55r34 60r37 61r37 62r37 63r37 64r37 65r37 66r37 69r37
+. 70r33
+62I9*int<integer> 9|69r39 70r35
+64I9*long<integer> 9|64r39
+72M9*unsigned_short 9|62r39
+73M9*unsigned_long 9|60r39 61r39
+76M9*unsigned_char 9|63r39
+89I9*ptrdiff_t<long_long_integer> 9|55r36
+92M9*size_t 9|66r39
+109E9*char<character> 9|65r39
+X 5 system.ads
+37K9*System 214e11 9|39r9 244r45 247r46 253r24 255r24 350r5
+67M9*Address 9|53r21 180r31 190r31 213r32 221r30 236r30 244r52 247r53 253r31
+. 255r31 337r22 343r20
+X 9 s-win32.ads
+39K16*Win32 5|37k9 9|350l12 350e17
+51O9*LARGE_INTEGER 327r35
+53M12*PVOID{5|67M9} 174r29 268r37 269r37
+55I9*HANDLE<4|89I9> 57r36 168r22 186r31 186r46 196r31 196r46 200r24 205r30
+. 212r32 220r30 227r36 231r30 236r46 240r30 338r29 342r20 347r36
+57i4*INVALID_HANDLE_VALUE{55I9}
+58N4*INVALID_FILE_SIZE
+60M9*ULONG<4|73M9> 164r29 165r29
+61M9*DWORD<4|73M9> 87r33 166r22 167r22 173r29 181r31 182r31 184r31 185r31
+. 191r31 192r31 194r31 195r31 201r31 208r30 208r44 214r32 215r39 222r30 223r37
+. 233r30 234r30 235r30 241r30 242r30 243r30 252r24 263r27 266r37 267r37 271r37
+. 272r37 273r37 274r37 323r38 336r22 344r20 344r34
+62M9*WORD<4|72M9> 251r24 254r24 256r24 256r37 286r23 287r23 288r23 289r23
+. 290r23 291r23 292r23 293r23
+63M9*BYTE<4|76M9>
+64I9*LONG<4|64I9> 206r30 207r37
+65E9*CHAR<4|109E9>
+66M9*SIZE_T<4|92M9> 244r30
+67M9*DWORD_PTR 270r37
+69I9*BOOL<4|62I9> 70r8 175r29 201r45 216r58 224r56 227r51 247r69 305r48 310r55
+. 315r58 320r58 327r57 338r44 347r51
+72I9*Bits1<short_short_integer> 75r8
+73I9*Bits2<short_short_integer> 76r8
+74I9*Bits17<integer> 77r8
+83N4*FALSE
+84N4*TRUE
+87V13*GetLastError{61M9} 88b28
+94N4*CP_UTF8
+95N4*CP_ACP
+97N4*GENERIC_READ
+98N4*GENERIC_WRITE
+100N4*CREATE_NEW
+101N4*CREATE_ALWAYS
+102N4*OPEN_EXISTING
+103N4*OPEN_ALWAYS
+104N4*TRUNCATE_EXISTING
+106N4*FILE_SHARE_DELETE
+107N4*FILE_SHARE_READ
+108N4*FILE_SHARE_WRITE
+110N4*FILE_BEGIN
+111N4*FILE_CURRENT
+112N4*FILE_END
+114N4*PAGE_NOACCESS
+115N4*PAGE_READONLY
+116N4*PAGE_READWRITE
+117N4*PAGE_WRITECOPY
+118N4*PAGE_EXECUTE
+120N4*FILE_MAP_ALL_ACCESS
+121N4*FILE_MAP_READ
+122N4*FILE_MAP_WRITE
+123N4*FILE_MAP_COPY
+125N4*FILE_ADD_FILE
+126N4*FILE_ADD_SUBDIRECTORY
+127N4*FILE_APPEND_DATA
+128N4*FILE_CREATE_PIPE_INSTANCE
+129N4*FILE_DELETE_CHILD
+130N4*FILE_EXECUTE
+131N4*FILE_LIST_DIRECTORY
+132N4*FILE_READ_ATTRIBUTES
+133N4*FILE_READ_DATA
+134N4*FILE_READ_EA
+135N4*FILE_TRAVERSE
+136N4*FILE_WRITE_ATTRIBUTES
+137N4*FILE_WRITE_DATA
+138N4*FILE_WRITE_EA
+139N4*STANDARD_RIGHTS_READ
+140N4*STANDARD_RIGHTS_WRITE
+141N4*SYNCHRONIZE
+143N4*FILE_ATTRIBUTE_READONLY
+144N4*FILE_ATTRIBUTE_HIDDEN
+145N4*FILE_ATTRIBUTE_SYSTEM
+146N4*FILE_ATTRIBUTE_DIRECTORY
+147N4*FILE_ATTRIBUTE_ARCHIVE
+148N4*FILE_ATTRIBUTE_DEVICE
+149N4*FILE_ATTRIBUTE_NORMAL
+150N4*FILE_ATTRIBUTE_TEMPORARY
+151N4*FILE_ATTRIBUTE_SPARSE_FILE
+152N4*FILE_ATTRIBUTE_REPARSE_POINT
+153N4*FILE_ATTRIBUTE_COMPRESSED
+154N4*FILE_ATTRIBUTE_OFFLINE
+155N4*FILE_ATTRIBUTE_NOT_CONTENT_INDEXED
+156N4*FILE_ATTRIBUTE_ENCRYPTED
+157N4*FILE_ATTRIBUTE_VALID_FLAGS
+158N4*FILE_ATTRIBUTE_VALID_SET_FLAGS
+160N4*GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS
+161N4*GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT
+163R9*OVERLAPPED 169e14 170r39 216r39 224r37
+164p7*Internal(60M9)
+165p7*InternalHigh(60M9)
+166m7*Offset{61M9}
+167m7*OffsetHigh{61M9}
+168i7*hEvent{55I9}
+172R9*SECURITY_ATTRIBUTES 176e14 177r39 183r38 193r38 232r37
+173m7*nLength{61M9}
+174m7*pSecurityDescriptor{53M12}
+175i7*bInheritHandle{69I9}
+179V13*CreateFileA{55I9} 180>7 181>7 182>7 183^7 184>7 185>7 186>7 187b28
+180m7 lpFileName{5|67M9}
+181m7 dwDesiredAccess{61M9}
+182m7 dwShareMode{61M9}
+183p7 lpSecurityAttributes(172R9)
+184m7 dwCreationDisposition{61M9}
+185m7 dwFlagsAndAttributes{61M9}
+186i7 hTemplateFile{55I9}
+189V13*CreateFile{55I9} 190>7 191>7 192>7 193^7 194>7 195>7 196>7 197b28
+190m7 lpFileName{5|67M9}
+191m7 dwDesiredAccess{61M9}
+192m7 dwShareMode{61M9}
+193p7 lpSecurityAttributes(172R9)
+194m7 dwCreationDisposition{61M9}
+195m7 dwFlagsAndAttributes{61M9}
+196i7 hTemplateFile{55I9}
+199V13*GetFileSize{69I9} 200>7 201^7 202b28
+200i7 hFile{55I9}
+201p7 lpFileSizeHigh(61M9)
+204V13*SetFilePointer{61M9} 205>7 206>7 207^7 208>7 209b28
+205i7 hFile{55I9}
+206i7 lDistanceToMove{64I9}
+207p7 lpDistanceToMoveHigh(64I9)
+208m7 dwMoveMethod{61M9}
+211V13*WriteFile{69I9} 212>7 213>7 214>7 215^7 216^7 217b28
+212i7 hFile{55I9}
+213m7 lpBuffer{5|67M9}
+214m7 nNumberOfBytesToWrite{61M9}
+215p7 lpNumberOfBytesWritten(61M9)
+216p7 lpOverlapped(163R9)
+219V13*ReadFile{69I9} 220>7 221>7 222>7 223^7 224^7 225b28
+220i7 hFile{55I9}
+221m7 lpBuffer{5|67M9}
+222m7 nNumberOfBytesToRead{61M9}
+223p7 lpNumberOfBytesRead(61M9)
+224p7 lpOverlapped(163R9)
+227V13*CloseHandle{69I9} 227>26 228b28
+227i26 hObject{55I9}
+230V13*CreateFileMapping{55I9} 231>7 232^7 233>7 234>7 235>7 236>7 237b28
+231i7 hFile{55I9}
+232p7 lpSecurityAttributes(172R9)
+233m7 flProtect{61M9}
+234m7 dwMaximumSizeHigh{61M9}
+235m7 dwMaximumSizeLow{61M9}
+236m7 lpName{5|67M9}
+239V13*MapViewOfFile{5|67M9} 240>7 241>7 242>7 243>7 244>7 245b28
+240i7 hFileMappingObject{55I9}
+241m7 dwDesiredAccess{61M9}
+242m7 dwFileOffsetHigh{61M9}
+243m7 dwFileOffsetLow{61M9}
+244m7 dwNumberOfBytesToMap{66M9}
+247V13*UnmapViewOfFile{69I9} 247>30 248b28
+247m30 lpBaseAddress{5|67M9}
+250V13*MultiByteToWideChar{62M9} 251>7 252>7 253>7 254>7 255>7 256>7 257b28
+251m7 CodePage{62M9}
+252m7 dwFlags{61M9}
+253m7 lpMultiByteStr{5|67M9}
+254m7 cchMultiByte{62M9}
+255m7 lpWideCharStr{5|67M9}
+256m7 cchWideChar{62M9}
+263M12*ProcessorId{61M9}
+265R9*SYSTEM_INFO 275e14 276r39 278r41
+266m7*dwOemId{61M9}
+267m7*dwPageSize{61M9}
+268m7*lpMinimumApplicationAddress{53M12}
+269m7*lpMaximumApplicationAddress{53M12}
+270m7*dwActiveProcessorMask{67M9}
+271m7*dwNumberOfProcessors{61M9}
+272m7*dwProcessorType{61M9}
+273m7*dwAllocationGranularity{61M9}
+274m7*dwReserved{61M9}
+278U14*GetSystemInfo 278^29 279b28
+278p29 SI(265R9)
+285R9*SYSTEMTIME 294e14 295r39 297r50 305r29 309r29
+286m7*wYear{62M9}
+287m7*wMonth{62M9}
+288m7*wDayOfWeek{62M9}
+289m7*wDay{62M9}
+290m7*wHour{62M9}
+291m7*wMinute{62M9}
+292m7*wSecond{62M9}
+293m7*wMilliseconds{62M9}
+297U14*GetSystemTime 297^29 298b28
+297p29 pSystemTime(285R9)
+300U14*GetSystemTimeAsFileTime 300^39 301b28
+300p39 lpFileTime(long_long_integer)
+303V13*FileTimeToSystemTime{69I9} 304^7 305^7 306b28
+304p7 lpFileTime(long_long_integer)
+305p7 lpSystemTime(285R9)
+308V13*SystemTimeToFileTime{69I9} 309^7 310^7 311b28
+309p7 lpSystemTime(285R9)
+310p7 lpFileTime(long_long_integer)
+313V13*FileTimeToLocalFileTime{69I9} 314^7 315^7 316b28
+314p7 lpFileTime(long_long_integer)
+315p7 lpLocalFileTime(long_long_integer)
+318V13*LocalFileTimeToFileTime{69I9} 319^7 320^7 321b28
+319p7 lpLocalFileTime(long_long_integer)
+320p7 lpFileTime(long_long_integer)
+323U14*Sleep 323>21 324b28
+323m21 dwMilliseconds{61M9}
+326V13*QueryPerformanceCounter{69I9} 327^7 329b16
+327p7 lpPerformanceCount(51O9)
+335V13*GetModuleHandleEx{69I9} 336>7 337>7 338^7 339b28
+336m7 dwFlags{61M9}
+337m7 lpModuleName{5|67M9}
+338p7 phModule(55I9)
+341V13*GetModuleFileName{61M9} 342>7 343>7 344>7 345b28
+342i7 hModule{55I9}
+343m7 lpFilename{5|67M9}
+344m7 nSize{61M9}
+347V13*FreeLibrary{69I9} 347>26 348b28
+347i26 hModule{55I9}
+

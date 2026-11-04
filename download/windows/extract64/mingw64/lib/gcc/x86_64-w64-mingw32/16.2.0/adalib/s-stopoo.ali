@@ -1,0 +1,110 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+
+U system.storage_pools%b  s-stopoo.adb		9969561e NE OL PK
+W system%s		system.ads		system.ali
+
+U system.storage_pools%s  s-stopoo.ads		098cb8a4 EE OL PU PK
+W ada%s			ada.ads			ada.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-finali.ads		20260807074606 099c16e4 ada.finalization%s
+D a-stream.ads		20260807074606 cb01a8f8 ada.streams%s
+D a-string.ads		20260807074606 90ac6797 ada.strings%s
+D a-sttebu.ads		20260807074606 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260807074606 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260807074606 2dbf449c ada.tags%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-finroo.ads		20260807074606 0a7c3ed4 system.finalization_root%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-putima.ads		20260807074606 1b989439 system.put_images%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20260807074606 45459446 system.storage_pools%s
+D s-stopoo.adb		20260807074606 dc2cc258 system.storage_pools%b
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [allocate_any system__storage_pools 89 14 none]
+G c Z s b [deallocate_any system__storage_pools 95 14 none]
+G c Z s s [root_storage_poolDF system__storage_pools 67 9 none]
+G c Z s s [root_storage_poolIP system__storage_pools 67 9 none]
+X 1 ada.ads
+18K9*Ada 22e8 21|36r6 43r10 68r10
+X 3 a-finali.ads
+40K13*Finalization 68e21 21|36w10 43r14 68r14
+50H9*Limited_Controlled<13|40R9> 66e55 21|43r27 68r27
+53U14*Initialize<13|48p14>
+54U14*Finalize<13|47p14>
+X 11 system.ads
+37K9*System 214e11 21|37r6 39r9 49r38 50r34 51r34 56r34 57r34 58r34 63r14
+. 91r37 92r33 93r33 97r33 98r33 99r33 101r5 22|32r14 40r37 41r33 42r33 54r33
+. 55r33 56r33 62r5
+67M9*Address 21|49r45 56r41 91r44 97r40 22|40r44 54r40
+X 13 s-finroo.ads
+46U14*Adjust
+X 20 s-stoele.ads
+43K16*Storage_Elements 104e28 21|37w13 50r41 51r41 57r41 58r41 63r21 92r40
+. 93r40 98r40 99r40 22|41r40 42r40 55r40 56r40
+54I9*Storage_Offset<long_long_integer>
+56I12*Storage_Count{54I9} 21|50r58 51r58 57r58 58r58 63r38 92r57 93r57 98r57
+. 99r57 22|41r57 42r57 55r57 56r57
+X 21 s-stopoo.ads
+39K16*Storage_Pools 11|37k9 21|67E9 101l12 101e25 22|32b21 62l12 62t25
+42H9*Root_Storage_Pool<3|50R9> 3|53P14 54P14 13|46p14 21|47p14 48r41 54p14
+. 55r41 61p13 62r14 67c9 68e62 70r45 90r40 96r40 22|39r40 53r40
+47x14*Allocate 48=7 49<7 50>7 51>7 22|45R7
+48r7 Pool{42R9}
+49m7 Storage_Address{11|67M9}
+50i7 Size_In_Storage_Elements{20|56I12}
+51i7 Alignment{20|56I12}
+54x14*Deallocate 55=7 56>7 57>7 58>7 22|59R7
+55r7 Pool{42R9}
+56m7 Storage_Address{11|67M9}
+57i7 Size_In_Storage_Elements{20|56I12}
+58i7 Alignment{20|56I12}
+61y13*Storage_Size{20|56I12} 62>7
+62r7 Pool{42R9}
+70P9 Root_Storage_Pool_Ptr(42R9) 71r8
+89U14 Allocate_Any 90=6 91<6 92>6 93>6 22|38b14 46l8 46t20
+90c6 Pool<42R9> 22|39b6 45m17
+91m6 Storage_Address{11|67M9} 22|40b6 45m23
+92i6 Size_In_Storage_Elements{20|56I12} 22|41b6 45r40
+93i6 Alignment{20|56I12} 22|42b6 45r66
+95U14 Deallocate_Any 96=6 97>6 98>6 99>6 22|52b14 60l8 60t22
+96c6 Pool<42R9> 22|53b6 59m19
+97m6 Storage_Address{11|67M9} 22|54b6 59r25
+98i6 Size_In_Storage_Elements{20|56I12} 22|55b6 59r42
+99i6 Alignment{20|56I12} 22|56b6 59r68
+

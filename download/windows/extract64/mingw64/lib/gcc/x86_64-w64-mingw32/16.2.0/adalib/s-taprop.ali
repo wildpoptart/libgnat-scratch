@@ -1,0 +1,591 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+
+U system.task_primitives.operations%b  s-taprop.adb  1e971071 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.unchecked_deallocation%s
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+W system.float_control%s  s-flocon.adb		s-flocon.ali
+W system.interrupt_management%s  s-intman.adb	s-intman.ali
+W system.multiprocessors%s  s-multip.adb	s-multip.ali
+W system.os_primitives%s  s-osprim.adb		s-osprim.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.debug%s  s-tasdeb.adb		s-tasdeb.ali
+W system.win32%s	s-win32.ads		s-win32.ali
+W system.win32.ext%s	s-winext.ads		s-winext.ali
+L "-Xlinker{00}--stack=0x800000,0x1000"
+
+U system.task_primitives.operations%s  s-taprop.ads  b2c96b80 BN NE OL PR PK
+W system%s		system.ads		system.ali
+W system.os_interface%s	s-osinte.ads		s-osinte.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20260807074606 c3a8ac65 ada.unchecked_deallocation%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260807074606 49eced87 interfaces.c.strings%s
+D system.ads		20260807074606 898beeee system%s
+D s-atacco.ads		20260807074606 5868e3ba system.address_to_access_conversions%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-flocon.ads		20260807074606 e0fc433c system.float_control%s
+D s-intman.ads		20260807074606 aa1eb6b4 system.interrupt_management%s
+D s-multip.ads		20260807074606 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20260807074606 35a74841 system.os_interface%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-osprim.ads		20260807074606 07fd65f6 system.os_primitives%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20260807074606 f470ae2d system.stack_usage%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20260807074606 601f6b72 system.task_info%s
+D s-taspri.ads		20260807074606 af22d192 system.task_primitives%s
+D s-taprop.ads		20260807074606 6a572f54 system.task_primitives.operations%s
+D s-taprop.adb		20260807074606 41540629 system.task_primitives.operations%b
+D s-tpoaal.adb		20260807074606 0239874f system.task_primitives.operations.atcb_allocation
+D s-tporft.adb		20260807074606 6958f000 system.task_primitives.operations.register_foreign_thread
+D s-taskin.ads		20260807074606 e3b5765b system.tasking%s
+D s-tasdeb.ads		20260807074606 a18505b7 system.tasking.debug%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+D s-winext.ads		20260807074606 78edf9eb system.win32.ext%s
+G a e
+G c Z s b [initialize system__task_primitives__operations 45 14 none]
+G c Z s b [create_task system__task_primitives__operations 50 14 none]
+G c Z s b [enter_task system__task_primitives__operations 76 14 none]
+G c Z s b [exit_task system__task_primitives__operations 84 14 none]
+G c Z s b [new_atcb system__task_primitives__operations__atcb_allocation 96 16 none]
+G c Z s b [free_atcb system__task_primitives__operations__atcb_allocation 100 17 none]
+G c Z s b [initialize_tcb system__task_primitives__operations 109 14 none]
+G c Z s b [finalize_tcb system__task_primitives__operations 113 14 none]
+G c Z s b [abort_task system__task_primitives__operations 121 14 none]
+G c Z s b [self system__task_primitives__operations 135 13 none]
+G c Z s b [initialize_lock system__task_primitives__operations 148 14 none]
+G c Z s b [initialize_lock system__task_primitives__operations 151 14 none]
+G c Z s b [finalize_lock system__task_primitives__operations 175 14 none]
+G c Z s b [finalize_lock system__task_primitives__operations 176 14 none]
+G c Z s b [write_lock system__task_primitives__operations 181 14 none]
+G c Z s b [write_lock system__task_primitives__operations 184 14 none]
+G c Z s b [write_lock system__task_primitives__operations 185 14 none]
+G c Z s b [read_lock system__task_primitives__operations 206 14 none]
+G c Z s b [unlock system__task_primitives__operations 230 14 none]
+G c Z s b [unlock system__task_primitives__operations 232 14 none]
+G c Z s b [unlock system__task_primitives__operations 233 14 none]
+G c Z s b [set_ceiling system__task_primitives__operations 290 14 none]
+G c Z s b [yield system__task_primitives__operations 302 14 none]
+G c Z s b [set_priority system__task_primitives__operations 310 14 none]
+G c Z s b [get_priority system__task_primitives__operations 334 13 none]
+G c Z s b [monotonic_clock system__task_primitives__operations 338 13 none]
+G c Z s b [rt_resolution system__task_primitives__operations 344 13 none]
+G c Z s b [sleep system__task_primitives__operations 356 14 none]
+G c Z s b [timed_sleep system__task_primitives__operations 378 14 none]
+G c Z s b [timed_delay system__task_primitives__operations 387 14 none]
+G c Z s b [wakeup system__task_primitives__operations 394 14 none]
+G c Z s b [environment_task system__task_primitives__operations 402 13 none]
+G c Z s b [get_thread_id system__task_primitives__operations 408 13 none]
+G c Z s b [is_valid_task system__task_primitives__operations 411 13 none]
+G c Z s b [register_foreign_thread system__task_primitives__operations 415 13 none]
+G c Z s b [lock_rts system__task_primitives__operations 428 14 none]
+G c Z s b [unlock_rts system__task_primitives__operations 431 14 none]
+G c Z s b [stack_guard system__task_primitives__operations 455 14 none]
+G c Z s b [check_exit system__task_primitives__operations 483 13 none]
+G c Z s b [check_no_locks system__task_primitives__operations 487 13 none]
+G c Z s b [suspend_task system__task_primitives__operations 491 13 none]
+G c Z s b [resume_task system__task_primitives__operations 500 13 none]
+G c Z s b [stop_all_tasks system__task_primitives__operations 508 14 none]
+G c Z s b [stop_task system__task_primitives__operations 514 13 none]
+G c Z s b [continue_task system__task_primitives__operations 519 13 none]
+G c Z s b [set_task_affinity system__task_primitives__operations 528 14 none]
+G c Z s b [is_task_context system__task_primitives__operations 533 13 none]
+G c Z b b [get_policy system__task_primitives__operations 87 13 none]
+G c Z b b [is_valid_task system__task_primitives__operations__specific 113 16 none]
+G c Z b b [set system__task_primitives__operations__specific 117 17 none]
+G c Z b b [register_foreign_thread system__task_primitives__operations 158 13 none]
+G c Z b b [initialize_cond system__task_primitives__operations 173 14 none]
+G c Z b b [finalize_cond system__task_primitives__operations 176 14 none]
+G c Z b b [cond_signal system__task_primitives__operations 179 14 none]
+G c Z b b [cond_wait system__task_primitives__operations 182 14 none]
+G c Z b b [cond_timed_wait system__task_primitives__operations 187 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 28|32r6 46r9
+X 4 a-uncdea.ads
+23u15*Unchecked_Deallocation 28|32w10 46r13
+X 5 interfac.ads
+47K9*Interfaces 247e15 27|37r6 38r6 49r8 50r8 669r12
+X 6 i-c.ads
+33K20*C 605e17 27|37w17 38r17 49r19 50r19 669r23
+62I9*int<integer> 27|669r25
+73M9*unsigned_long
+89I9*ptrdiff_t<long_long_integer>
+X 7 i-cstrin.ads
+48K22*Strings 183e25 27|38w19 50r21
+65P9*chars_ptr
+71p4*Null_Ptr{65P9} 27|206r61
+X 8 system.ads
+37K9*System 214e11 26|35r6 36r6 37r6 39r9 42r24 43r24 52r20 53r20 54r20 149r14
+. 152r31 176r49 184r46 232r42 292r14 312r14 334r50 358r17 382r18 396r16 543r5
+. 27|40r6 41r6 42r6 43r6 44r6 45r6 46r6 48r14 52r8 53r8 54r8 55r8 56r8 57r8
+. 58r8 59r8 60r8 87r32 131r43 383r14 481r14 494r17 522r18 627r44 659r29 692r47
+. 718r7 815r20 816r20 817r20 836r16 844r39 1057r34 1153r16 1231r5 28|34r11
+. 29|32r6 33r6 34r6 36r11 55r42 66r4 69r7 69r30 98r4
+67M9*Address 26|52r27 27|710r42 710r59 747r39 815r27
+69m4*Null_Address{67M9} 27|131r50 29|67r22 94r43
+81V14*"="{boolean} 27|131r40
+100I12*Any_Priority{integer} 26|54r27 149r21 292r21 312r21 334r57 27|87r39
+. 383r21 481r21 659r36 692r54 817r27
+101I12*Priority{100I12} 29|55r49 69r14
+165A9 Priorities_Mapping(integer)<integer>
+169a4 FIFO_Underlying_Priorities{165A9} 27|670r34
+193a4 Underlying_Priorities{165A9} 27|672r34
+X 11 s-flocon.ads
+34K16*Float_Control 63e25 27|40w13 718r14
+39U14*Reset 27|718s28
+X 12 s-intman.ads
+50K16*Interrupt_Management 111e32 27|41w13 1010r7
+92U14*Initialize 27|1010s28
+X 13 s-multip.ads
+20K16*Multiprocessors 32e27 27|42w13 836r23 844r46 1153r23 1165r34 1200r25
+. 1201r25 29|32w13 69r37
+23I9*CPU_Range<integer> 27|836r39 1153r39
+25I12*CPU{23I9} 27|1200r41
+27i4*Not_A_Specific_CPU{23I9} 27|844r62 1165r50 29|69r53
+29V13*Number_Of_CPUs{25I12} 27|1201s41
+X 14 s-osinte.ads
+50K16*OS_Interface 381e24 26|35w13 42r31 27|52r15 1016r21 1057r41
+58O12*LARGE_INTEGER{34|51O9} 27|1057r54
+72I12*Thread_Id{34|55I9} 26|408r55 493r25 502r25 27|94r30 159r24 165r24 353r55
+. 747r20 1091r21 1107r21 29|38r21
+78N4*NO_ERROR 27|1095r54 1111r53
+115U14*QueryPerformanceFrequency 27|1059s7
+134U14*SwitchToThread 27|649s10
+151U14*InitializeCriticalSection 27|387s7 398s7
+156U14*EnterCriticalSection 27|429s7 436s7 441s7
+160U14*LeaveCriticalSection 27|460s7 465s7 470s7
+164U14*DeleteCriticalSection 27|407s7 412s7
+172P9*PTHREAD_START_ROUTINE(34|61M9) 27|834r24
+176V13*To_PTHREAD_START_ROUTINE[3|23]{172P9} 27|855s22
+179V13*CreateThread{34|55I9} 27|858s19 867s19
+199N4*Create_Suspended 27|863r20 872r20
+211N4*Stack_Size_Param_Is_A_Reservation 27|864r25
+218V13*ResumeThread{34|61M9} 27|917s17 1111s17
+221V13*SuspendThread{34|61M9} 27|1095s17
+235V13*GetCurrentThread{34|55I9} 27|366s42 735s38 788s42 1026s44
+238V13*GetCurrentProcess{34|55I9} 27|1017s24
+241V13*GetCurrentThreadId{34|61M9} 27|738s38
+244V13*TlsAlloc{34|61M9} 27|1020s19
+247V13*TlsGetValue{34|53M12} 27|131s17 363s49
+250V13*TlsSetValue{34|69I9} 27|141s23
+262V13*WaitForSingleObject{34|61M9} 27|263s17 313s25
+273N4*Wait_Infinite 27|263r57
+274N4*WAIT_TIMEOUT 27|315r27
+300V13*CreateEvent{34|55I9} 27|206s17
+313V13*SetEvent{34|69I9} 27|232s17 328s20
+316V13*ResetEvent{34|69I9} 27|256s22 296s17
+345V13*SetThreadPriority{34|69I9} 27|667s9
+353V13*SetPriorityClass{34|69I9} 27|1016s34
+358U14*SetThreadPriorityBoost 27|908s10
+360i7 DisablePriorityBoost{34|69I9} 27|908r41
+366N4*Realtime_Priority_Class 27|1017r43
+X 15 s-oslock.ads
+37K16*OS_Locks 62e20 26|152r38 176r56 184r53 232r49 27|53r15
+42R12*RTS_Lock{40R9} 26|152r47 176r65 184r62 232r58 27|76r30 184r30 189r35
+. 248r30 281r35 393r31 410r49 434r46 463r42
+X 16 s-osprim.ads
+40K16*OS_Primitives 89e25 27|43w13 54r15 1009r7
+43o4*Max_Sensible_Delay{duration} 27|541r42
+59U14*Initialize 27|1009s21
+70N4*Relative 27|539r17 591r17
+X 17 s-parame.ads
+50K16*Parameters 182e22 26|36w13 53r27 27|55r15 816r27
+57I9*Size_Type<long_long_integer> 26|53r38 27|160r24 166r24 816r38 29|39r21
+64i4*Unspecified_Size{57I9} 27|160r37 166r37 29|39r34
+X 19 s-soflin.ads
+45K16*Soft_Links 430e22 29|33w13 98r11
+343r7*Pri_Stack_Info{20|48R9} 27|741m39 742m39
+368U14*Create_TSD 29|98s22
+X 20 s-stache.ads
+49m7*Limit{8|67M9} 27|742m54
+50m7*Base{8|67M9} 27|741m54
+X 21 s-stausa.ads
+206U14*Initialize 207i<c,__gnat_stack_usage_initialize>22
+265U14*Output_Results 269i<c,__gnat_stack_usage_output_results>22
+X 24 s-tasinf.ads
+46K16*Task_Info 103e21 27|44w13 56r15 1184r39 29|34w13 70r13
+82M12*CPU_Number{34|263M12} 27|722r43
+84m4*Any_CPU{82M12} 27|1184r49
+86X4*Invalid_CPU_Number 27|724r16
+91m7*CPU{82M12} 27|722r36 1184r32 1187r57
+96P9*Task_Info_Type(90R9)
+98p4*Unspecified_Task_Info{96P9} 29|70r23
+100V13*Number_Of_Processors{positive} 27|722s55
+X 25 s-taspri.ads
+38K16*Task_Primitives 8|37k9 25|89e27 26|39r16 543r12 27|48r21 1231r12 28|34r18
+. 29|36r18
+41R9*Lock 66e14 26|150r30 175r49 182r43 207r43 231r27 291r30 27|384r30 405r49
+. 420r27 449r27 458r42 480r30
+63r7*Mutex{15|42R12} 27|387m36 407m32 429m31 460m31
+64i7*Priority{integer} 27|389m9 424r12
+65i7*Owner_Priority{integer} 27|388m9 422m9 424r25
+68I9 Condition_Variable<34|55I9> 27|173r54 176r52 179r50 183r30 188r35 203r54
+. 208r19 218r52 229r50 247r30 280r35
+71i7*Thread{14|72I12} 27|355r26 668r24 734r28 735m28 764r36 801m25 885m19
+. 939r22 944r48 1026m34 1094r22 1095r44 1110r22 1111r43 1160r22 1172r27 1187r30
+. 1217r63 28|57m34 57r63 29|54m25 101m22
+79m7*Thread_Id{34|61M9} 27|738m25 894m19
+82i7*CV{68I9} 27|501m36 552m34 606m34 630m32 803m42 933m34
+85r7*L{15|42R12} 27|441m41 470m41 501m65 553m34 607m34 804m42 932m34
+X 26 s-taprop.ads
+39K32*Operations 25|38k16 26|543l28 543e38 27|48b37 1231l28 1231t38 28|34r34
+. 29|36r34
+42K12*OSI=42:31 408r51 493r21 502r21 27|353r51
+43K12*ST=43:31 45r45 51r20 76r36 96r38 96r66 100r32 106r35 106r63 109r40
+. 113r32 121r30 135r25 185r30 233r26 311r11 334r31 357r17 379r18 381r18 388r17
+. 390r17 395r16 402r37 408r32 415r44 455r31 483r35 487r39 492r21 501r21 514r28
+. 519r32 528r37 27|343r31 353r32 521r18 579r17 1069r35 1079r39 1090r21 1106r21
+. 1130r28 1140r32 1150r37 1197r38
+45U14*Initialize 45>26 27|1004b14 1039l8 1039t18
+45p26 Environment_Task{30|109P9} 27|1004b26 1008r30 1026r7 1031r42 1032r7
+. 1034r19 1038r26
+50U14*Create_Task 51>7 52>7 53>7 54>7 55<7 56r19 27|813b14 921l8 921t19
+51p7 T{30|109P9} 27|814b7 843r10 844r18 846r12 846r37 847r25 847r42 853r37
+. 885r7 894r7 898r21 913r26
+52m7 Wrapper{8|67M9} 27|815b7 855r48
+53i7 Stack_Size{17|57I9} 27|816b7 860r20
+54i7 Priority{8|100I12} 27|817b7 898r24 902r29
+55b7 Succeeded{boolean} 27|818b7 849m10 879m10 920m7
+76U14*Enter_Task 76>26 77r19 27|709b14 771l8 771t18 1034s7 29|102s4
+76p26 Self_ID{30|109P9} 27|709b26 714r21 720r10 722r11 734r10 735r10 738r7
+. 741r10 742r10 744r10 754r15 755r18 757r20 758r22 764r18 766r18
+84U14*Exit_Task 85r19 27|958b14 961l8 961t17
+94K12*ATCB_Allocation 104l8 104e23 107r14 27|151b17 951r7 28|35b14 83l5 83t20
+96V16*New_ATCB{30|109P9} 96>26 97r22 107r30 28|78b13 81l8 81t16
+96i26 Entry_Num{30|240I9} 28|78b23 80r42
+100U17*Free_ATCB 100>28 101r22 27|951s23 28|41b14 72l8 72t17
+100p28 T{30|109P9} 28|41b25 42r28 43r37 57r51 58r51
+106V13*New_ATCB=107:30{30|109P9}
+106i23 Entry_Num{30|240I9}
+109U14*Initialize_TCB 109>30 109<52 110r19 27|796b14 807l8 807t22
+109p30 Self_ID{30|109P9} 27|796b30 801r7 803r24 804r24
+109b52 Succeeded{boolean} 27|796b49 806m7
+113U14*Finalize_TCB 113>28 114r19 27|927b14 952l8 952t20
+113p28 T{30|109P9} 27|927b28 932r22 933r22 935r10 936r23 939r10 944r36 951r34
+121U14*Abort_Task 121>26 122r19 27|967b14 971l8 971t18
+121p26 T{30|109P9} 27|967b26 968r28
+135V13*Self{30|109P9} 136r19 27|362b13 370l8 370t12 422s41 499s32 786s17
+. 28|43s41
+139E9*Lock_Level 143e18 153r15 27|394r15
+140n7*PO_Level{139E9}
+141n7*Global_Task_Level{139E9}
+142n7*RTS_Lock_Level{139E9} 27|1024r48
+143n7*ATCB_Level{139E9} 27|804r52
+148U14*Initialize_Lock 149>7 150^7 27|382b14 390l8 390t23
+149i7 Prio{8|100I12} 27|383b7 389r21
+150p7 L(25|41R9) 27|384b7 387r34 388r7 389r7
+151U14*Initialize_Lock 152^7 153>7 27|392b14 399l8 399t23 804s7 1024s7
+152p7 L(15|42R12) 27|393b7 398r34
+153e7 Level{139E9} 27|394b7 396r28
+175U14*Finalize_Lock 175^29 27|405b14 408l8 408t21
+175p29 L(25|41R9) 27|405b29 407r30
+176U14*Finalize_Lock 176^29 27|410b14 413l8 413t21 932s7
+176p29 L(15|42R12) 27|410b29 412r30
+181U14*Write_Lock 182^7 183<7 27|419b14 432l8 432t18 451s7
+182p7 L(25|41R9) 27|420b7 422r7 424r10 424r23 429r29
+183b7 Ceiling_Violation{boolean} 27|420b33 425m10 431m7
+184U14*Write_Lock 184^26 27|266s7 323s7 434b14 437l8 437t18 988s7
+184p26 L(15|42R12) 27|434b26 436r29
+185U14*Write_Lock 185>26 27|439b14 442l8 442t18 589s7
+185p26 T{30|109P9} 27|439b26 441r29
+206U14*Read_Lock 207^7 208<7 209r19 27|448b14 452l8 452t17
+207p7 L(25|41R9) 27|449b7 451r19
+208b7 Ceiling_Violation{boolean} 27|449b33 451m22
+230U14*Unlock 231^7 27|458b14 461l8 461t14
+231p7 L(25|41R9) 27|458b22 460r29
+232U14*Unlock 232^22 27|258s7 298s7 463b14 466l8 466t14 997s7
+232p22 L(15|42R12) 27|463b22 465r29
+233U14*Unlock 233>22 27|468b14 471l8 471t14 506s10 619s7
+233p22 T{30|109P9} 27|468b22 470r29
+290U14*Set_Ceiling 291^7 292>7 293r19 27|479b14 486l8 486t19
+291p7 L(25|41R9) 27|480b7 483r28
+292i7 Prio{8|100I12} 27|481b7 483r31
+302U14*Yield 302>21 303r19 27|620s7 637b14 651l8 651t13
+302b21 Do_Yield{boolean} 27|637b21 648r10
+310U14*Set_Priority 311>7 312>7 313>7 314r19 27|657b14 686l8 686t20 898s7
+311p7 T{30|109P9} 27|658b7 668r12 685r7
+312i7 Prio{8|100I12} 27|659b7 670r62 672r57 685r36
+313b7 Loss_Of_Inheritance{boolean} 27|660b7 663r28
+334V13*Get_Priority{8|100I12} 334>27 335r19 27|422s27 692b13 695l8 695t20
+334p27 T{30|109P9} 27|692b27 694r14
+338V13*Monotonic_Clock{duration} 339r19 27|527s32 555s27 581s32 609s27 1045b13
+. 1050l8 1050t23
+344V13*RT_Resolution{duration} 345r19 27|1056b13 1061l8 1061t21
+356U14*Sleep 357>7 358>7 359r19 27|492b14 509l8 509t13
+357p7 Self_ID{30|109P9} 27|493b7 499r22 501r18 501r47 503r10 504r18 504r46
+. 506r18
+358e7 Reason{30|132E9} 27|494b7 496r28
+378U14*Timed_Sleep 379>7 380>7 381>7 382>7 383<7 384<7 27|518b14 570l8 570t19
+379p7 Self_ID{30|109P9} 27|519b7 549r23 549r51 552r16 553r16
+380o7 Time{duration} 27|520b7 540r22 541r36 543r22 544r22
+381i7 Mode{30|220I12} 27|521b7 539r10
+382e7 Reason{30|132E9} 27|522b7 526r28
+383b7 Timedout{boolean} 27|523b7 536m7 563m16
+384b7 Yielded{boolean} 27|524b7 537m7
+387U14*Timed_Delay 388>7 389>7 390>7 27|576b14 621l8 621t19
+388p7 Self_ID{30|109P9} 27|577b7 589r19 600r10 603r23 603r51 606r16 607r16
+. 616r10 619r15
+389o7 Time{duration} 27|578b7 592r22 593r22 595r22 596r22
+390i7 Mode{30|220I12} 27|579b7 591r10
+394U14*Wakeup 395>7 396>7 397r19 27|627b14 631l8 631t14
+395p7 T{30|109P9} 27|627b22 630r20
+396e7 Reason{30|132E9} 27|627b35 628r28
+402V13*Environment_Task{30|109P9} 403r19 27|977b13 980l8 980t24
+408V13*Get_Thread_Id{14|72I12} 408>28 27|353b13 356l8 356t21
+408p28 T{30|109P9} 27|353b28 355r14
+411V13*Is_Valid_Task{boolean} 412r19 27|777b13 785s10
+415V13*Register_Foreign_Thread{30|109P9} 27|783b13 790l8 790t31
+428U14*Lock_RTS 27|986b14 989l8 989t16 29|65s4
+431U14*Unlock_RTS 27|995b14 998l8 998t18 29|71s4
+455U14*Stack_Guard 455>27 455>43 27|343b14 347l8 347t19
+455p27 T{30|109P9} 27|343b27 344r28
+455b43 On{boolean} 27|343b43 344r31
+483V13*Check_Exit{boolean} 483>25 484r19 27|1069b13 1073l8 1073t18
+483p25 Self_ID{30|109P9} 27|1069b25 1070r28
+487V13*Check_No_Locks{boolean} 487>29 488r19 27|1079b13 1083l8 1083t22
+487p29 Self_ID{30|109P9} 27|1079b29 1080r28
+491V13*Suspend_Task{boolean} 492>7 493>7 27|1089b13 1099l8 1099t20
+492p7 T{30|109P9} 27|1090b7 1094r10 1095r32
+493i7 Thread_Self{14|72I12} 27|1091b7 1094r32
+500V13*Resume_Task{boolean} 501>7 502>7 27|1105b13 1115l8 1115t19
+501p7 T{30|109P9} 27|1106b7 1110r10 1111r31
+502i7 Thread_Self{14|72I12} 27|1107b7 1110r32
+508U14*Stop_All_Tasks 27|1121b14 1124l8 1124t22
+514V13*Stop_Task{boolean} 514>24 27|1130b13 1134l8 1134t17
+514p24 T{30|109P9} 27|1130b24 1131r28
+519V13*Continue_Task{boolean} 519>28 27|1140b13 1144l8 1144t21
+519p28 T{30|109P9} 27|1140b28 1141r28
+528U14*Set_Task_Affinity 528>33 27|913s7 1038s7 1150b14 1221l8 1221t25
+528p33 T{30|109P9} 27|1150b33 1160r10 1165r13 1172r15 1172r48 1183r13 1184r13
+. 1187r18 1187r38 1196r13 1197r19 1199r22 1207r25 1208r19 1217r51
+533V13*Is_Task_Context{boolean} 27|1227b13 1230l8 1230t23
+X 27 s-taprop.adb
+73p4 Environment_Task_Id{30|109P9} 979r14 1008m7
+76r4 Single_RTS_Lock{15|42R12} 988m19 988r19 997m15 997r15 1024m24 1024r24
+81i4 Time_Slice_Val{integer} 82r22 900r10 1012r10
+84e4 Dispatching_Policy{character} 85r22 669r34 901r17 1012r37
+87V13 Get_Policy{character} 87>25 88b<c,__gnat_get_specific_dispatching>22
+. 902s17
+87i25 Prio{8|100I12}
+91b4 Foreign_Task_Elaborated{boolean} 29|68m7 68r7
+94i4 Null_Thread_Id{14|72I12} 734r37 801r35 939r32 1160r31
+102m4 TlsIndex{34|61M9} 103m24 103r24 131r30 141r36 363r62 1020m7
+111K12 Specific 121l8 121e16 123b17 145l8 145t16 714r7 777r50 960r7 28|60r13
+. 66r13 29|57r4
+113V16*Is_Valid_Task{boolean} 114r22 129b16 132l11 132t24 777r59
+117U17*Set 117>22 118r22 138b17 143l11 143t14 714s16 960s16 28|60s22 66s22
+. 29|57s13
+117p22 Self_Id{30|109P9} 138b22 141r58
+139i10 Succeeded{34|69I9} 141m10 142r25
+158V13 Register_Foreign_Thread{30|109P9} 159>7 160>7 164b13 366s17 788s17
+. 29|37b10 105l5 105t28
+159i7 Thread{14|72I12} 165b7 29|38b4 54r35 101r32
+160i7 Sec_Stack_Size{17|57I9} 166b7 29|39b4 99r43
+173U14 Initialize_Cond 173^31 203b14 209l8 209t23 803s7
+173p31 Cond(25|68I9) 203b31 208r7
+176U14 Finalize_Cond 176^29 218b14 223l8 223t21 933s7
+176p29 Cond(25|68I9) 218b29 221r38
+179U14 Cond_Signal 179^27 229b14 234l8 234t19 630s7
+179p27 Cond(25|68I9) 229b27 232r35
+182U14 Cond_Wait 183^7 184^7 246b14 267l8 267t17 501s7
+183p7 Cond(25|68I9) 247b7 256r42 263r46
+184p7 L(15|42R12) 248b7 258r15 266r19
+187U14 Cond_Timed_Wait 188^7 189^7 190>7 191<7 192<7 279b14 333l8 333t23
+. 551s13 605s13
+188p7 Cond(25|68I9) 280b7 296r37 313r54 328r38
+189p7 L(15|42R12) 281b7 298r15 323r19
+190o7 Rel_Time{duration} 282b7 303r10 309r16 311r25
+191b7 Timed_Out{boolean} 283b7 304m10 316m13 319m13 327r10
+192i7 Status{integer} 284b7 332m7
+204i7 hEvent{34|55I9} 206m7 207r22 208r39
+219i7 Result{34|69I9} 221m7 222r22
+230i7 Result{34|69I9} 232m7 233r22
+250m7 Result{34|61M9} 263m7 264r22
+251i7 Result_Bool{34|69I9} 256m7 257r22
+286m7 Time_Out_Max{34|61M9} 309r38 310r18
+289m7 Time_Out{34|61M9} 308m10 313r65
+290i7 Result{34|69I9} 296m7 297r22 328m10 329r25
+291m7 Wait_Result{34|61M9} 305m10 313m10 315r13 317m13 332r26
+363p7 Self_Id{30|109P9} 365r10 368r17
+527o7 Check_Time{duration} 541r64 543r29 555m13 557r35 567r36
+528o7 Rel_Time{duration} 540m10 543m10 547r10 554r16 567m13
+529o7 Abs_Time{duration} 541m10 544m10 557r23 567r25
+531i7 Result{integer} 554m42
+533b7 Local_Timedout{boolean} 554m26 559r20
+581o7 Check_Time{duration} 593r29 595r29 609m13 611r35 613r36
+582o7 Rel_Time{duration} 592m10 595m10 599r10 608r16 613m13
+583o7 Abs_Time{duration} 593m10 596m10 611r23 613r25
+585b7 Timedout{boolean} 608m26
+586i7 Result{integer} 608m36
+662i7 Res{34|69I9} 666m7 673r22
+710U17*Get_Stack_Bounds 710>35 710>51 711b<c,__gnat_get_stack_bounds>25 740s7
+710m35 Base{8|67M9}
+710m51 Limit{8|67M9}
+746V22*Set_Thread_Description{integer} 747>16 747>31 747>48 751b<c,__gnat_set_thread_description>21
+. 763s15
+747i16 H{14|72I12}
+747m31 Descr{8|67M9}
+747i48 Length{integer}
+753a13 Nul_Terminated_Image=760:15{string} 765r18
+762i13 Result{integer} 768r28
+820N7 Initial_Stack_Size 869r13
+826V16*Is_Windows_XP{integer} 827b<c,__gnat_is_windows_xp>25 857s10
+830i7 hTask{34|55I9} 858m10 867m10 878r10 885r29 908r34 917r31
+831m7 TaskId{34|61M9} 865m13 865r13 873m13 873r13
+832m7 pTaskParameter{34|53M12} 853m7 862r13 871r13
+833m7 Result{34|61M9} 917m7 918r22 920r20
+834p7 Entry_Point{14|172P9} 855m7 861r13 870r13
+928i7 Succeeded{34|69I9} 929r28 944m10
+1005i7 Discard{34|69I9} 1016m10
+1046V16*Internal_Clock{duration} 1047b<ada,__gnat_monotonic_clock>27 1049s14
+1057o7 Ticks_Per_Second{14|58O12} 1059m34 1059r34 1060r30
+1151m7 Result{34|61M9} 1170m10 1179r25 1185m13 1191r28
+1204m13 CPU_Set{34|61M9} 1213m19 1213r30 1217r71
+1205m13 Mask_Result{34|67M9} 1217m13 1218r28
+1207i17 Proc<integer> 1208r36 1213r55
+X 28 s-tpoaal.adb
+42p7 Tmp{30|109P9} 61m19 61r19 70m16 70r16
+43b7 Is_Self{boolean} 49r10
+45U17 Free[4|23] 61s13 70s10
+51r13 Local_ATCB{30|990R9} 57m13 58m13 60m27 60r27
+X 29 s-tporft.adb
+42r4 Local_ATCB{30|990R9} 54m4 55m4 56m4 57m18 57r18
+43p4 Self_Id{30|109P9} 61m4 67r7 70r49 74r4 75r4 75r29 77r13 78r7 78r39 79r7
+. 82r4 83r4 85r4 86r4 90r4 94r4 99r7 101r4 102r16 104r11
+44b4 Succeeded{boolean} 70m58 72r19
+77i8 L{integer} 78r28 79r28 79r40
+X 30 s-taskin.ads
+47K16*Tasking 26|37w13 43r31 358r24 382r25 396r23 27|45r13 57r15 58r15 494r24
+. 522r25 627r51 29|66r11 30|1235e19
+107R9*Ada_Task_Control_Block 28|46r37 51r34 80r18 29|42r25 61r19 30|1184e14
+109P9*Task_Id(107R9) 26|45r48 51r23 76r39 96r69 100r35 106r66 109r43 113r35
+. 121r33 135r28 185r33 233r29 311r14 334r34 357r20 379r21 388r20 395r19 402r40
+. 408r35 415r47 455r34 483r38 487r42 492r24 501r24 514r31 519r35 528r40 27|73r26
+. 117r32 138r32 160r62 167r13 343r34 353r35 362r25 363r26 439r30 468r26 493r17
+. 519r18 577r17 627r26 658r29 692r31 709r36 783r44 796r40 814r20 927r32 967r30
+. 977r37 1004r45 1069r38 1079r42 1090r24 1106r24 1130r31 1140r35 1150r40
+. 28|41r29 42r17 46r61 78r60 29|40r11 43r17
+112p4*Null_Task{109P9} 29|67r36
+121V13*To_Task_Id[3|23]{109P9} 27|363s37
+124V13*To_Address[3|23]{8|67M9} 27|141s46 853s25
+132E9*Task_States 26|358r32 382r33 396r31 27|494r32 522r33 627r59 30|213e7
+147n7*Runnable{132E9} 27|616r34 29|82r28
+174n7*Delay_Sleep{132E9} 27|600r34
+220I12*Delay_Modes{integer} 26|381r21 390r20 27|521r21 579r20
+234I9*Entry_Index<integer>
+240I9*Task_Entry_Index<234I9> 26|96r41 106r38 28|78r35
+382A9*Dispatching_Domain(boolean)<13|23I9>
+391P9*Dispatching_Domain_Access(382A9)
+393p4*System_Domain{391P9} 27|1197r41
+506e7*State{132E9} 27|600m25 616m25 29|82m19
+535i7*Base_CPU{13|23I9} 27|844r27 846r21 847r51 1165r22 1172r57
+540i7*Current_Priority{8|100I12} 27|685m16 694r23 28|58m31 58r60 29|55m22
+570a7*Task_Image{string} 27|754r30 755r33 757r35 29|85m19
+574i7*Task_Image_Len{natural} 27|744r25 758r37 766r33 29|86m19
+585r7*LL{25|48R9} 27|355r23 441m38 470m38 501m33 501m62 552m31 553m31 606m31
+. 607m31 630m29 668r21 734r25 735m25 738m22 764r33 801m22 803m39 804m39 885m16
+. 894m16 932m31 933m31 939r19 944r45 1026m31 1094r19 1095r41 1110r19 1111r40
+. 1160r19 1172r24 1187r27 1217r60 28|57m31 57r60 29|54m22 101m19
+600m7*Task_Alternate_Stack{8|67M9} 29|94m19
+613r7*Compiler_Data{19|342R9} 27|741m25 742m25 29|99m22
+679p7*Task_Info{24|96P9} 27|720r25 722r26 1183r22 1184r22 1187r47
+686i7*Global_Task_Lock_Nesting{natural} 29|56m22
+711p7*Domain{391P9} 27|843r19 846r46 847r34 1196r22 1197r28 1199r31 1207r34
+. 1208r28
+765I12*Master_Level{integer}
+841I12*ATC_Level_Base{integer}
+856I12*ATC_Level{841I12}
+869R9*Entry_Call_Record
+870p7*Self{109P9} 29|78m31
+899i7*Level{856I12} 29|79m31
+972A9*Entry_Call_Array(869R9)<integer>
+990R9*Ada_Task_Control_Block
+991r7*Common{505R9} 27|355r16 441m31 470m31 501m26 501m55 552m24 553m24 600m18
+. 606m24 607m24 616m18 630m22 668r14 685m9 694r16 720r18 722r19 734r18 735m18
+. 738m15 741m18 742m18 744r18 754r23 755r26 757r28 758r30 764r26 766r26 801m15
+. 803m32 804m32 843r12 844r20 846r14 846r39 847r27 847r44 885m9 894m9 932m24
+. 933m24 939r12 944r38 1026m24 1094r12 1095r34 1110r12 1111r33 1160r12 1165r15
+. 1172r17 1172r50 1183r15 1184r15 1187r20 1187r40 1196r15 1197r21 1199r24
+. 1207r27 1208r21 1217r53 28|57m24 57r53 58m24 58r53 29|54m15 55m15 56m15
+. 82m12 85m12 86m12 94m12 99m15 101m12
+994a7*Entry_Calls{972A9} 29|77r21 78m15 79m15
+1023i7*Master_Of_Task{765I12} 29|74m12 75r37
+1030i7*Master_Within{765I12} 29|75m12
+1045i7*Awake_Count{natural} 29|83m12
+1123i7*ATC_Nesting_Level{856I12} 27|504r54 549r59 603r59
+1135i7*Deferral_Level{natural} 27|503r18 29|90m12
+1143i7*Pending_ATC_Level{841I12} 27|504r26 549r31 603r31
+1160i7*Known_Tasks_Index{integer} 27|935r12 936r25 1032m24
+1200U14*Initialize_ATCB 29|66s19
+X 31 s-tasdeb.ads
+37K24*Debug 27|45w21 58r23 31|166e25
+67a4*Known_Tasks(30|109P9) 27|936m10 1031m7 1031r20 1032r45
+X 34 s-win32.ads
+39K16*Win32 27|46r13 59r15 60r15 142r37 206r36 206r48 222r31 233r31 257r36
+. 297r31 329r34 673r28 832r24 908r65 34|350e17
+51O9*LARGE_INTEGER
+53M12*PVOID{8|67M9} 27|832r30
+55I9*HANDLE<6|89I9> 27|204r16 221r30 232r27 256r34 263r38 296r29 313r46 328r30
+. 830r24
+61M9*DWORD<6|73M9> 27|102r15 250r21 286r31 289r21 291r21 311r18 831r32 833r24
+. 860r13 863r13 864r18 872r13 1151r16 1179r35 1191r38 1204r23
+67M9*DWORD_PTR 27|1205r27
+69I9*BOOL<6|62I9> 27|139r22 219r16 230r16 251r21 290r21 662r13 928r19 1005r17
+83N4*FALSE 27|206r54
+84N4*TRUE 27|142r43 206r42 222r37 233r37 257r42 297r37 329r40 673r34 908r71
+227V13*CloseHandle{69I9} 27|221s17 944s23
+263M12*ProcessorId{61M9} 27|1172r35
+X 35 s-winext.ads
+35K22*Ext 27|46w19 60r21 35|130e21
+51V13*SetThreadIdealProcessor{34|61M9} 27|1171s12 1186s15
+56V13*SetThreadAffinityMask{34|67M9} 27|1217s28
+

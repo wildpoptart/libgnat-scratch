@@ -1,0 +1,155 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnvnnnnnnvvnvnnnnnnnnnnnnnnnn
+
+U system.tasking.protected_objects%b  s-taprob.adb  48087e79 OL PK
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.soft_links.tasking%s  s-solita.adb	s-solita.ali
+W system.task_primitives%s  s-taspri.ads	s-taspri.ali
+W system.task_primitives.operations%s  s-taprop.adb  s-taprop.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.traces%s	s-traces.adb		s-traces.ali
+
+U system.tasking.protected_objects%s  s-taprob.ads  e2c8a7eb EB EE NE OL PK
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-atacco.ads		20090409150019 1dc856ad
+D s-exctab.ads		20090417131547 66e51330
+D s-linux.ads		20090730092306 47911ab1
+D s-multip.ads		20101011073009 38ac9f73
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-soflin.ads		20090729085153 9414c974
+D s-solita.ads		20090409150019 4e08c3ec
+D s-stache.ads		20090417130712 596fc1b4
+D s-stausa.ads		20101018101807 bba781f7
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-tasinf.ads		20090409150019 21316953
+D s-taspri.ads		20080408071349 af44aca8
+D s-taprop.ads		20090409150019 07f79e46
+D s-taskin.ads		20101021101406 b2eaee08
+D s-taprob.ads		20090409150019 502249e3
+D s-taprob.adb		20080413172522 3f958160
+D s-traent.ads		20090417130712 5221ee41
+D s-traces.ads		20090409150019 f21d68aa
+D s-unstyp.ads		20090409150019 6ae15c76
+X 6 system.ads
+37K9*System 153e11 24|48r9 131r16 141r13 142r13 174r42 203r16 219r17 222r21
+. 246r5 25|39r6 40r6 41r6 42r6 44r14 46r8 47r8 77r28 81r25 82r29 91r42 217r16
+. 261r13 280r4 281r5
+64M9*Address 24|131r23 141r20 142r20
+105I12*Any_Priority{integer} 24|174r49 203r23 219r24 222r28 25|81r32 82r36
+. 91r49 217r23
+106I12*Priority{105I12} 25|77r35
+X 12 s-parame.ads
+51K16*Parameters 204e22 25|40w13 127r10 184r10 270r10
+184b4*Runtime_Traces{boolean} 25|127r21 184r21 270r21
+X 13 s-soflin.ads
+45K16*Soft_Links 397e22 25|42r13 280r11
+X 14 s-solita.ads
+37K27*Tasking 43e30 25|42w24 280r22
+39U14*Init_Tasking_Soft_Links 25|280s30
+X 21 s-taspri.ads
+45K16*Task_Primitives 123e27 24|216r19 25|39r13 46r15 261r20
+48R9*Lock 24|216r35
+X 22 s-taprop.ads
+39K32*Operations 546e38 25|39w29 46r31 261r36
+133U14*Initialize_Lock 25|80s7
+160U14*Finalize_Lock 25|62s7
+166U14*Write_Lock 25|125s7
+197U14*Read_Lock 25|182s7
+221U14*Unlock 25|268s7
+287U14*Set_Ceiling 25|261s47
+X 23 s-taskin.ads
+47K16*Tasking 6|37k9 23|1130e19 24|48r16 246r12 25|44r21 279r4 281r12
+105R9*Ada_Task_Control_Block 1084e14
+107P9*Task_Id(105R9) 24|232r15 25|141r32 197r32 234r32
+110p4*Null_Task{107P9} 25|83r23 246r29
+114V13*Self{107P9} 25|121s50 141s43 178s50 197s43 234s43
+221N4*Null_Entry 24|122r39
+223N4*Max_Entry 24|124r38
+229I9*Entry_Index<integer> 24|126r38
+393V13*Detect_Blocking{boolean} 25|121s10 139s10 178s10 195s10 232s10
+496i7*Protected_Action_Nesting{natural} 25|149m28 150r30 205m28 206r30 241r43
+. 251m28 252r30
+707i4*Unspecified_Priority{integer} 25|76r26
+892r7*Common{449R9} 25|149m21 150r23 205m21 206r23 241r36 251m21 252r23
+1090U14*Initialize 25|279s12
+X 24 s-taprob.ads
+48K24*Protected_Objects 23|47k16 24|246l20 246e37 25|44b29 281l20 281t37
+122N4*Null_Protected_Entry 127r12
+124N4*Max_Protected_Entry 127r36
+126I9*Protected_Entry_Index<23|229I9> 132r16 143r13
+129P9*Barrier_Function_Pointer(boolean) 151r17
+131m9 O{6|64M9}
+132i9 E{126I9}
+139P9*Entry_Action_Pointer 152r17
+141m9 O{6|64M9}
+142m9 P{6|64M9}
+143i9 E{126I9}
+150R9*Entry_Body 153e14 157r41
+151p7*Barrier{129P9}
+152p7*Action{139P9}
+157P9*Entry_Body_Access(150R9)
+159R9*Protection 169r41 215c9 239e14 241r51 25|60r51
+169P9*Protection_Access(159R9) 171r23 174r16 178r26 183r29 189r39 202r16
+. 206r31 25|70r26 91r16 100r29 159r39 216r16 226r31
+171p4*Null_PO{169P9}
+173V13*Get_Ceiling{6|105I12} 174>7 25|90b13 94l8 94t19
+174p7 Object{169P9} 25|91b7 93r14
+177U14*Initialize_Protection 178>7 179>7 25|69b14 84l8 84t29
+178p7 Object{169P9} 25|70b7 80m39 81r7 82r7 83r7
+179i7 Ceiling_Priority{integer} 25|71b7 73r34
+183U14*Lock 183>20 25|100b14 153l8 153t12
+183p20 Object{169P9} 25|100b20 121r35 125m19 145r13
+189U14*Lock_Read_Only 189>30 25|159b14 209l8 209t22
+189p30 Object{169P9} 25|159b30 178r35 182m18 201r13
+201U14*Set_Ceiling 202>7 203>7 25|215b14 220l8 220t19
+202p7 Object{169P9} 25|216b7 219r7
+203i7 Prio{6|105I12} 25|217b7 219r29
+206U14*Unlock 206>22 25|226b14 273l8 273t14
+206p22 Object{169P9} 25|226b22 242r39 246r13 259r10 259r32 262m16 262r33
+. 265r10 265r28 268m15
+216r7*L{21|48R9} 25|62m29 80m46 125m26 182m25 262m23 268m22
+219i7*Ceiling{6|105I12} 25|81m14 259r39 265m17
+222i7*New_Ceiling{6|105I12} 25|82m14 93r21 219m14 259r17 262r40 265r35
+232p7*Owner{23|107P9} 25|83m14 121r42 145m20 178r42 201m20 242r46 246m20
+241U14 Finalize_Protection 241=35 25|60b14 63l8 63t27
+241r35 Object{159R9} 25|60b35 62m22
+X 25 s-taprob.adb
+53e4 Locking_Policy{character} 54m22 260r13
+73i7 Init_Priority{integer} 76r10 77m10 80r24 81r46 82r50
+101b7 Ceiling_Violation{boolean} 125m36 131r10
+141p13 Self_Id{23|107P9} 145r29 149r13 150r15
+160b7 Ceiling_Violation{boolean} 182m35 188r10
+197p13 Self_Id{23|107P9} 201r29 205r13 206r15
+234p13 Self_Id{23|107P9} 241r28 242r54 251r13 252r15
+X 27 s-traces.ads
+55K16*Traces 25|41w13 47r15 27|114e18
+94n7*PO_Lock{58E9} 25|128r27 185r27
+95n7*PO_Unlock{58E9} 25|271r27
+110U14*Send_Trace_Info 25|128s10 185s10 271s10
+

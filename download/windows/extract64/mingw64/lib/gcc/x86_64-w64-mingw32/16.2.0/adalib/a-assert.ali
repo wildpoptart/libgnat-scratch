@@ -1,0 +1,54 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_ELABORATION_CODE
+
+U ada.assertions%b	a-assert.adb		8b2c6428 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+
+U ada.assertions%s	a-assert.ads		cc3ec2fd EE OL PU PK
+W ada%s			ada.ads			ada.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-assert.ads		20260807074606 ba465f5c ada.assertions%s
+D a-assert.adb		20260807074606 316a3b74 ada.assertions%b
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+G a e
+G c Z s b [assert ada__assertions 49 14 none]
+G c Z s b [assert ada__assertions 52 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 2|44r9 55r5 3|32r14 42r16 49r16 53r5
+X 2 a-assert.ads
+44K13*Assertions 1|18k9 2|55l9 55e19 3|32b18 42r20 49r20 53l9 53t19
+47X4*Assertion_Error 3|42r31 49r31
+49U14*Assert 49>22 3|39b14 44l8 44t14
+49b22 Check{boolean} 50r13 3|39b22 41r10
+52U14*Assert 52>22 52>39 3|46b14 51l8 51t14
+52b22 Check{boolean} 53r13 3|46b22 48r10
+52a39 Message{string} 3|46b39 49r52
+

@@ -1,0 +1,33 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U gnat.sse%s		g-sse.ads		f3f4e206 NE OL PK
+W gnat%s		gnat.ads		gnat.ali
+
+D gnat.ads		20050905075125 fd2ad2f1
+D g-sse.ads		20090728080709 0ede30f7
+D system.ads		20120503154647 23e1f70b
+X 1 gnat.ads
+36K9*GNAT 39e9 2|110r9 137r5
+X 2 g-sse.ads
+110K14*SSE 1|36k9 2|137l10 137e13
+116N4*VECTOR_BYTES
+119N4*VECTOR_ALIGN
+133F9*Float32<float>
+134F9*Float64<long_float>
+135I9*Integer64<long_long_integer>
+

@@ -1,0 +1,77 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+
+U ada.unchecked_deallocate_subpool%b  a-undesu.adb  f050cfe1 NE OL PU SU
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.storage_pools.subpools.finalization%s  s-spsufi.adb  s-spsufi.ali
+
+U ada.unchecked_deallocate_subpool%s  a-undesu.ads  c1d9e5fa NE OL PR SU
+W ada%s			ada.ads			ada.ali
+W system%s		system.ads		system.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-finali.ads		20260807074606 099c16e4 ada.finalization%s
+D a-stream.ads		20260807074606 cb01a8f8 ada.streams%s
+D a-string.ads		20260807074606 90ac6797 ada.strings%s
+D a-sttebu.ads		20260807074606 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260807074606 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260807074606 2dbf449c ada.tags%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D a-undesu.ads		20260807074606 4f46efb4 ada.unchecked_deallocate_subpool%s
+D a-undesu.adb		20260807074606 f3810922 ada.unchecked_deallocate_subpool%b
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-finpri.ads		20260807074606 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20260807074606 0a7c3ed4 system.finalization_root%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-putima.ads		20260807074606 1b989439 system.put_images%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20260807074606 45459446 system.storage_pools%s
+D s-stposu.ads		20260807074606 f8e797ef system.storage_pools.subpools%s
+D s-spsufi.ads		20260807074606 b470be98 system.storage_pools.subpools.finalization%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s b [unchecked_deallocate_subpool ada 18 15 none]
+X 1 ada.ads
+18K9*Ada 22e8 10|18r11 11|38r11 43r5
+X 10 a-undesu.ads
+18U15*Unchecked_Deallocate_Subpool 1|18k9 10|19=4 11|38b15 43l9 43t37
+19p4 Subpool{27|58P9} 11|39b4 42m29
+X 14 system.ads
+37K9*System 10|16r6 19r21 11|32r6 33r6 35r5 36r5 39r21 14|214e11
+X 26 s-stopoo.ads
+39K16*Storage_Pools 10|16r13 19r28 11|32r13 33r13 35r12 36r12 39r28 26|101e25
+X 27 s-stposu.ads
+40K30*Subpools 10|16w27 19r42 11|32w27 33r27 35w26 36r26 39r42 27|349e34
+58P9*Subpool_Handle(52R9) 10|19r51 11|39r51
+X 28 s-spsufi.ads
+32K39*Finalization 11|33w36 36w35 28|46e47
+39U14*Finalize_And_Deallocate 11|42s4
+

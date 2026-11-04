@@ -1,0 +1,71 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P SS ZX
+
+RN
+
+U ada.strings.wide_fixed.wide_hash%s  a-swfwha.ads  c5c1f377 NE OL PU
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.wide_fixed%s  a-stwifi.adb	a-stwifi.ali
+W ada.strings.wide_hash%s  a-stwiha.adb		a-stwiha.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-contai.ads		20260807074606 61e5e089 ada.containers%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-finali.ads		20260807074606 099c16e4 ada.finalization%s
+D a-stream.ads		20260807074606 cb01a8f8 ada.streams%s
+D a-string.ads		20260807074606 90ac6797 ada.strings%s
+D a-sttebu.ads		20260807074606 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260807074606 c6ced0ae ada.strings.utf_encoding%s
+D a-stwifi.ads		20260807074606 d82fa5f6 ada.strings.wide_fixed%s
+D a-swfwha.ads		20260807074606 fdd1a852 ada.strings.wide_fixed.wide_hash%s
+D a-stwiha.ads		20260807074606 81da1e5a ada.strings.wide_hash%s
+D a-stwima.ads		20260807074606 622132d7 ada.strings.wide_maps%s
+D a-tags.ads		20260807074606 2dbf449c ada.tags%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-finpri.ads		20260807074606 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20260807074606 0a7c3ed4 system.finalization_root%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-putima.ads		20260807074606 1b989439 system.put_images%s
+D s-retsta.ads		20260807074606 0f6b06cb system.return_stack%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-stratt.ads		20260807074606 80b8dafb system.stream_attributes%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+X 1 ada.ads
+18K9*Ada 22e8 10|16r6 16r22 18r10 20r11 22r14
+X 2 a-contai.ads
+16K13*Containers 28e19 10|16w10 19r30
+19M9*Hash_Type 10|19r41
+X 6 a-string.ads
+16K13*Strings 1|18k9 6|35e16 10|16r26 18r14 20r15 22r18
+X 9 a-stwifi.ads
+18K21*Wide_Fixed 6|16k13 9|254e27 10|18r22 22r26
+X 10 a-swfwha.ads
+18V33*Wide_Hash=20:23{2|19M9} 22r37
+19a4 Key{wide_string}
+X 11 a-stwiha.ads
+18V22*Wide_Hash{2|19M9} 10|16w34 20r23
+

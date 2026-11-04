@@ -1,0 +1,34 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U system.program_info%b	s-proinf.adb		850aa1f9 NE OL PK
+W system%s		system.ads		system.ali
+
+U system.program_info%s	s-proinf.ads		34a8cc35 NE OL PR PK
+W system%s		system.ads		system.ali
+
+D system.ads		20120503154647 23e1f70b
+D s-proinf.ads		20090409150019 17493b3e
+D s-proinf.adb		20090409150019 92439ac7
+X 1 system.ads
+37K9*System 153e11 2|35r9 43r5 3|32r14 41r5
+X 2 s-proinf.ads
+35K16*Program_Info 1|37k9 2|43l12 43e24 3|32b21 41l12 41t24
+38V13*Default_Task_Stack{integer} 3|36b13 39l8 39t26
+X 3 s-proinf.adb
+34N4 Default_Stack_Size 38r14
+

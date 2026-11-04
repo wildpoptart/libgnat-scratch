@@ -1,0 +1,44 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+
+U system.img_real%s	s-imgrea.ads		bfec9648 NE OL PK
+W system%s		system.ads		system.ali
+W system.img_llf%s	s-imgllf.ads		s-imgllf.ali
+
+D system.ads		20260807074606 898beeee system%s
+D s-imager.ads		20260807074606 45c7157d system.image_r%s
+D s-imageu.ads		20260807074606 95851461 system.image_u%s
+D s-imgllf.ads		20260807074606 e85a7fe5 system.img_llf%s
+D s-imgllu.ads		20260807074606 047fb1fb system.img_llu%s
+D s-imgrea.ads		20260807074606 de3d0743 system.img_real%s
+D s-powllf.ads		20260807074606 9b99e843 system.powten_llf%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+G a e
+X 1 system.ads
+37K9*System 214e11 6|36r6 38r9 47r14 57r5
+X 4 s-imgllf.ads
+40K16*Img_LLF 72e19 6|36w13 47r21
+63U14*Set_Image_Long_Long_Float=70:19 6|47r29
+X 6 s-imgrea.ads
+38K16*Img_Real 1|37k9 6|57l12 57e20
+40U14*Set_Image_Real=47:29
+41f7 V{long_long_float}
+42a7 S{string}
+43i7 P{natural}
+44i7 Fore{natural}
+45i7 Aft{natural}
+46i7 Exp{natural}
+

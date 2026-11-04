@@ -1,0 +1,130 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnvnnvnnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U ada.strings.unbounded.text_io%b  a-suteio.adb	97a2d3b4 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+U ada.strings.unbounded.text_io%s  a-suteio.ads	f8316fe5 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20101220072657 e684739b
+D a-suteio.ads		20090409150019 26d8e9aa
+D a-suteio.adb		20100623125137 8917cfca
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20120503154647 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 12|37r6 39r9 42r30 48r14 54r31 56r31 61r5 13|32r6 32r23 34r14
+. 57r30 80r14 132r5
+X 9 a-string.ads
+16K13*Strings 1|16k9 9|35e16 12|39r13 61r9 13|34r18 132r9
+X 11 a-strunb.ads
+77K21*Unbounded 9|16k13 11|490e26 12|39r21 61r17 13|34r26 132r17
+80R9*Unbounded_String 474e14 12|41r60 42r60 49r18 50r35 53r58 54r58 55r58
+. 56r58 13|40r29 43r16 57r60 60r16 74r35 81r18 100r23 107r41 118r28 125r46
+103U14*Set_Unbounded_String 13|47s7 64s7 88s7
+112U14*Append 13|51s10 68s10 92s10
+434R9 Shared_String
+438i7*Last{natural} 13|104r29 111r35 122r34 129r40
+439a7*Data{string} 13|104r15 111r21 122r20 129r26
+444P9 Shared_String_Access(434R9) 13|101r21 108r21 119r21 126r21
+473p7*Reference{444P9} 13|101r47 108r47 119r47 126r47
+X 12 a-suteio.ads
+39K31*Text_IO 11|77k21 12|61l27 61e34 13|34b36 132l27 132t34
+41V13*Get_Line{11|80R9} 13|40b13 55l8 55t16
+42V13*Get_Line{11|80R9} 42>23 13|57b13 72l8 72t16
+42p23 File{15|52P9} 13|57b23 63r17 67r20
+47U14*Get_Line 48>7 49<7 13|76s7 79b14 94l8 94t16
+48p7 File{15|52P9} 13|80b7 87r17 91r20
+49r7 Item{11|80R9} 13|81b7 88m29 92m18
+50U14*Get_Line 50<24 13|74b14 77l8 77t16
+50r24 Item{11|80R9} 13|74b24 76m32
+53U14*Put 53>54 13|100b14 105l8 105t11
+53r54 U{11|80R9} 13|100b19 101r45
+54U14*Put 54>24 54>54 13|107b14 112l8 112t11
+54p24 File{15|52P9} 13|107b19 111r12
+54r54 U{11|80R9} 13|107b37 108r45
+55U14*Put_Line 55>54 13|118b14 123l8 123t16
+55r54 U{11|80R9} 13|118b24 119r45
+56U14*Put_Line 56>24 56>54 13|125b14 130l8 130t16
+56p24 File{15|52P9} 13|125b24 129r17
+56r54 U{11|80R9} 13|125b42 126r45
+X 13 a-suteio.adb
+41a7 Buffer{string} 46m17 47r37 49r20 50m20 51r26
+42i7 Last{natural} 46m25 47r50 49r13 50m28 51r39
+43r7 Result{11|80R9} 47m29 51m18 54r14
+58a7 Buffer{string} 63m23 64r37 66r20 67m26 68r26
+59i7 Last{natural} 63m31 64r50 66r13 67m34 68r39
+60r7 Result{11|80R9} 64m29 68m18 71r14
+83a7 Buffer{string} 87m23 88r35 90r20 91m26 92r24
+84i7 Last{natural} 87m31 88r48 90r13 91m34 92r37
+101p7 UR{11|444P9} 104r12 104r26
+108p7 UR{11|444P9} 111r18 111r32
+119p7 UR{11|444P9} 122r17 122r31
+126p7 UR{11|444P9} 129r23 129r37
+X 15 a-textio.ads
+49K13*Text_IO 12|37w10 42r34 48r18 54r35 56r35 13|32w10 32r27 57r34 80r18
+. 15|472e16
+52P9*File_Type(370R9) 12|42r42 48r26 54r43 56r43 13|57r42 80r26 107r26 125r31
+122V13*Current_Input{52P9} 13|76s17
+242U14*Put 13|111s7
+243U14*Put 13|104s7
+245U14*Get_Line 13|63s7 67s10 87s7 91s10
+250U14*Get_Line 13|46s7 50s10
+260U14*Put_Line 13|129s7
+264U14*Put_Line 13|122s7
+

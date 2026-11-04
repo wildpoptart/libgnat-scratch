@@ -1,0 +1,31 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U gnat.current_exception%s  g-curexc.ads	ba174f04 NE OL PU PK
+W gnat%s		gnat.ads		gnat.ali
+
+D gnat.ads		20050905075125 fd2ad2f1
+D g-curexc.ads		20080820135520 473d9df5
+D system.ads		20120503154647 23e1f70b
+X 1 gnat.ads
+36K9*GNAT 39e9 2|46r9 114r5
+X 2 g-curexc.ads
+46K14*Current_Exception 1|36k9 2|114l10 114e27
+55V13*Exception_Information{string} 110b30
+61V13*Exception_Message{string} 111b30
+67V13*Exception_Name{string} 112b30
+

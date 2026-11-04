@@ -1,0 +1,43 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+
+U gnat.c_time%s		g-c_time.ads		ca7e3a9a NE OL PU
+W gnat%s		gnat.ads		gnat.ali
+W system%s		system.ads		system.ali
+W system.c_time%s	s-c_time.adb		s-c_time.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D gnat.ads		20260807074606 b5988c27 gnat%s
+D g-c_time.ads		20260807074606 9ae4667d gnat.c_time%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-c_time.ads		20260807074606 e502d0c0 system.c_time%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-oscons.ads		20261013120928 b46ffdda system.os_constants%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+X 3 gnat.ads
+40K9*GNAT 63e9 4|38r9
+X 4 g-c_time.ads
+38K14*C_Time=38:36
+X 7 system.ads
+37K9*System 4|37r6 38r29 7|214e11
+X 8 s-c_time.ads
+39K16*C_Time 4|37w13 38r36 8|93e18
+

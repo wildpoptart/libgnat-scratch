@@ -1,0 +1,56 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+
+U system.os_locks%s	s-oslock.ads		2dc4039e NE OL PR PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+W system.win32%s	s-win32.ads		s-win32.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-oslock.ads		20260807074606 88eb514b system.os_locks%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-win32.ads		20260807074606 f77987dc system.win32%s
+G a e
+G c Z s s [critical_sectionIP system__os_locks 49 9 none]
+X 3 interfac.ads
+47K9*Interfaces 247e15 7|34r6 59r23
+X 4 i-c.ads
+33K20*C 605e17 7|34w17 59r34
+89I9*ptrdiff_t<long_long_integer>
+92M9*size_t 7|59r36
+X 5 system.ads
+37K9*System 214e11 7|35r6 37r9 50r19 62r5
+67M9*Address 7|50r26
+X 7 s-oslock.ads
+37K16*OS_Locks 5|37k9 7|49E9 62l12 62e20
+40R9*CRITICAL_SECTION 42r24 49c9 60e14
+42R12*RTS_Lock{40R9}
+50m7*DebugInfo{5|67M9}
+52i7*LockCount{long_integer}
+53i7*RecursionCount{long_integer}
+54i7*OwningThread{10|55I9}
+58i7*LockSemaphore{10|55I9}
+59m7*SpinCount{4|92M9}
+X 10 s-win32.ads
+39K16*Win32 7|35w13 54r24 58r23 10|350e17
+55I9*HANDLE<4|89I9> 7|54r30 58r29
+

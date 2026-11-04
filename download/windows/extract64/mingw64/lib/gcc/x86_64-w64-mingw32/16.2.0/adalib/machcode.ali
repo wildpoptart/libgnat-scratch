@@ -1,0 +1,30 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+
+U machine_code%s	machcode.ads		aa474e9e NE OL PU
+W system%s		system.ads		system.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+D machcode.ads		20260807074606 678d4680 machine_code%s
+D system.ads		20260807074606 898beeee system%s
+D s-maccod.ads		20260807074606 cdca081e system.machine_code%s
+G a e
+X 1 machcode.ads
+20K9*Machine_Code=20:37
+X 2 system.ads
+37K9*System 1|18r6 20r30 2|214e11
+X 3 s-maccod.ads
+38K16*Machine_Code 1|18w13 20r37 3|142e24
+

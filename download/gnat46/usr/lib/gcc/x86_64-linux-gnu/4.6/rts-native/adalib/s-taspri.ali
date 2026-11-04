@@ -1,0 +1,66 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnvvnnnnnnnnnnnnnnnnnn
+
+U system.task_primitives%s  s-taspri.ads	e28875aa NE OL PR PK
+W system%s		system.ads		system.ali
+W system.os_interface%s	s-osinte.adb		s-osinte.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-linux.ads		20090730092306 47911ab1
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-stalib.ads		20101021102512 c4241c00
+D s-taspri.ads		20080408071349 af44aca8
+D s-unstyp.ads		20090409150019 6ae15c76
+X 4 i-c.ads
+45M9*unsigned_long
+47M9*unsigned_char
+X 5 system.ads
+37K9*System 153e11 11|43r6 45r9 68r28 77r39 82r21 83r25 95r19 98r20 103r24
+. 111r21 116r20 123r5
+64M9*Address 11|68r35 111r28
+X 8 s-osinte.ads
+47K16*OS_Interface 568e24 11|43w13 77r46 82r28 83r32 95r26 98r27 103r31 116r27
+59M12*unsigned_char{4|47M9}
+272M9*pthread_t<4|45M9> 11|103r44
+278R9*pthread_mutex_t 11|82r41 83r45 95r39
+279A9*pthread_cond_t(59M12) 11|98r40 116r40
+307N4*Alternate_Stack_Size 11|77r59
+X 11 s-taspri.ads
+45K16*Task_Primitives 5|37k9 11|123l12 123e27
+48R9*Lock 82c9
+51R9*RTS_Lock 83c9 119r19
+56R9*Suspension_Object 85c9 100e14
+59P9*Task_Body_Access
+63R9*Private_Data 102c9 121e14
+68M12*Task_Address{5|64M9}
+74N4*Task_Address_Size
+77N4*Alternate_Stack_Size
+86b7*State{boolean}
+92b7*Waiting{boolean}
+95r7*L{8|278R9}
+98a7*CV{8|279A9}
+103m7*Thread{8|272M9}
+111m7*LWP{5|64M9}
+116a7*CV{8|279A9}
+119r7*L{51R9}
+

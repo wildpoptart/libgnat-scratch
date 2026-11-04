@@ -1,0 +1,46 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U ada.exceptions.is_null_occurrence%b  a-einuoc.adb  17d21067 NE OL PR SU
+W ada.exceptions%s	a-except.adb		a-except.ali
+
+U ada.exceptions.is_null_occurrence%s  a-einuoc.ads  c4bf5e73 NE OL PR SU
+W ada.exceptions%s	a-except.adb		a-except.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-einuoc.ads		20090619122338 c8ce44ba
+D a-einuoc.adb		20090619122907 df1c54dd
+D a-unccon.ads		20070406091342 f9eb8f06
+D system.ads		20120503154647 23e1f70b
+D s-parame.ads		20091130110856 9c5d83fa
+D s-stalib.ads		20101021102512 c4241c00
+D s-traent.ads		20090417130712 5221ee41
+X 1 ada.ads
+16K9*Ada 19e8 3|37r10 39r22 4|36r10 48r5
+X 2 a-except.ads
+55K13*Exceptions 370e19 3|37r14 39r26 4|36r14 48r9
+63P9*Exception_Id(8|122R9)
+66p4*Null_Id{63P9} 4|43r14
+68R9*Exception_Occurrence 332e14 3|38r8 4|37r8
+290p7*Id{63P9} 4|43r9
+X 3 a-einuoc.ads
+37V25*Is_Null_Occurrence{boolean} 2|55k13 3|38>4 39r37 4|36b25 48l20 48t38
+38r4 X{2|68R9} 4|37b4 43r7
+X 8 s-stalib.ads
+122R9*Exception_Data
+

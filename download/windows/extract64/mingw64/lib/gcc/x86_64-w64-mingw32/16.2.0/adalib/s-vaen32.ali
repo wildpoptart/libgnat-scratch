@@ -1,0 +1,68 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+
+U system.val_enum_32%s	s-vaen32.ads		d3b417ad NE OL PR PK
+W ada%s			ada.ads			ada.ali
+Z ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.val_util%s	s-valuti.adb		s-valuti.ali
+W system.value_n%s
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D system.ads		20260807074606 898beeee system%s
+D s-vaen32.ads		20260807074606 90f611d6 system.val_enum_32%s
+D s-valuti.ads		20260807074606 ecabe223 system.val_util%s
+D s-valuen.ads		20260807074606 5bd81154 system.value_n%s
+D s-valuen.adb		20260807074606 7c71222f system.value_n%b
+G a e
+G c Z s s [value_enumeration system__val_enum_32__impl 45 13 41_4]
+G c Z s s [valid_value_enumeration system__val_enum_32__impl 72 13 41_4]
+G c Z s s [value_enumeration_pos system__val_enum_32__impl 38 13 41_4]
+X 3 interfac.ads
+47K9*Interfaces 247e15 5|35w6 41r33
+65I9*Integer_32<integer> 5|41r44
+X 4 system.ads
+37K9*System 214e11 5|36r6 38r9 45r17 55r17 63r5
+67M9*Address 5|45r24 55r24
+X 5 s-vaen32.ads
+38K16*Val_Enum_32 4|37k9 5|63l12 63e23
+41K12*Impl[7|40] 46r17 51r14 56r17 61r14
+43V13*Value_Enumeration_32=51:19{natural}
+44a7 Names{string}
+45m7 Indexes{4|67M9}
+46p7 Hash{7|43P9[41]}
+47i7 Num{natural}
+48b7 Is_Wide{boolean}
+49a7 Str{string}
+53V13*Valid_Value_Enumeration_32=61:19{boolean}
+54a7 Names{string}
+55m7 Indexes{4|67M9}
+56p7 Hash{7|43P9[41]}
+57i7 Num{natural}
+58b7 Is_Wide{boolean}
+59a7 Str{string}
+X 7 s-valuen.ads
+40k16*Value_N 5|36w13 41r24 7|85e19
+43P9*Hash_Function_Ptr(integer) 5|46r22[41] 56r22[41]
+45V13*Value_Enumeration{natural} 5|51r19[41]
+72V13*Valid_Value_Enumeration{boolean} 5|61r19[41]
+

@@ -1,0 +1,173 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U gnat.cpp.std.type_info%b  g-cstyin.adb	75ce30c1 NE OL PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.unchecked_conversion%s
+W gnat.cpp.std%s	g-cppstd.adb		g-cppstd.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+
+U gnat.cpp.std.type_info%s  g-cstyin.ads	38debe4d EE NE OL PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W gnat.cpp.std%s	g-cppstd.adb		g-cppstd.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-string.ads		20260807074606 90ac6797 ada.strings%s
+D a-sttebu.ads		20260807074606 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260807074606 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260807074606 2dbf449c ada.tags%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D gnat.ads		20260807074606 b5988c27 gnat%s
+D g-cpp.ads		20260807074606 71147c8f gnat.cpp%s
+D g-cppstd.ads		20260807074606 d32eb61c gnat.cpp.std%s
+D g-cstyin.ads		20260807074606 4e57d047 gnat.cpp.std.type_info%s
+D g-cstyin.adb		20260807074606 5c7bcb17 gnat.cpp.std.type_info%b
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D i-c.ads		20260807074606 dbdd3be7 interfaces.c%s
+D i-cexten.ads		20260807074606 be1de098 interfaces.c.extensions%s
+D i-cstrin.ads		20260807074606 49eced87 interfaces.c.strings%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260807074606 5d88fdea system.soft_links%s
+D s-stache.ads		20260807074606 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+G a e
+G c Z s s [destructor gnat__cpp__std__type_info 63 14 none]
+G c Z s s [delete_destructor gnat__cpp__std__type_info 66 14 none]
+G c Z s b [name gnat__cpp__std__type_info 72 13 none]
+G c Z s b [before gnat__cpp__std__type_info 80 13 none]
+G c Z s b [equals gnat__cpp__std__type_info 88 13 none]
+G c Z s s [is_pointer_p gnat__cpp__std__type_info 106 13 none]
+G c Z s s [is_function_p gnat__cpp__std__type_info 111 13 none]
+G c Z s s [do_catch gnat__cpp__std__type_info 116 13 none]
+G c Z s s [do_upcast gnat__cpp__std__type_info 125 13 none]
+G c Z b b [strcmp gnat__cpp__std__type_info 41 13 none]
+G c Z b b [name_starts_with_asterisk gnat__cpp__std__type_info 44 13 none]
+G c Z b b [name_past_asterisk gnat__cpp__std__type_info 47 13 none]
+G c Z b b [to_address gnat__cpp__std__type_info 50 13 none]
+G c Z b b [to_pointer gnat__cpp__std__type_info 52 13 none]
+G c Z b b [convert_caught_object gnat__cpp__std__type_info 117 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 12|37r6 51r11 53r11
+X 7 a-unccon.ads
+23v14*Unchecked_Conversion 12|37w10 51r15 53r15
+X 8 gnat.ads
+40K9*GNAT 63e9 11|49r17 141r5 12|39r14 160r5
+X 9 g-cpp.ads
+35K14*CPP 8|40k9 9|36e13 11|49r22 141r10 12|39r19 160r10
+X 10 g-cppstd.ads
+40K18*Std 9|35k14 10|97e17 11|49r26 141r14 12|39r23 160r14
+X 11 g-cstyin.ads
+49K30*Type_Info 10|40k18 11|137E9 141l18 141e27 12|39b27 160l18 160t27
+50H9*type_info 51r24 63p14 63r40 66p14 66r47 72r42 80r50 88r50 106p13 106r50
+. 111p13 111r51 116p13 117r39 118r39 125p13 126r33 127r33 137c9 139e14 12|44r63
+. 47r56 55r63 64r56 79r42 87r50 103r50 117r60 133r60
+63U14*Destructor 63^26 64b<cpp,_ZNSt9type_infoD1Ev>24 65r30
+63p26 this(50R9)
+66U14*Delete_Destructor 66^33 67b<cpp,_ZNSt9type_InfoD0Ev>24 68r30
+66p33 This(50R9)
+72V13*Name{16|65P9} 72^19 12|79b13
+72p19 this(50R9) 12|81r8
+80V13*Before{boolean} 80^21 80^27 12|87b13 97l8 97t14
+80p21 this(50R9) 12|87b21 90r14 93r25 96r26
+80p27 that(50R9) 12|87b27 91r21 93r40 96r55
+88V13*Equals{boolean} 88^21 88^27 12|103b13 115l8 115t14 138s17
+88p21 this(50R9) 12|103b21 106r10 110r10 114r22
+88p27 that(50R9) 12|103b27 106r17 114r37
+106V13*Is_Pointer_P{15|60E12} 106^27 108b<cpp,_ZNKSt9type_info14__is_pointer_pEv>24
+. 12|143R20
+106p27 this(50R9)
+111V13*Is_Function_P{15|60E12} 111^28 113b<cpp,_ZNKSt9type_info15__is_function_pEv>24
+111p28 this(50R9)
+116V13*Do_Catch{15|60E12} 117^7 118^7 119=7 120>7 122b<cpp,_ZNKSt9type_info10__do_catchEPKS_PPvj>24
+. 12|152R20
+117p7 this(50R9)
+118p7 thrown_type(50R9)
+119m7 thrown_object{17|67M9}
+120m7 outer_count{14|71M9}
+125V13*Do_Upcast{15|60E12} 126^7 127^7 128=7 131b<cpp,_ZNKSt9type_info11__do_upcastEPKN10__cxxabiv117__class_type_infoEPPv>12
+126p7 this(50R9)
+127p7 target(50R9)
+128m7 obj_ptr{17|67M9}
+138p7*Raw_Name{16|65P9} 12|57r58 66r49 93r30 93r45 96r31 96r60 114r27 114r42
+X 12 g-cstyin.adb
+41V13 strcmp{14|62I9} 41>21 41>24 42b30 93s17 114s14
+41p21 L{16|65P9}
+41p24 R{16|65P9}
+44V13 Name_Starts_With_Asterisk{boolean} 44^40 55b13 62l8 62t33 68s15 90s19
+. 91s26 110s15
+44p40 this(11|50R9) 55b40 57r53
+47V13 Name_Past_Asterisk{16|65P9} 47^33 64b13 73l8 73t26 81s13
+47p33 this(11|50R9) 64b33 66r44 68r10
+50V13 To_Address[7|23]{17|67M9} 57s41 66s32 96s14 96s43
+52V13 To_Pointer[7|23]{16|65P9} 72s14
+57m7 Addr{17|67M9} 59r25
+58e7 C{14|109E9} 59m11 59r11 61r14
+66m7 Addr{17|67M9} 69m10 69r18 72r26
+117V13 Convert_Caught_Object{14|96E9} 117^36 117^44 118=36 119>36 121i<cpp,__gnat_convert_caught_object>24
+. 133b13 158l8 158t29
+117p36 Choice(11|50R9) 133b36 138r10 152r13
+117p44 Except(11|50R9) 133b44 138r25 143r13 152r30
+118m36 Thrown{17|67M9} 134b36 146r48 148m16 152m38 152r38
+119e36 Lang{character} 135b36 142r10
+145m16 Thrown_Indirect{17|67M9} 146m20 146r20 148r26
+X 13 interfac.ads
+47K9*Interfaces 11|35r6 36r6 37r6 74r26 107r34 112r35 120r23 121r23 129r17
+. 138r18 12|34r6 34r24 35r6 35r35 36r6 36r32 41r46 120r53 136r53 13|247e15
+X 14 i-c.ads
+33K20*C 11|35w17 36r17 37r17 74r37 107r45 112r46 120r34 121r34 129r28 138r29
+. 12|34w17 34w35 35r17 35r46 36r17 36r43 41r57 120r64 136r64 14|605e17
+62I9*int<integer> 12|41r59
+71M9*unsigned 11|120r36
+96B9*C_bool<boolean> 12|120r66 136r66 139r17 153r20 157r14
+109E9*char<character> 12|58r19
+X 15 i-cexten.ads
+40K22*Extensions 11|36w19 107r47 112r48 121r36 129r30 12|35w19 35w48 15|852e28
+60B12*bool{14|96E9} 11|107r58 112r59 121r47 129r41
+X 16 i-cstrin.ads
+48K22*Strings 11|37w19 74r39 138r31 12|36w19 36w45 16|183e25
+65P9*chars_ptr 11|74r47 138r39 12|41r28 48r40 51r37 53r53 65r40 80r26
+X 17 system.ads
+37K9*System 11|34w6 119r30 128r24 12|32w6 32w18 33r6 33r35 51r48 53r37 57r23
+. 66r14 17|214e11
+67M9*Address 11|119r37 128r31 12|51r55 53r44 57r30 66r21 118r60 134r60 145r34
+77V14*"<"{boolean} 12|96r41
+X 24 s-stoele.ads
+43K16*Storage_Elements 12|33w13 33w42 24|104e28
+54I9*Storage_Offset<long_long_integer> 12|69r25
+74V14*"+"{17|67M9} 12|69r23
+

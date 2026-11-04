@@ -1,0 +1,37 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_ELABORATION_CODE
+
+U ada.numerics%s	a-numeri.ads		f2c63a02 EE OL PU PK
+W ada%s			ada.ads			ada.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-numeri.ads		20260807074606 84bea7a3 ada.numerics%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D system.ads		20260807074606 898beeee system%s
+D s-exctab.ads		20260807074606 91bef6ef system.exception_table%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+G a e
+X 1 ada.ads
+18K9*Ada 22e8 2|20r9 36r5
+X 2 a-numeri.ads
+20K13*Numerics 1|18k9 2|36l9 36e17
+23X4*Argument_Error
+28N4*Pi
+32N4*e
+

@@ -1,0 +1,117 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U interfaces.c.extensions%s  i-cexten.ads	bd108911 NE OL PK
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D i-cexten.ads		20101019103052 1e6d46de
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-parame.ads		20091130110856 9c5d83fa
+D s-stalib.ads		20101021102512 c4241c00
+X 3 interfac.ads
+36K9*Interfaces 171e15 5|37r9 263r5
+X 4 i-c.ads
+18K20*C 3|36k9 4|230e17 5|37r20 263r16
+47M9*unsigned_char
+50M12*plain_char{47M9} 5|56r20
+X 5 i-cexten.ads
+37K22*Extensions 4|18k20 5|263l18 263e28
+41M12*void{6|64M9}
+42M12*void_ptr{6|64M9}
+46M12*opaque_structure_def{6|64M9} 47r44
+47P9*opaque_structure_def_ptr(46M12)
+51M12*incomplete_class_def{6|64M9} 52r44
+52P9*incomplete_class_def_ptr(51M12)
+56M12*bool{4|50M12}
+60I12*long_long{long_long_integer}
+61M9*unsigned_long_long 67r19 70r33
+66R9*Signed_128 68e14 69r39 70r8
+67m7*low{61M9}
+67m12*high{61M9}
+74M9*Unsigned_1 75r8
+77M9*Unsigned_2 78r8
+80M9*Unsigned_3 81r8
+83M9*Unsigned_4 84r8
+86M9*Unsigned_5 87r8
+89M9*Unsigned_6 90r8
+92M9*Unsigned_7 93r8
+95M9*Unsigned_8 96r8
+98M9*Unsigned_9 99r8
+101M9*Unsigned_10 102r8
+104M9*Unsigned_11 105r8
+107M9*Unsigned_12 108r8
+110M9*Unsigned_13 111r8
+113M9*Unsigned_14 114r8
+116M9*Unsigned_15 117r8
+119M9*Unsigned_16 120r8
+122M9*Unsigned_17 123r8
+125M9*Unsigned_18 126r8
+128M9*Unsigned_19 129r8
+131M9*Unsigned_20 132r8
+134M9*Unsigned_21 135r8
+137M9*Unsigned_22 138r8
+140M9*Unsigned_23 141r8
+143M9*Unsigned_24 144r8
+146M9*Unsigned_25 147r8
+149M9*Unsigned_26 150r8
+152M9*Unsigned_27 153r8
+155M9*Unsigned_28 156r8
+158M9*Unsigned_29 159r8
+161M9*Unsigned_30 162r8
+164M9*Unsigned_31 165r8
+167M9*Unsigned_32 168r8
+170I9*Signed_2<short_short_integer> 171r8
+173I9*Signed_3<short_short_integer> 174r8
+176I9*Signed_4<short_short_integer> 177r8
+179I9*Signed_5<short_short_integer> 180r8
+182I9*Signed_6<short_short_integer> 183r8
+185I9*Signed_7<short_short_integer> 186r8
+188I9*Signed_8<short_short_integer> 189r8
+191I9*Signed_9<short_integer> 192r8
+194I9*Signed_10<short_integer> 195r8
+197I9*Signed_11<short_integer> 198r8
+200I9*Signed_12<short_integer> 201r8
+203I9*Signed_13<short_integer> 204r8
+206I9*Signed_14<short_integer> 207r8
+209I9*Signed_15<short_integer> 210r8
+212I9*Signed_16<short_integer> 213r8
+215I9*Signed_17<integer> 216r8
+218I9*Signed_18<integer> 219r8
+221I9*Signed_19<integer> 222r8
+224I9*Signed_20<integer> 225r8
+227I9*Signed_21<integer> 228r8
+230I9*Signed_22<integer> 231r8
+233I9*Signed_23<integer> 234r8
+236I9*Signed_24<integer> 237r8
+239I9*Signed_25<integer> 240r8
+242I9*Signed_26<integer> 243r8
+245I9*Signed_27<integer> 246r8
+248I9*Signed_28<integer> 249r8
+251I9*Signed_29<integer> 252r8
+254I9*Signed_30<integer> 255r8
+257I9*Signed_31<integer> 258r8
+260I9*Signed_32<integer> 261r8
+X 6 system.ads
+37K9*System 5|35w6 41r24 42r24 46r36 51r36 6|153e11
+64M9*Address 5|41r31 42r31 46r43 51r43
+

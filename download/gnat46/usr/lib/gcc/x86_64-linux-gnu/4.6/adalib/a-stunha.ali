@@ -1,0 +1,81 @@
+V "GNAT Lib v4.6"
+A -gnatwa
+A -O2
+A -O2
+A -Wextra
+A -Wall
+A -fexceptions
+A -fPIC
+A -g
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U ada.strings.unbounded.hash%b  a-stunha.adb	217daf40 NE OL PR SU
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W system%s		system.ads		system.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.string_hash%s	s-strhas.adb		s-strhas.ali
+
+U ada.strings.unbounded.hash%s  a-stunha.ads	963f9629 NE OL PR SU
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-contai.ads		20101025135029 61e5e089
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20101220072657 e684739b
+D a-stunha.ads		20070406091342 115e053b
+D a-stunha.adb		20090622122457 16bf72ef
+D a-tags.ads		20101021101406 c7695348
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D system.ads		20120503154647 23e1f70b
+D s-exctab.ads		20090417131547 66e51330
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-strhas.ads		20090623093900 269cd894
+D s-strhas.adb		20091130110856 ade175f5
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 11|16r6 18r10 21r22 12|32r10 35r8 40r5
+X 4 a-contai.ads
+16K13*Containers 24e19 11|16w10 19r35 12|33r35 35r12
+19M9*Hash_Type 11|19r46 12|33r46 37r26
+X 8 a-string.ads
+16K13*Strings 35e16 11|18r14 21r26 12|32r14 40r9
+X 10 a-strunb.ads
+77K21*Unbounded 490e26 11|18r22 21r34 12|32r22 40r17
+80R9*Unbounded_String 474e14 11|19r10 12|33r10
+101V13*To_String{string} 12|39s17
+X 11 a-stunha.ads
+18V32*Hash{4|19M9} 10|77k21 11|19>4 21r44 12|32b32 40l27 40t31
+19r4 Key{10|80R9} 12|33b4 39r28
+X 12 a-stunha.adb
+36V13 Hash[28|56]{4|19M9} 39s11 29|43b13
+X 16 system.ads
+37K9*System 12|30r6 36r25 16|153e11
+X 28 s-strhas.ads
+41K16*String_Hash 12|30w13 36r32 28|60e23
+56v13*Hash 12|36r44
+

@@ -1,0 +1,59 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P ZX
+
+RN
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+
+U system.parameters%b	s-parame.adb		3007a9ef NE OL PK
+W system%s		system.ads		system.ali
+
+U system.parameters%s	s-parame.ads		282545b2 NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20260807074606 898beeee system%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-parame.adb		20260807074606 91a902b3 system.parameters%b
+G a e
+G c Z s b [default_stack_size system__parameters 67 13 none]
+G c Z s b [minimum_stack_size system__parameters 70 13 none]
+G c Z s b [adjust_storage_size system__parameters 73 13 none]
+X 1 system.ads
+37K9*System 214e11 2|50r9 110r25 182r5 3|34r14 82r5
+67M9*Address 2|110r32
+73N4*Memory_Size 2|57r29 57r48
+X 2 s-parame.ads
+50K16*Parameters 1|37k9 2|182l12 182e22 3|34b21 82l12 82t22
+57I9*Size_Type<long_long_integer> 64r32 64r45 67r39 70r39 73r41 73r59 82r38
+. 92r46 3|40r41 40r59 55r39 61r13 64r17 72r39
+64i4*Unspecified_Size{57I9} 3|42r17
+67V13*Default_Stack_Size{57I9} 3|43s17 55b13 66l8 66t26
+70V13*Minimum_Stack_Size{57I9} 3|44s20 45s17 61s46 62s17 72b13 80l8 80t26
+73V13*Adjust_Storage_Size{57I9} 73>34 3|40b13 49l8 49t27
+73i34 Size{57I9} 3|40b34 42r10 44r13 47r17
+82i4*Default_Env_Stack_Size{57I9}
+87b4*Stack_Grows_Down{boolean}
+92i4*Runtime_Default_Sec_Stack_Size{57I9}
+96b4*Sec_Stack_Dynamic{boolean}
+104N4*long_bits
+109N4*ptr_bits
+110M12*C_Address{1|67M9}
+113a4*C_Malloc_Linkname{string}
+136b4*Garbage_Collected{boolean}
+151b4*No_Abort{boolean}
+164N4*Max_Attribute_Count
+171N4*Max_Task_Image_Length
+178N4*Default_Exception_Msg_Max_Length
+X 3 s-parame.adb
+56i7*Default_Stack_Size{integer} 57r25 59r10 61r24 64r28
+

@@ -1,0 +1,257 @@
+V "GNAT Lib v16"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=nocona
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LONG_LONG_INTEGERS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+
+U system.bignums%b	s-bignum.adb		f540563c NE OL PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.generic_bignums%s
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.shared_bignums%s  s-shabig.ads		s-shabig.ali
+W system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U system.bignums%s	s-bignum.ads		4b783a3f BN NE OL PR PK
+W system%s		system.ads		system.ali
+W system.shared_bignums%s  s-shabig.ads		s-shabig.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20260807074606 76789da1 ada%s
+D a-except.ads		20260807074606 8699d7ff ada.exceptions%s
+D a-unccon.ads		20260807074606 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260807074606 9111f9c1 interfaces%s
+D system.ads		20260807074606 898beeee system%s
+D s-bignum.ads		20260807074606 6cce4bfd system.bignums%s
+D s-bignum.adb		20260807074606 2664a5c3 system.bignums%b
+D s-genbig.ads		20260807074606 70a1f56a system.generic_bignums%s
+D s-genbig.adb		20260807074606 6148e340 system.generic_bignums%b
+D s-imagei.ads		20260807074606 11a376a2 system.image_i%s
+D s-imgint.ads		20260807074606 86836590 system.img_int%s
+D s-parame.ads		20260807074606 a1aeab5c system.parameters%s
+D s-secsta.ads		20260807074606 578279f5 system.secondary_stack%s
+D s-shabig.ads		20260807074606 5417e075 system.shared_bignums%s
+D s-stalib.ads		20260807074606 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260807074606 ccded4e8 system.storage_elements%s
+D s-traent.ads		20260807074606 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260807074606 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [big_add system__bignums 51 13 none]
+G c Z s b [big_sub system__bignums 52 13 none]
+G c Z s b [big_mul system__bignums 53 13 none]
+G c Z s b [big_div system__bignums 54 13 none]
+G c Z s b [big_exp system__bignums 55 13 none]
+G c Z s b [big_mod system__bignums 56 13 none]
+G c Z s b [big_rem system__bignums 57 13 none]
+G c Z s b [big_neg system__bignums 58 13 none]
+G c Z s b [big_abs system__bignums 59 13 none]
+G c Z s b [big_eq system__bignums 64 13 none]
+G c Z s b [big_ne system__bignums 65 13 none]
+G c Z s b [big_ge system__bignums 66 13 none]
+G c Z s b [big_le system__bignums 67 13 none]
+G c Z s b [big_gt system__bignums 68 13 none]
+G c Z s b [big_lt system__bignums 69 13 none]
+G c Z s b [bignum_in_lli_range system__bignums 73 13 none]
+G c Z s b [to_bignum system__bignums 77 13 none]
+G c Z s b [from_bignum system__bignums 81 13 none]
+G c Z s b [llu_to_bignum system__bignums 85 13 none]
+G c Z s b [llu_from_bignum system__bignums 89 13 none]
+G c Z b b [allocate_bignum system__bignums 39 13 none]
+G c Z b b [free_bignum system__bignums 42 14 none]
+G c Z b b [to_bignum system__bignums 45 13 none]
+G c Z b b [big_add system__bignums__sec_stack_bignums 69 13 96_4]
+G c Z b b [big_sub system__bignums__sec_stack_bignums 70 13 96_4]
+G c Z b b [big_mul system__bignums__sec_stack_bignums 71 13 96_4]
+G c Z b b [big_div system__bignums__sec_stack_bignums 72 13 96_4]
+G c Z b b [big_exp system__bignums__sec_stack_bignums 73 13 96_4]
+G c Z b b [big_mod system__bignums__sec_stack_bignums 74 13 96_4]
+G c Z b b [big_rem system__bignums__sec_stack_bignums 75 13 96_4]
+G c Z b b [big_neg system__bignums__sec_stack_bignums 76 13 96_4]
+G c Z b b [big_abs system__bignums__sec_stack_bignums 77 13 96_4]
+G c Z b b [big_and system__bignums__sec_stack_bignums 82 13 96_4]
+G c Z b b [big_or system__bignums__sec_stack_bignums 83 13 96_4]
+G c Z b b [big_shift_left system__bignums__sec_stack_bignums 87 13 96_4]
+G c Z b b [big_shift_right system__bignums__sec_stack_bignums 88 13 96_4]
+G c Z b b [big_eq system__bignums__sec_stack_bignums 92 13 96_4]
+G c Z b b [big_ne system__bignums__sec_stack_bignums 93 13 96_4]
+G c Z b b [big_ge system__bignums__sec_stack_bignums 94 13 96_4]
+G c Z b b [big_le system__bignums__sec_stack_bignums 95 13 96_4]
+G c Z b b [big_gt system__bignums__sec_stack_bignums 96 13 96_4]
+G c Z b b [big_lt system__bignums__sec_stack_bignums 97 13 96_4]
+G c Z b b [bignum_in_lli_range system__bignums__sec_stack_bignums 101 13 96_4]
+G c Z b b [to_bignum system__bignums__sec_stack_bignums 105 13 96_4]
+G c Z b b [to_bignum system__bignums__sec_stack_bignums 109 13 96_4]
+G c Z b b [to_bignum system__bignums__sec_stack_bignums 113 13 96_4]
+G c Z b b [to_bignum system__bignums__sec_stack_bignums 117 13 96_4]
+G c Z b b [to_bignum system__bignums__sec_stack_bignums 121 13 96_4]
+G c Z b b [to_bignum system__bignums__sec_stack_bignums 125 13 96_4]
+G c Z b b [from_bignum system__bignums__sec_stack_bignums 129 13 96_4]
+G c Z b b [from_bignum system__bignums__sec_stack_bignums 133 13 96_4]
+G c Z b b [from_bignum system__bignums__sec_stack_bignums 137 13 96_4]
+G c Z b b [from_bignum system__bignums__sec_stack_bignums 141 13 96_4]
+G c Z b b [from_bignum system__bignums__sec_stack_bignums 145 13 96_4]
+G c Z b b [from_bignum system__bignums__sec_stack_bignums 149 13 96_4]
+G c Z b b [to_string system__bignums__sec_stack_bignums 153 13 96_4]
+G c Z b b [is_zero system__bignums__sec_stack_bignums 159 13 96_4]
+G c Z b b [msd system__bignums__sec_stack_bignums 44 13 96_4]
+G c Z b b [lsd system__bignums__sec_stack_bignums 45 13 96_4]
+G c Z b b [Oconcat system__bignums__sec_stack_bignums 48 13 96_4]
+G c Z b b [add system__bignums__sec_stack_bignums 67 13 96_4]
+G c Z b b [compare system__bignums__sec_stack_bignums 80 13 96_4]
+G c Z b b [div_rem system__bignums__sec_stack_bignums 88 14 96_4]
+G c Z b b [normalize system__bignums__sec_stack_bignums 99 13 96_4]
+G c Z b b [Oexpon system__bignums__sec_stack_bignums 107 13 96_4]
+X 4 interfac.ads
+92M9*Unsigned_32
+X 5 system.ads
+37K9*System 214e11 6|39r6 40r6 42r9 45r23 47r22 114r5 7|32r6 33r6 33r35 34r6
+. 34r35 35r6 35r35 37r14 96r37 154r5
+67M9*Address 7|52r22
+81V14*"="{boolean} 7|86r38
+X 6 s-bignum.ads
+42K16*Bignums 5|37k9 6|114l12 114e19 7|37b21 154l12 154t19
+45K12*SU=45:30 48r34 49r39
+47P12*Bignum{14|73P9} 51r29 51r44 52r29 52r44 53r29 53r44 54r29 54r44 55r29
+. 55r44 56r29 56r44 57r29 57r44 58r29 58r44 59r29 59r44 64r29 65r29 66r29
+. 67r29 68r29 69r29 73r38 77r54 81r30 85r59 89r34 7|39r70 42r38 45r43 45r58
+. 51r70 60r14 97r7 99r29 99r44 102r29 102r44 105r29 105r44 108r29 108r44
+. 111r29 111r44 114r29 114r44 117r29 117r44 120r26 120r41 123r26 123r41 126r29
+. 128r29 130r29 132r29 134r29 136r29 139r38 142r54 145r30 148r59 151r34
+48M12*Long_Long_Unsigned{18|46M9} 85r32 89r49 7|148r32 151r49
+49M12*Long_Long_Long_Unsigned{18|47M9}
+51V13*Big_Add{47P12} 51>22 51>25 95r19 7|99b13
+51p22 X{47P12} 7|99b22
+51p25 Y{47P12} 7|99b25
+52V13*Big_Sub{47P12} 52>22 52>25 96r19 7|102b13
+52p22 X{47P12} 7|102b22
+52p25 Y{47P12} 7|102b25
+53V13*Big_Mul{47P12} 53>22 53>25 97r19 7|105b13
+53p22 X{47P12} 7|105b22
+53p25 Y{47P12} 7|105b25
+54V13*Big_Div{47P12} 54>22 54>25 98r19 7|108b13
+54p22 X{47P12} 7|108b22
+54p25 Y{47P12} 7|108b25
+55V13*Big_Exp{47P12} 55>22 55>25 99r19 7|111b13
+55p22 X{47P12} 7|111b22
+55p25 Y{47P12} 7|111b25
+56V13*Big_Mod{47P12} 56>22 56>25 100r19 7|114b13
+56p22 X{47P12} 7|114b22
+56p25 Y{47P12} 7|114b25
+57V13*Big_Rem{47P12} 57>22 57>25 101r19 7|117b13
+57p22 X{47P12} 7|117b22
+57p25 Y{47P12} 7|117b25
+58V13*Big_Neg{47P12} 58>22 102r19 7|120b13
+58p22 X{47P12} 7|120b22
+59V13*Big_Abs{47P12} 59>22 103r19 7|123b13
+59p22 X{47P12} 7|123b22
+64V13*Big_EQ{boolean} 64>22 64>25 104r19 7|126b13
+64p22 X{47P12} 7|126b22
+64p25 Y{47P12} 7|126b25
+65V13*Big_NE{boolean} 65>22 65>25 105r19 7|128b13
+65p22 X{47P12} 7|128b22
+65p25 Y{47P12} 7|128b25
+66V13*Big_GE{boolean} 66>22 66>25 106r19 7|130b13
+66p22 X{47P12} 7|130b22
+66p25 Y{47P12} 7|130b25
+67V13*Big_LE{boolean} 67>22 67>25 107r19 7|132b13
+67p22 X{47P12} 7|132b22
+67p25 Y{47P12} 7|132b25
+68V13*Big_GT{boolean} 68>22 68>25 108r19 7|134b13
+68p22 X{47P12} 7|134b22
+68p25 Y{47P12} 7|134b25
+69V13*Big_LT{boolean} 69>22 69>25 109r19 7|136b13
+69p22 X{47P12} 7|136b22
+69p25 Y{47P12} 7|136b25
+73V13*Bignum_In_LLI_Range{boolean} 73>34 110r19 7|139b13
+73p34 X{47P12} 7|139b34
+77V13*To_Bignum{47P12} 77>24 111r19 7|142b13
+77i24 X{long_long_integer} 7|142b24
+81V13*From_Bignum{long_long_integer} 81>26 112r19 7|145b13
+81p26 X{47P12} 7|145b26
+85V13*LLU_To_Bignum{47P12} 85>28 7|148b13
+85m28 X{48M12} 7|148b28
+89V13*LLU_From_Bignum{48M12} 89>30 7|151b13
+89p30 X{47P12} 7|151b30
+X 7 s-bignum.adb
+39V13 Allocate_Bignum{6|47P12} 39>30 39>48 51b13 94l8 94t23 97r15
+39a30 D{14|55A9} 51b30 57r50 64r28 89r21 91r17
+39b48 Neg{boolean} 51b48 90r21
+42U14 Free_Bignum 42=27 97r32
+42p27 X{6|47P12}
+45V13 To_Bignum{6|47P12} 45b13 45=24 97r45
+45p24 X{6|47P12} 45r69
+52m7 Addr{5|67M9} 57m20 61m28 61r28 65r29
+60p10 B{6|47P12} 61m14 61r14 62m30 62r30 91r10 92r17
+64r10 BD{14|58R9} 65m14 65r14 66m30 66r30 83m30 83r30 86r40
+72R15 Bignum_Data_Header 75e20 77r14 82r16
+73i13 Len{14|46I12} 78r13 86r29 89m14
+74b13 Neg{boolean} 79r13 90m14
+82r10 BDH{72R15} 83m14 83r14 84m30 84r30 86r25 89m10 90m10
+96K12 Sec_Stack_Bignums[8|54] 100r14 103r14 106r14 109r14 112r14 115r14 118r14
+. 121r14 124r14 127r14 129r14 131r14 133r14 135r14 137r14 140r14 143r14 146r14
+. 149r14 152r14
+X 8 s-genbig.ads
+54k16*Generic_Bignums 7|32w13 96r44 8|162e27
+69V13*Big_Add{14|73P9} 7|100r32[96]
+70V13*Big_Sub{14|73P9} 7|103r32[96]
+71V13*Big_Mul{14|73P9} 7|106r32[96]
+72V13*Big_Div{14|73P9} 7|109r32[96]
+73V13*Big_Exp{14|73P9} 7|112r32[96]
+74V13*Big_Mod{14|73P9} 7|115r32[96]
+75V13*Big_Rem{14|73P9} 7|118r32[96]
+76V13*Big_Neg{14|73P9} 7|121r32[96]
+77V13*Big_Abs{14|73P9} 7|124r32[96]
+92V13*Big_EQ{boolean} 7|127r32[96]
+93V13*Big_NE{boolean} 7|129r32[96]
+94V13*Big_GE{boolean} 7|131r32[96]
+95V13*Big_LE{boolean} 7|133r32[96]
+96V13*Big_GT{boolean} 7|135r32[96]
+97V13*Big_LT{boolean} 7|137r32[96]
+101V13*Bignum_In_LLI_Range{boolean} 7|140r32[96]
+105V13*To_Bignum{14|73P9} 7|143r32[96]
+109V13*To_Bignum{14|73P9} 7|149r32[96]
+129V13*From_Bignum{long_long_integer} 7|146r32[96]
+133V13*From_Bignum{60M12[7|96]} 7|152r32[96]
+X 13 s-secsta.ads
+35K16*Secondary_Stack 7|33w13 33w42 13|429e27
+70U14*SS_Allocate 7|57s7
+X 14 s-shabig.ads
+38K16*Shared_Bignums 6|39w13 47r29 7|34w13 34w42 14|80e26
+46I12*Length{natural} 7|73r19
+52M12*SD{4|92M9}
+55A9*Digit_Vector(52M12)<integer> 7|39r34 51r34
+58R9*Bignum_Data 7|64r15 14|66e14
+62a7*D{55A9} 7|91m12
+73P9*Bignum(58R9) 6|47r44
+X 16 s-stoele.ads
+43K16*Storage_Elements 7|35w13 35w42 16|104e28
+54I9*Storage_Offset<long_long_integer> 7|57r26
+X 18 s-unstyp.ads
+38K16*Unsigned_Types 6|40w13 45r30 18|256e26
+46M9*Long_Long_Unsigned 6|48r37
+47M9*Long_Long_Long_Unsigned 6|49r42
+
